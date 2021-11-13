@@ -13,9 +13,9 @@ Bitstock Core integration/staging repository
 • Prefix: BSOCK adresses start with the letter "a"  
 • Ports: 7429 (p2p) / 7430 (rpc)
 
-• Explorer http://explorer.bitstock.cc
+• Explorer http://explorer.bitstock.investments
 
-• Website [bitstock.cc](http://www.bitstock.cc)
+• Website [bitstock.investments](http://www.bitstock.investments)
 
 ### Rewards Breakdown
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252

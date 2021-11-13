@@ -28,9 +28,9 @@ Build-Depends: debhelper,
  libzmq3-dev,
  dh-systemd
 Standards-Version: 3.9.2
-Homepage: http://www.bitstock.cc
-Vcs-Git: git://github.com/bitstock-altc/bitstock.git
-Vcs-Browser: https://github.com/bitstock-altc/bitstock
+Homepage: https://www.bitstock.investments/
+Vcs-Git: git://github.com/bitstockproject/bitstock-core.git
+Vcs-Browser: https://github.com/bitstockproject/bitstock-core
 
 Package: bitstockd
 Architecture: any

@@ -29,7 +29,7 @@ packages:
 - "python3-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/bitstock-altc/bitstock.git"
+- "url": "https://github.com/bitstockproject/bitstock.git"
   "dir": "bitstock"
 files:
 - "MacOSX10.11.sdk.tar.gz"

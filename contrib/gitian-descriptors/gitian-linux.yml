@@ -33,7 +33,7 @@ packages:
 - "ca-certificates"
 - "python3"
 remotes:
-- "url": "https://github.com/bitstock-altc/bitstock.git"
+- "url": "https://github.com/bitstockproject/bitstock-core.git"
   "dir": "bitstock"
 files: []
 script: |

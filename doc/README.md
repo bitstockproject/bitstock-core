@@ -26,7 +26,7 @@ Drag Bitstock-Qt to your applications folder, and then run Bitstock-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Bitstock Wiki](https://github.com/bitstock-altc/bitstock/wiki)
+* See the documentation at the [Bitstock Wiki](https://github.com/bitstockproject/bitstock-core/wiki)
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Bitstock Forum](http://forum.bitstock.org/).
 * Join our Discord server [Discord Server](https://discord.bitstock.org)

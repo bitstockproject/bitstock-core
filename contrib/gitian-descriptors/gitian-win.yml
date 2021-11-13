@@ -24,7 +24,7 @@ packages:
 - "python3"
 - "rename"
 remotes:
-- "url": "https://github.com/bitstock-altc/bitstock.git"
+- "url": "https://github.com/bitstockproject/bitstock.git"
   "dir": "bitstock"
 files: []
 script: |
