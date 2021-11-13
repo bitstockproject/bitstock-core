@@ -1,0 +1,860 @@
+# Copyright (c) 2013-2016 The Bitcoin Core developers
+# Distributed under the MIT software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+bin_PROGRAMS += qt/bitstock-qt
+EXTRA_LIBRARIES += qt/libbitcoinqt.a
+
+# bitstock qt core #
+QT_TS = \
+  qt/locale/bitstock_bg.ts \
+  qt/locale/bitstock_ca.ts \
+  qt/locale/bitstock_cs.ts \
+  qt/locale/bitstock_da.ts \
+  qt/locale/bitstock_de.ts \
+  qt/locale/bitstock_en.ts \
+  qt/locale/bitstock_en_GB.ts \
+  qt/locale/bitstock_en_US.ts \
+  qt/locale/bitstock_eo.ts \
+  qt/locale/bitstock_es.ts \
+  qt/locale/bitstock_es_ES.ts \
+  qt/locale/bitstock_fi.ts \
+  qt/locale/bitstock_fr_FR.ts \
+  qt/locale/bitstock_hi_IN.ts \
+  qt/locale/bitstock_hr.ts \
+  qt/locale/bitstock_hr_HR.ts \
+  qt/locale/bitstock_it.ts \
+  qt/locale/bitstock_ja.ts \
+  qt/locale/bitstock_ko_KR.ts \
+  qt/locale/bitstock_lt_LT.ts \
+  qt/locale/bitstock_nl.ts \
+  qt/locale/bitstock_pl.ts \
+  qt/locale/bitstock_pt.ts \
+  qt/locale/bitstock_pt_BR.ts \
+  qt/locale/bitstock_ro_RO.ts \
+  qt/locale/bitstock_ru.ts \
+  qt/locale/bitstock_sk.ts \
+  qt/locale/bitstock_sv.ts \
+  qt/locale/bitstock_tr.ts \
+  qt/locale/bitstock_uk.ts \
+  qt/locale/bitstock_vi.ts \
+  qt/locale/bitstock_zh_CN.ts \
+  qt/locale/bitstock_zh_TW.ts
+
+QT_FORMS_UI = \
+  qt/forms/addressbookpage.ui \
+  qt/forms/askpassphrasedialog.ui \
+  qt/forms/coincontroldialog.ui \
+  qt/forms/blockexplorer.ui \
+  qt/forms/editaddressdialog.ui \
+  qt/forms/governancepage.ui \
+  qt/forms/helpmessagedialog.ui \
+  qt/forms/intro.ui \
+  qt/forms/openuridialog.ui \
+  qt/forms/optionsdialog.ui \
+  qt/forms/rpcconsole.ui \
+  qt/bitstock/forms/loadingdialog.ui \
+  qt/forms/zpivcontroldialog.ui \
+  qt/bitstock/forms/snackbar.ui \
+  qt/bitstock/forms/navmenuwidget.ui \
+  qt/bitstock/forms/lockunlock.ui \
+  qt/bitstock/forms/expandablebutton.ui \
+  qt/bitstock/forms/receivedialog.ui \
+  qt/bitstock/forms/walletpassworddialog.ui \
+  qt/bitstock/forms/topbar.ui \
+  qt/bitstock/forms/txrow.ui \
+  qt/bitstock/forms/dashboardwidget.ui \
+  qt/bitstock/forms/coincontrolpivwidget.ui \
+  qt/bitstock/forms/addresslabelrow.ui \
+  qt/bitstock/forms/contactdropdownrow.ui \
+  qt/bitstock/forms/mninfodialog.ui \
+  qt/bitstock/forms/optionbutton.ui \
+  qt/bitstock/forms/masternodewizarddialog.ui \
+  qt/bitstock/forms/mnrow.ui \
+  qt/bitstock/forms/masternodeswidget.ui \
+  qt/bitstock/forms/myaddressrow.ui \
+  qt/bitstock/forms/csrow.ui \
+  qt/bitstock/forms/sendchangeaddressdialog.ui \
+  qt/bitstock/forms/sendconfirmdialog.ui \
+  qt/bitstock/forms/sendcustomfeedialog.ui \
+  qt/bitstock/forms/sendchangeaddressdialog.ui \
+  qt/bitstock/forms/sendmultirow.ui \
+  qt/bitstock/forms/send.ui \
+  qt/bitstock/forms/addnewaddressdialog.ui \
+  qt/bitstock/forms/addnewcontactdialog.ui \
+  qt/bitstock/forms/requestdialog.ui \
+  qt/bitstock/forms/receivewidget.ui \
+  qt/bitstock/forms/tooltipmenu.ui \
+  qt/bitstock/forms/addresseswidget.ui \
+  qt/bitstock/forms/defaultdialog.ui \
+  qt/bitstock/forms/denomgenerationdialog.ui \
+  qt/bitstock/forms/privacywidget.ui \
+  qt/bitstock/forms/coldstakingwidget.ui \
+  qt/bitstock/settings/forms/settingsbackupwallet.ui \
+  qt/bitstock/settings/forms/settingsbittoolwidget.ui \
+  qt/bitstock/settings/forms/settingsconsolewidget.ui \
+  qt/bitstock/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/bitstock/settings/forms/settingsfaqwidget.ui \
+  qt/bitstock/settings/forms/settingsinformationwidget.ui \
+  qt/bitstock/settings/forms/settingsmainoptionswidget.ui \
+  qt/bitstock/settings/forms/settingsmultisenddialog.ui \
+  qt/bitstock/settings/forms/settingsmultisendwidget.ui \
+  qt/bitstock/settings/forms/settingssignmessagewidgets.ui \
+  qt/bitstock/settings/forms/settingswalletoptionswidget.ui \
+  qt/bitstock/settings/forms/settingswalletrepairwidget.ui \
+  qt/bitstock/settings/forms/settingswidget.ui \
+  qt/bitstock/forms/welcomecontentwidget.ui \
+  qt/bitstock/forms/splash.ui
+
+QT_MOC_CPP = \
+  qt/moc_addressbookpage.cpp \
+  qt/moc_addresstablemodel.cpp \
+  qt/moc_askpassphrasedialog.cpp \
+  qt/moc_bantablemodel.cpp \
+  qt/moc_bitcoinaddressvalidator.cpp \
+  qt/moc_bitcoinamountfield.cpp \
+  qt/bitstock/moc_bitstockgui.cpp \
+  qt/moc_bitcoinunits.cpp \
+  qt/moc_blockexplorer.cpp \
+  qt/moc_clientmodel.cpp \
+  qt/moc_coincontroldialog.cpp \
+  qt/moc_coincontroltreewidget.cpp \
+  qt/moc_csvmodelwriter.cpp \
+  qt/moc_editaddressdialog.cpp \
+  qt/moc_governancepage.cpp \
+  qt/moc_guiutil.cpp \
+  qt/moc_intro.cpp \
+  qt/moc_macdockiconhandler.cpp \
+  qt/moc_macnotificationhandler.cpp \
+  qt/moc_notificator.cpp \
+  qt/moc_openuridialog.cpp \
+  qt/moc_optionsdialog.cpp \
+  qt/moc_optionsmodel.cpp \
+  qt/moc_peertablemodel.cpp \
+  qt/moc_paymentserver.cpp \
+  qt/moc_qvalidatedlineedit.cpp \
+  qt/moc_qvaluecombobox.cpp \
+  qt/moc_proposalframe.cpp \
+  qt/moc_recentrequeststablemodel.cpp \
+  qt/moc_rpcconsole.cpp \
+  qt/moc_splashscreen.cpp \
+  qt/moc_trafficgraphwidget.cpp \
+  qt/moc_transactiondesc.cpp \
+  qt/moc_transactionfilterproxy.cpp \
+  qt/moc_transactiontablemodel.cpp \
+  qt/moc_utilitydialog.cpp \
+  qt/moc_walletmodel.cpp \
+  qt/bitstock/moc_loadingdialog.cpp \
+  qt/moc_zpivcontroldialog.cpp \
+  qt/bitstock/moc_pwidget.cpp \
+  qt/bitstock/moc_snackbar.cpp \
+  qt/bitstock/moc_navmenuwidget.cpp \
+  qt/bitstock/moc_lockunlock.cpp \
+  qt/bitstock/moc_expandablebutton.cpp \
+  qt/bitstock/moc_furabstractlistitemdelegate.cpp \
+  qt/bitstock/moc_receivedialog.cpp \
+  qt/bitstock/moc_walletpassworddialog.cpp \
+  qt/bitstock/moc_pfborderimage.cpp \
+  qt/bitstock/moc_topbar.cpp \
+  qt/bitstock/moc_txrow.cpp \
+  qt/bitstock/moc_dashboardwidget.cpp \
+  qt/bitstock/moc_coincontrolpivwidget.cpp \
+  qt/bitstock/moc_addresslabelrow.cpp \
+  qt/bitstock/moc_contactdropdownrow.cpp \
+  qt/bitstock/moc_mninfodialog.cpp \
+  qt/bitstock/moc_optionbutton.cpp \
+  qt/bitstock/moc_coldstakingmodel.cpp \
+  qt/bitstock/moc_mnmodel.cpp \
+  qt/bitstock/moc_masternodewizarddialog.cpp \
+  qt/bitstock/moc_mnrow.cpp \
+  qt/bitstock/moc_masternodeswidget.cpp \
+  qt/bitstock/moc_myaddressrow.cpp \
+  qt/bitstock/moc_csrow.cpp \
+  qt/bitstock/moc_contactsdropdown.cpp \
+  qt/bitstock/moc_sendchangeaddressdialog.cpp \
+  qt/bitstock/moc_sendconfirmdialog.cpp \
+  qt/bitstock/moc_sendcustomfeedialog.cpp \
+  qt/bitstock/moc_sendchangeaddressdialog.cpp \
+  qt/bitstock/moc_sendmultirow.cpp \
+  qt/bitstock/moc_send.cpp \
+  qt/bitstock/moc_addnewaddressdialog.cpp \
+  qt/bitstock/moc_addnewcontactdialog.cpp \
+  qt/bitstock/moc_requestdialog.cpp \
+  qt/bitstock/moc_receivewidget.cpp \
+  qt/bitstock/moc_tooltipmenu.cpp \
+  qt/bitstock/moc_addresseswidget.cpp \
+  qt/bitstock/moc_defaultdialog.cpp \
+  qt/bitstock/moc_denomgenerationdialog.cpp \
+  qt/bitstock/moc_privacywidget.cpp \
+  qt/bitstock/moc_coldstakingwidget.cpp \
+  qt/bitstock/settings/moc_settingsbackupwallet.cpp \
+  qt/bitstock/settings/moc_settingsbittoolwidget.cpp \
+  qt/bitstock/settings/moc_settingsconsolewidget.cpp \
+  qt/bitstock/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/bitstock/settings/moc_settingsfaqwidget.cpp \
+  qt/bitstock/settings/moc_settingsinformationwidget.cpp \
+  qt/bitstock/settings/moc_settingsmainoptionswidget.cpp \
+  qt/bitstock/settings/moc_settingsmultisenddialog.cpp \
+  qt/bitstock/settings/moc_settingsmultisendwidget.cpp \
+  qt/bitstock/settings/moc_settingssignmessagewidgets.cpp \
+  qt/bitstock/settings/moc_settingswalletoptionswidget.cpp \
+  qt/bitstock/settings/moc_settingswalletrepairwidget.cpp \
+  qt/bitstock/settings/moc_settingswidget.cpp \
+  qt/bitstock/moc_welcomecontentwidget.cpp \
+  qt/bitstock/moc_splash.cpp
+
+BITCOIN_MM = \
+  qt/macdockiconhandler.mm \
+  qt/macnotificationhandler.mm
+
+QT_MOC = \
+  qt/bitstock.moc \
+  qt/bitcoinamountfield.moc \
+  qt/intro.moc \
+  qt/rpcconsole.moc \
+  qt/bitstock/settings/moc_settingsconsolewidget.cpp
+
+QT_QRC_CPP = qt/qrc_bitstock.cpp
+QT_QRC = qt/bitstock.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_bitstock_locale.cpp
+QT_QRC_LOCALE = qt/bitstock_locale.qrc
+
+PROTOBUF_CC = qt/paymentrequest.pb.cc
+PROTOBUF_H = qt/paymentrequest.pb.h
+PROTOBUF_PROTO = qt/paymentrequest.proto
+
+BITCOIN_QT_H = \
+  qt/addressbookpage.h \
+  qt/addresstablemodel.h \
+  qt/askpassphrasedialog.h \
+  qt/bantablemodel.h \
+  qt/bitcoinaddressvalidator.h \
+  qt/bitcoinamountfield.h \
+  qt/bitstock/bitstockgui.h \
+  qt/bitcoinunits.h \
+  qt/blockexplorer.h \
+  qt/clientmodel.h \
+  qt/coincontroldialog.h \
+  qt/coincontroltreewidget.h \
+  qt/csvmodelwriter.h \
+  qt/editaddressdialog.h \
+  qt/governancepage.h \
+  qt/guiconstants.h \
+  qt/guiutil.h \
+  qt/intro.h \
+  qt/macdockiconhandler.h \
+  qt/macnotificationhandler.h \
+  qt/networkstyle.h \
+  qt/notificator.h \
+  qt/openuridialog.h \
+  qt/optionsdialog.h \
+  qt/optionsmodel.h \
+  qt/paymentrequestplus.h \
+  qt/paymentserver.h \
+  qt/peertablemodel.h \
+  qt/platformstyle.h \
+  qt/proposalframe.h \
+  qt/qvalidatedlineedit.h \
+  qt/qvaluecombobox.h \
+  qt/recentrequeststablemodel.h \
+  qt/rpcconsole.h \
+  qt/splashscreen.h \
+  qt/trafficgraphwidget.h \
+  qt/transactiondesc.h \
+  qt/transactionfilterproxy.h \
+  qt/transactionrecord.h \
+  qt/transactiontablemodel.h \
+  qt/utilitydialog.h \
+  qt/walletmodel.h \
+  qt/walletmodeltransaction.h \
+  qt/bitstock/prunnable.h \
+  qt/bitstock/pfborderimage.h \
+  qt/bitstock/loadingdialog.h \
+  qt/winshutdownmonitor.h \
+  qt/zpivcontroldialog.h \
+  qt/bitstock/pwidget.h \
+  qt/bitstock/guitransactionsutils.h \
+  qt/bitstock/snackbar.h \
+  qt/bitstock/navmenuwidget.h \
+  qt/bitstock/lockunlock.h \
+  qt/bitstock/receivedialog.h \
+  qt/bitstock/furlistrow.h \
+  qt/bitstock/furabstractlistitemdelegate.h \
+  qt/bitstock/txviewholder.h \
+  qt/bitstock/qtutils.h \
+  qt/bitstock/expandablebutton.h \
+  qt/bitstock/walletpassworddialog.h \
+  qt/bitstock/topbar.h \
+  qt/bitstock/txrow.h \
+  qt/bitstock/addressholder.h \
+  qt/bitstock/addressfilterproxymodel.h \
+  qt/bitstock/dashboardwidget.h \
+  qt/bitstock/coincontrolpivwidget.h \
+  qt/bitstock/addresslabelrow.h \
+  qt/bitstock/contactdropdownrow.h \
+  qt/bitstock/mninfodialog.h \
+  qt/bitstock/optionbutton.h \
+  qt/bitstock/coldstakingmodel.h \
+  qt/bitstock/mnmodel.h \
+  qt/bitstock/masternodewizarddialog.h \
+  qt/bitstock/mnrow.h \
+  qt/bitstock/masternodeswidget.h \
+  qt/bitstock/myaddressrow.h \
+  qt/bitstock/csrow.h \
+  qt/bitstock/contactsdropdown.h \
+  qt/bitstock/sendchangeaddressdialog.h \
+  qt/bitstock/sendconfirmdialog.h \
+  qt/bitstock/sendcustomfeedialog.h \
+  qt/bitstock/sendchangeaddressdialog.h \
+  qt/bitstock/sendmultirow.h \
+  qt/bitstock/send.h \
+  qt/bitstock/addnewaddressdialog.h \
+  qt/bitstock/addnewcontactdialog.h \
+  qt/bitstock/requestdialog.h \
+  qt/bitstock/receivewidget.h \
+  qt/bitstock/tooltipmenu.h \
+  qt/bitstock/addresseswidget.h \
+  qt/bitstock/defaultdialog.h \
+  qt/bitstock/denomgenerationdialog.h \
+  qt/bitstock/privacywidget.h \
+  qt/bitstock/coldstakingwidget.h \
+  qt/bitstock/settings/settingsbackupwallet.h \
+  qt/bitstock/settings/settingsbittoolwidget.h \
+  qt/bitstock/settings/settingsconsolewidget.h \
+  qt/bitstock/settings/settingsdisplayoptionswidget.h \
+  qt/bitstock/settings/settingsfaqwidget.h \
+  qt/bitstock/settings/settingsinformationwidget.h \
+  qt/bitstock/settings/settingsmainoptionswidget.h \
+  qt/bitstock/settings/settingsmultisenddialog.h \
+  qt/bitstock/settings/settingsmultisendwidget.h \
+  qt/bitstock/settings/settingssignmessagewidgets.h \
+  qt/bitstock/settings/settingswalletoptionswidget.h \
+  qt/bitstock/settings/settingswalletrepairwidget.h \
+  qt/bitstock/settings/settingswidget.h \
+  qt/bitstock/welcomecontentwidget.h \
+  qt/bitstock/splash.h
+
+RES_ICONS = \
+  qt/res/icons/add.png \
+  qt/res/icons/address-book.png \
+  qt/res/icons/automint_active.png \
+  qt/res/icons/automint_inactive.png \
+  qt/res/icons/bitcoin.ico \
+  qt/res/icons/bitcoin.png \
+  qt/res/icons/bitcoin_testnet.ico \
+  qt/res/icons/bitcoin_testnet.png \
+  qt/res/icons/bitcoin_regtest.png \
+  qt/res/icons/browse.png \
+  qt/res/icons/clock1.png \
+  qt/res/icons/clock2.png \
+  qt/res/icons/clock3.png \
+  qt/res/icons/clock4.png \
+  qt/res/icons/clock5.png \
+  qt/res/icons/configure.png \
+  qt/res/icons/connect0_16.png \
+  qt/res/icons/connect1_16.png \
+  qt/res/icons/connect2_16.png \
+  qt/res/icons/connect3_16.png \
+  qt/res/icons/connect4_16.png \
+  qt/res/icons/debugwindow.png \
+  qt/res/icons/edit.png \
+  qt/res/icons/editcopy.png \
+  qt/res/icons/editpaste.png \
+  qt/res/icons/explorer.png \
+  qt/res/icons/export.png \
+  qt/res/icons/eye.png \
+  qt/res/icons/eye_minus.png \
+  qt/res/icons/eye_plus.png \
+  qt/res/icons/filesave.png \
+  qt/res/icons/history.png \
+  qt/res/icons/key.png \
+  qt/res/icons/lock_closed.png \
+  qt/res/icons/lock_open.png \
+  qt/res/icons/masternodes.png \
+  qt/res/icons/onion.png \
+  qt/res/icons/overview.png \
+  qt/res/icons/qrcode.png \
+  qt/res/icons/quit.png \
+  qt/res/icons/receive.png \
+  qt/res/icons/receive_dark.png \
+  qt/res/icons/privacy.png \
+  qt/res/icons/remove.png \
+  qt/res/icons/send.png \
+  qt/res/icons/send_dark.png \
+  qt/res/icons/governance.png \
+  qt/res/icons/governance_dark.png \
+  qt/res/icons/staking_active.png \
+  qt/res/icons/staking_inactive.png \
+  qt/res/icons/synced.png \
+  qt/res/icons/trade.png \
+  qt/res/icons/transaction0.png \
+  qt/res/icons/transaction2.png \
+  qt/res/icons/transaction_conflicted.png \
+  qt/res/icons/tx_inout.png \
+  qt/res/icons/tx_input.png \
+  qt/res/icons/tx_output.png \
+  qt/res/icons/tx_mined.png \
+  qt/res/icons/ic-transaction-received.svg \
+  qt/res/icons/ic-transaction-mint.svg \
+  qt/res/icons/ic-transaction-sent.svg \
+  qt/res/icons/ic-transaction-staked.svg \
+  qt/res/icons/unit_bitstock.png \
+  qt/res/icons/unit_mbitstock.png \
+  qt/res/icons/unit_ubitstock.png \
+  qt/res/icons/unit_tbitstock.png \
+  qt/res/icons/unit_tmbitstock.png \
+  qt/res/icons/unit_tubitstock.png \
+  qt/res/icons/yesvote.png \
+  qt/res/icons/novote.png \
+  qt/res/icons/abstainvote.png \
+  qt/bitstock/res/img/bg-dashboard-banner.png \
+  qt/bitstock/res/img/bg-multi-number-dark.svg \
+  qt/bitstock/res/img/ic-check-locked.svg \
+  qt/bitstock/res/img/ic-nav-address.svg \
+  qt/bitstock/res/img/ic-update.svg \
+  qt/bitstock/res/img/bg-multi-number.svg \
+  qt/bitstock/res/img/ic-check-mint-off.svg \
+  qt/bitstock/res/img/ic-nav-cold-staking.svg \
+  qt/bitstock/res/img/ic-nav-cold-staking-active.svg \
+  qt/bitstock/res/img/ic-nav-dashboard-active.svg \
+  qt/bitstock/res/img/ic-wallet-status-locked.svg \
+  qt/bitstock/res/img/bg-splash.svg \
+  qt/bitstock/res/img/bg-splash.png \
+  qt/bitstock/res/img/ic-check-mint.svg \
+  qt/bitstock/res/img/ic-nav-dashboard-hover.svg \
+  qt/bitstock/res/img/ic-wallet-status-staking.svg \
+  qt/bitstock/res/img/ic-check-peers-off.svg \
+  qt/bitstock/res/img/ic-nav-dashboard.svg \
+  qt/bitstock/res/img/ic-wallet-status-unlocked.svg \
+  qt/bitstock/res/img/ic-check-peers.svg \
+  qt/bitstock/res/img/ic-nav-master-active.svg \
+  qt/bitstock/res/img/ic-watch-password-white.svg \
+  qt/bitstock/res/img/bg-welcome-container.jpg \
+  qt/bitstock/res/img/bg-welcome-container.png \
+  qt/bitstock/res/img/bg-welcome-container.svg \
+  qt/bitstock/res/img/bg-welcome-container@2x.png \
+  qt/bitstock/res/img/bg-welcome-container@3x.png \
+  qt/bitstock/res/img/ic-check-staking-off.svg \
+  qt/bitstock/res/img/ic-nav-master-hover.svg \
+  qt/bitstock/res/img/ic-watch-password.svg \
+  qt/bitstock/res/img/bg-welcome.jpg \
+  qt/bitstock/res/img/bg-welcome.svg \
+  qt/bitstock/res/img/bg-welcome@2x.jpg \
+  qt/bitstock/res/img/bg-welcome@3x.jpg \
+  qt/bitstock/res/img/bg-welcome.png \
+  qt/bitstock/res/img/ic-check-staking.svg \
+  qt/bitstock/res/img/ic-nav-master.svg \
+  qt/bitstock/res/img/img-dashboard-banner.jpg \
+  qt/bitstock/res/img/btn-radio-active.svg \
+  qt/bitstock/res/img/ic-check-sync-off.svg \
+  qt/bitstock/res/img/ic-nav-privacy-active.svg \
+  qt/bitstock/res/img/img-empty-contacts.svg \
+  qt/bitstock/res/img/btn-radio-off.svg \
+  qt/bitstock/res/img/ic-check-sync.png \
+  qt/bitstock/res/img/ic-nav-privacy-hover.svg \
+  qt/bitstock/res/img/img-empty-dark-contacts.svg \
+  qt/bitstock/res/img/ic-contact-arrow-down.svg \
+  qt/bitstock/res/img/ic-contact-arrow-down-white.svg \
+  qt/bitstock/res/img/ic-check-sync.svg \
+  qt/bitstock/res/img/ic-check-faq.svg \
+  qt/bitstock/res/img/ic-nav-privacy.svg \
+  qt/bitstock/res/img/img-empty-dark-error.svg \
+  qt/bitstock/res/img/ic-add-label.svg \
+  qt/bitstock/res/img/ic-pending.svg \
+  qt/bitstock/res/img/ic-check-theme-dark.svg \
+  qt/bitstock/res/img/ic-nav-receive-active.svg \
+  qt/bitstock/res/img/img-empty-dark-masternode.svg \
+  qt/bitstock/res/img/ic-add-liliac.svg \
+  qt/bitstock/res/img/ic-check-theme-light.svg \
+  qt/bitstock/res/img/ic-nav-receive-hover.svg \
+  qt/bitstock/res/img/img-empty-dark-multisend.svg \
+  qt/bitstock/res/img/ic-add-purple.svg \
+  qt/bitstock/res/img/ic-check-white.svg \
+  qt/bitstock/res/img/ic-nav-receive.svg \
+  qt/bitstock/res/img/img-empty-dark-peers.svg \
+  qt/bitstock/res/img/ic-add.svg \
+  qt/bitstock/res/img/ic-check.svg \
+  qt/bitstock/res/img/ic-nav-send-active.svg \
+  qt/bitstock/res/img/img-empty-dark-staking-off.svg \
+  qt/bitstock/res/img/img-empty-dark-staking-on.svg \
+  qt/bitstock/res/img/ic-address-book-grey.svg \
+  qt/bitstock/res/img/ic-chevron-left.svg \
+  qt/bitstock/res/img/ic-nav-send-hover.svg \
+  qt/bitstock/res/img/img-empty-dark-transactions.svg \
+  qt/bitstock/res/img/ic-address-book-white.svg \
+  qt/bitstock/res/img/ic-chevron-right.svg \
+  qt/bitstock/res/img/ic-nav-send.svg \
+  qt/bitstock/res/img/img-empty-error.svg \
+  qt/bitstock/res/img/ic-address-book.svg \
+  qt/bitstock/res/img/ic-clear-liliac.svg \
+  qt/bitstock/res/img/ic-nav-settings-active.svg \
+  qt/bitstock/res/img/img-empty-masternode.svg \
+  qt/bitstock/res/img/ic-address-send-white.svg \
+  qt/bitstock/res/img/ic-clear-purple.svg \
+  qt/bitstock/res/img/ic-nav-settings-hover.svg \
+  qt/bitstock/res/img/img-empty-multisend.svg \
+  qt/bitstock/res/img/ic-address-send.svg \
+  qt/bitstock/res/img/ic-close-white.svg \
+  qt/bitstock/res/img/ic-nav-settings.svg \
+  qt/bitstock/res/img/img-empty-peers.svg \
+  qt/bitstock/res/img/img-empty-privacy.svg \
+  qt/bitstock/res/img/img-empty-privacy-dark.svg \
+  qt/bitstock/res/img/ic-arrow-drop-down-white.svg \
+  qt/bitstock/res/img/ic-close.svg \
+  qt/bitstock/res/img/ic-radio-liliac-on.svg \
+  qt/bitstock/res/img/img-empty-staking-off.svg \
+  qt/bitstock/res/img/ic-arrow-drop-down.svg \
+  qt/bitstock/res/img/ic-coin-piv.svg \
+  qt/bitstock/res/img/ic-receive-off.svg \
+  qt/bitstock/res/img/img-empty-staking-on.svg \
+  qt/bitstock/res/img/ic-arrow-drop-up-white.svg \
+  qt/bitstock/res/img/ic-coin-zpiv.png \
+  qt/bitstock/res/img/ic-receive-on.svg \
+  qt/bitstock/res/img/img-empty-transactions.svg \
+  qt/bitstock/res/img/ic-arrow-drop-up.svg \
+  qt/bitstock/res/img/ic-coin-zpiv.svg \
+  qt/bitstock/res/img/ic-received.svg \
+  qt/bitstock/res/img/img-logo-bitstock.png \
+  qt/bitstock/res/img/ic-arrow-drop-white-down.svg \
+  qt/bitstock/res/img/ic-combo-box.svg \
+  qt/bitstock/res/img/ic-send.svg \
+  qt/bitstock/res/img/img-logo-bitstock@2x.png \
+  qt/bitstock/res/img/ic-arrow-purple-down.svg \
+  qt/bitstock/res/img/ic-connect.svg \
+  qt/bitstock/res/img/ic-submenu-lock.svg \
+  qt/bitstock/res/img/img-logo-bitstock@3x.png \
+  qt/bitstock/res/img/img-logo-bitstock.svg \
+  qt/bitstock/res/img/ic-arrow-right-white.svg \
+  qt/bitstock/res/img/ic-arrow-left-white.svg \
+  qt/bitstock/res/img/ic-arrow-left.svg \
+  qt/bitstock/res/img/ic-copy-liliac.svg \
+  qt/bitstock/res/img/ic-submenu-staking.svg \
+  qt/bitstock/res/img/img-nav-logo-bitstock.png \
+  qt/bitstock/res/img/ic-arrow-right.svg \
+  qt/bitstock/res/img/ic-copy.svg \
+  qt/bitstock/res/img/ic-copy-big.svg \
+  qt/bitstock/res/img/ic-copy-big-white.svg \
+  qt/bitstock/res/img/ic-submenu-unlock.svg \
+  qt/bitstock/res/img/img-nav-logo.png \
+  qt/bitstock/res/img/ic-arrow-white-left.svg \
+  qt/bitstock/res/img/ic-exit.svg \
+  qt/bitstock/res/img/ic-switch-liliac-on.svg \
+  qt/bitstock/res/img/img-nav-logo.svg \
+  qt/bitstock/res/img/ic-arrow-white-right.svg \
+  qt/bitstock/res/img/ic-expand.svg \
+  qt/bitstock/res/img/ic-switch-off.svg \
+  qt/bitstock/res/img/img-qr-test-big.png \
+  qt/bitstock/res/img/ic-check-active.svg \
+  qt/bitstock/res/img/ic-folder.svg \
+  qt/bitstock/res/img/ic-switch-on.svg \
+  qt/bitstock/res/img/img-qr-test.png \
+  qt/bitstock/res/img/ic-check-box.svg \
+  qt/bitstock/res/img/ic-check-box-dark-active.svg \
+  qt/bitstock/res/img/ic-check-box-indeterminate.svg \
+  qt/bitstock/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/bitstock/res/img/ic-label-liliac.svg \
+  qt/bitstock/res/img/ic-transaction-warning.svg \
+  qt/bitstock/res/img/ic-transaction-mint.svg \
+  qt/bitstock/res/img/ic-transaction-mint-inactive.svg \
+  qt/bitstock/res/img/ic-check-cold-staking.svg \
+  qt/bitstock/res/img/ic-check-cold-staking-off.svg \
+  qt/bitstock/res/img/ic-check-cold-staking-enabled.svg \
+  qt/bitstock/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/bitstock/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/bitstock/res/img/img-qr.svg \
+  qt/bitstock/res/img/ic-check-connect-off.svg \
+  qt/bitstock/res/img/ic-label.svg \
+  qt/bitstock/res/img/ic-transaction-received.svg \
+  qt/bitstock/res/img/dark/ic-transaction-received.svg \
+  qt/bitstock/res/img/dark/ic-transaction-warning.svg \
+  qt/bitstock/res/img/dark/ic-transaction-mint.svg \
+  qt/bitstock/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/bitstock/res/img/ic-transaction-received-inactive.svg \
+  qt/bitstock/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/bitstock/res/img/img-welcome-step1.png \
+  qt/bitstock/res/img/ic-check-connect.svg \
+  qt/bitstock/res/img/ic-menu-hover.svg \
+  qt/bitstock/res/img/ic-transaction-sent.svg \
+  qt/bitstock/res/img/ic-transaction-sent-inactive.svg \
+  qt/bitstock/res/img/dark/ic-transaction-sent.svg \
+  qt/bitstock/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/bitstock/res/img/img-welcome-step2.png \
+  qt/bitstock/res/img/ic-check-dark.svg \
+  qt/bitstock/res/img/ic-mint.svg \
+  qt/bitstock/res/img/ic-transaction-staked.svg \
+  qt/bitstock/res/img/ic-transaction-staked-inactive.svg \
+  qt/bitstock/res/img/dark/ic-transaction-staked.svg \
+  qt/bitstock/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/bitstock/res/img/img-welcome-step3.png \
+  qt/bitstock/res/img/ic-check-liliac-on.svg \
+  qt/bitstock/res/img/ic-nav-address-active.svg \
+  qt/bitstock/res/img/ic-unlock-staking.svg \
+  qt/bitstock/res/img/img-welcome-step4.png \
+  qt/bitstock/res/img/ic-check-locked-off.svg \
+  qt/bitstock/res/img/ic-nav-address-hover.svg \
+  qt/bitstock/res/img/ic-update-liliac.svg \
+  qt/bitstock/res/img/ic-arrow-drop-down-purple.svg \
+  qt/bitstock/res/img/ic-arrow-drop-up-purple.svg \
+  qt/bitstock/res/img/ic-check-liliac-indeterminate.svg \
+  qt/bitstock/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/bitstock/res/img/ic-transaction-stake-delegated.svg \
+  qt/bitstock/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/bitstock/res/img/ic-transaction-stake-hot.svg \
+  qt/bitstock/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/bitstock/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/bitstock/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/bitstock/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/bitstock/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/bitstock/res/img/ic-transaction-cs-contract.svg \
+  qt/bitstock/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/bitstock/res/img/ic-check-box-indeterminate.svg \
+  qt/bitstock/res/img/ani-loading-dark.gif \
+  qt/bitstock/res/img/ani-loading.gif
+
+
+
+BITCOIN_QT_BASE_CPP = \
+  qt/bantablemodel.cpp \
+  qt/bitcoinaddressvalidator.cpp \
+  qt/bitcoinamountfield.cpp \
+  qt/bitstock/bitstockgui.cpp \
+  qt/bitcoinunits.cpp \
+  qt/blockexplorer.cpp \
+  qt/clientmodel.cpp \
+  qt/csvmodelwriter.cpp \
+  qt/guiutil.cpp \
+  qt/intro.cpp \
+  qt/networkstyle.cpp \
+  qt/notificator.cpp \
+  qt/optionsdialog.cpp \
+  qt/optionsmodel.cpp \
+  qt/peertablemodel.cpp \
+  qt/platformstyle.cpp \
+  qt/qvalidatedlineedit.cpp \
+  qt/qvaluecombobox.cpp \
+  qt/rpcconsole.cpp \
+  qt/splashscreen.cpp \
+  qt/trafficgraphwidget.cpp \
+  qt/utilitydialog.cpp
+
+BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+
+BITCOIN_QT_WALLET_CPP = \
+  qt/addressbookpage.cpp \
+  qt/addresstablemodel.cpp \
+  qt/askpassphrasedialog.cpp \
+  qt/blockexplorer.cpp \
+  qt/coincontroldialog.cpp \
+  qt/coincontroltreewidget.cpp \
+  qt/editaddressdialog.cpp \
+  qt/governancepage.cpp \
+  qt/openuridialog.cpp \
+  qt/paymentrequestplus.cpp \
+  qt/paymentserver.cpp \
+  qt/proposalframe.cpp \
+  qt/recentrequeststablemodel.cpp \
+  qt/transactiondesc.cpp \
+  qt/transactionfilterproxy.cpp \
+  qt/transactionrecord.cpp \
+  qt/transactiontablemodel.cpp \
+  qt/walletmodel.cpp \
+  qt/walletmodeltransaction.cpp \
+  qt/bitstock/loadingdialog.cpp \
+  qt/zpivcontroldialog.cpp \
+  qt/bitstock/pwidget.cpp \
+  qt/bitstock/guitransactionsutils.cpp \
+  qt/bitstock/snackbar.cpp \
+  qt/bitstock/navmenuwidget.cpp \
+  qt/bitstock/lockunlock.cpp \
+  qt/bitstock/receivedialog.cpp \
+  qt/bitstock/furabstractlistitemdelegate.cpp \
+  qt/bitstock/txviewholder.cpp \
+  qt/bitstock/qtutils.cpp \
+  qt/bitstock/expandablebutton.cpp \
+  qt/bitstock/walletpassworddialog.cpp \
+  qt/bitstock/topbar.cpp \
+  qt/bitstock/txrow.cpp \
+  qt/bitstock/addressholder.cpp \
+  qt/bitstock/addressfilterproxymodel.cpp \
+  qt/bitstock/dashboardwidget.cpp \
+  qt/bitstock/coincontrolpivwidget.cpp \
+  qt/bitstock/addresslabelrow.cpp \
+  qt/bitstock/contactdropdownrow.cpp \
+  qt/bitstock/contactsdropdown.cpp \
+  qt/bitstock/optionbutton.cpp \
+  qt/bitstock/mninfodialog.cpp \
+  qt/bitstock/coldstakingmodel.cpp \
+  qt/bitstock/mnmodel.cpp \
+  qt/bitstock/masternodewizarddialog.cpp \
+  qt/bitstock/mnrow.cpp \
+  qt/bitstock/masternodeswidget.cpp \
+  qt/bitstock/myaddressrow.cpp \
+  qt/bitstock/csrow.cpp \
+  qt/bitstock/sendchangeaddressdialog.cpp \
+  qt/bitstock/sendconfirmdialog.cpp \
+  qt/bitstock/sendcustomfeedialog.cpp \
+  qt/bitstock/sendchangeaddressdialog.cpp \
+  qt/bitstock/sendmultirow.cpp \
+  qt/bitstock/send.cpp \
+  qt/bitstock/addnewaddressdialog.cpp \
+  qt/bitstock/addnewcontactdialog.cpp \
+  qt/bitstock/requestdialog.cpp \
+  qt/bitstock/receivewidget.cpp \
+  qt/bitstock/tooltipmenu.cpp \
+  qt/bitstock/addresseswidget.cpp \
+  qt/bitstock/defaultdialog.cpp \
+  qt/bitstock/denomgenerationdialog.cpp \
+  qt/bitstock/privacywidget.cpp \
+  qt/bitstock/coldstakingwidget.cpp \
+  qt/bitstock/settings/settingsbackupwallet.cpp \
+  qt/bitstock/settings/settingsbittoolwidget.cpp \
+  qt/bitstock/settings/settingsconsolewidget.cpp \
+  qt/bitstock/settings/settingsdisplayoptionswidget.cpp \
+  qt/bitstock/settings/settingsfaqwidget.cpp \
+  qt/bitstock/settings/settingsinformationwidget.cpp \
+  qt/bitstock/settings/settingsmainoptionswidget.cpp \
+  qt/bitstock/settings/settingsmultisenddialog.cpp \
+  qt/bitstock/settings/settingsmultisendwidget.cpp \
+  qt/bitstock/settings/settingssignmessagewidgets.cpp \
+  qt/bitstock/settings/settingswalletoptionswidget.cpp \
+  qt/bitstock/settings/settingswalletrepairwidget.cpp \
+  qt/bitstock/settings/settingswidget.cpp \
+  qt/bitstock/welcomecontentwidget.cpp \
+  qt/bitstock/splash.cpp
+
+
+BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+if TARGET_WINDOWS
+BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+endif
+if ENABLE_WALLET
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
+endif
+
+RES_IMAGES = \
+  qt/res/images/about.png \
+  qt/res/images/splash.png \
+  qt/res/images/splash_testnet.png \
+  qt/res/images/splash_regtest.png \
+  qt/res/images/bitstock_logo_horizontal.png \
+  qt/res/images/downArrow_dark.png \
+  qt/res/images/downArrow_small_dark.png \
+  qt/res/images/downArrow_small.png \
+  qt/res/images/upArrow_small_dark.png \
+  qt/res/images/upArrow_small.png \
+  qt/res/images/leftArrow_small_dark.png \
+  qt/res/images/rightArrow_small_dark.png \
+  qt/res/images/qtreeview_selected.png
+
+RES_CSS = \
+  qt/res/css/default.css \
+  qt/bitstock/res/css/style_dark.css \
+  qt/bitstock/res/css/style_light.css
+
+RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
+
+BITCOIN_RC = qt/res/bitstock-qt-res.rc
+
+BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
+  -I$(builddir)/qt/forms
+
+qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES)
+
+nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+  $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
+
+# forms/foo.h -> forms/ui_foo.h
+QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
+
+# Most files will depend on the forms and moc files as includes. Generate them
+# before anything else.
+$(QT_MOC): $(QT_FORMS_H)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_bitstock_qt_OBJECTS) : | $(QT_MOC)
+
+#Generating these with a half-written protobuf header leads to wacky results.
+#This makes sure it's done.
+$(QT_MOC): $(PROTOBUF_H)
+$(QT_MOC_CPP): $(PROTOBUF_H)
+
+# bitstock-qt binary #
+qt_bitstock_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_bitstock_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_bitstock_qt_SOURCES = qt/bitstock.cpp
+if TARGET_DARWIN
+  qt_bitstock_qt_SOURCES += $(BITCOIN_MM)
+endif
+if TARGET_WINDOWS
+  qt_bitstock_qt_SOURCES += $(BITCOIN_RC)
+endif
+qt_bitstock_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+if ENABLE_WALLET
+qt_bitstock_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+endif
+if ENABLE_ZMQ
+qt_bitstock_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+endif
+qt_bitstock_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+  $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+qt_bitstock_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_bitstock_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+
+#locale/foo.ts -> locale/foo.qm
+QT_QM=$(QT_TS:.ts=.qm)
+
+SECONDARY: $(QT_QM)
+
+$(srcdir)/qt/bitstockstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
+	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
+
+translate: $(srcdir)/qt/bitstockstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/bitstock.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/bitstock_en.ts
+
+$(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
+	@test -f $(RCC)
+	@cp -f $< $(@D)/temp_$(<F)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitstock_locale $(@D)/temp_$(<F) | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+	@rm $(@D)/temp_$(<F)
+
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
+	@test -f $(RCC)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bitstock $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_bitstock_locale.qrc
+
+CLEANFILES += $(CLEAN_QT)
+
+bitstock_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_bitstock_qt_OBJECTS) qt/bitstock-qt$(EXEEXT) $(LIBBITCOINQT)
+
+bitstock_qt : qt/bitstock-qt$(EXEEXT)
+
+ui_%.h: %.ui
+	@test -f $(UIC)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(UIC) -o $@ $< || (echo "Error creating $@"; false)
+
+%.moc: %.cpp
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+moc_%.cpp: %.h
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+%.qm: %.ts
+	@test -f $(LRELEASE)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@

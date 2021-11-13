@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Bitstock Core
+Comment=Bitstock P2P Cryptocurrency
+Exec=bitstock-qt %u
+Terminal=false
+Type=Application
+Icon=bitstock128
+MimeType=x-scheme-handler/bitstock;
+Categories=Office;Finance;
+StartupWMClass=Bitstock-qt
+Name[en_US]=bitstock-qt.desktop

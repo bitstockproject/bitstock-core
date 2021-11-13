@@ -1,0 +1,8 @@
+/usr/bin/bitstock-cli		--	gen_context(system_u:object_r:bitstock_exec_t,s0)
+/usr/sbin/bitstockd		--	gen_context(system_u:object_r:bitstock_exec_t,s0)
+/usr/lib(64)?/bitstock/bitstockd		--	gen_context(system_u:object_r:bitstock_exec_t,s0)
+
+/etc/bitstock(/.*)?		gen_context(system_u:object_r:bitstock_conf_t,s0)
+/var/lib/bitstock(/.*)?		gen_context(system_u:object_r:bitstock_var_lib_t,s0)
+
+(/var)?/run/bitstockd(/.*)?   gen_context(system_u:object_r:bitstock_var_run_t,s0)

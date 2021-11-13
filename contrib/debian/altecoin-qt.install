@@ -1,0 +1,6 @@
+usr/local/bin/bitstock-qt usr/bin
+share/pixmaps/bitstock32.xpm usr/share/pixmaps
+share/pixmaps/bitstock16.xpm usr/share/pixmaps
+share/pixmaps/bitstock128.png usr/share/pixmaps
+debian/bitstock-qt.desktop usr/share/applications
+debian/bitstock-qt.protocol usr/share/kde4/services/
