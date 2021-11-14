@@ -18,7 +18,7 @@ CAmount CollateralRequired(int nHeight)
 {
     CAmount nCollateralRequired;
     
-    nCollateralRequired = 5000 * COIN;
+    nCollateralRequired = 1000 * COIN;
 
     return nCollateralRequired;
 }
