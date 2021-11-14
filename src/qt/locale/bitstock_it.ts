@@ -6139,8 +6139,8 @@ Portafoglio Bitstock Core.</translation>
         <translation>È necessario specificare una chiave masternodepriv nella configurazione. Consultare la documentazione per assistenza.</translation>
     </message>
     <message>
-        <source>(7429 could be used only on mainnet)</source>
-        <translation>(7429 potrebbe essere utilizzato solo su mainnet)</translation>
+        <source>(4316 could be used only on mainnet)</source>
+        <translation>(4316 potrebbe essere utilizzato solo su mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6151,8 +6151,8 @@ Portafoglio Bitstock Core.</translation>
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 7429 for mainnet)</source>
-        <translation>(deve essere 7429 per mainnet)</translation>
+        <source>(must be 4316 for mainnet)</source>
+        <translation>(deve essere 4316 per mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

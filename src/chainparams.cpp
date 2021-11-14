@@ -165,7 +165,7 @@ public:
         pchMessageStart[2] = 0x55;
         pchMessageStart[3] = 0x4e;
         vAlertPubKey = ParseHex("0454501d1ac281b571c0016382898fbdd4aff6ed88243bb3299ba1b77bdff3495f9ba7027059e997ed3c04bf52d3f08fbce159ffe3ccbbc2734ddf1a21586041f6");
-        nDefaultPort = 7429;
+        nDefaultPort = 4316;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Bitstock starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
         bnProofOfStakeLimit_V2 = ~uint256(0) >> 20; // 60/4 = 15 ==> use 2**4 higher limit

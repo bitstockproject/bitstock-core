@@ -253,10 +253,10 @@ QT_TRANSLATE_NOOP("bitstock-core", ""
 QT_TRANSLATE_NOOP("bitstock-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("bitstock-core", "(7429 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("bitstock-core", "(4316 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("bitstock-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("bitstock-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("bitstock-core", "(must be 7429 for mainnet)"),
+QT_TRANSLATE_NOOP("bitstock-core", "(must be 4316 for mainnet)"),
 QT_TRANSLATE_NOOP("bitstock-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("bitstock-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("bitstock-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

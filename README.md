@@ -11,7 +11,7 @@ Bitstock Core integration/staging repository
 • Maturity: 100 Confirmations 
 • Total Coin Supply: 21000000 
 • Prefix: BSOCK adresses start with the letter "a"  
-• Ports: 7429 (p2p) / 7430 (rpc)
+• Ports: 4316 (p2p) / 4317 (rpc)
 
 • Explorer http://explorer.bitstock.investments
 
