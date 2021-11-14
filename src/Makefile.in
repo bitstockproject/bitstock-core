@@ -796,6 +796,11 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/ic-transaction-mint.svg \
 	qt/res/icons/ic-transaction-sent.svg \
 	qt/res/icons/ic-transaction-staked.svg \
+	qt/res/icons/unit_bitstock.png \
+	qt/res/icons/unit_mbitstock.png \
+	qt/res/icons/unit_ubitstock.png \
+	qt/res/icons/unit_tbitstock.png \
+	qt/res/icons/unit_tmbitstock.png \
 	qt/res/icons/unit_tubitstock.png qt/res/icons/yesvote.png \
 	qt/res/icons/novote.png qt/res/icons/abstainvote.png \
 	qt/bitstock/res/img/bg-dashboard-banner.png \
@@ -3213,6 +3218,12 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-mint.svg \
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-sent.svg \
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-staked.svg \
+@ENABLE_QT_TRUE@  qt/res/icons/unit_bitstock.png \
+@ENABLE_QT_TRUE@  qt/res/icons/unit_mbitstock.png \
+@ENABLE_QT_TRUE@  qt/res/icons/unit_ubitstock.png \
+@ENABLE_QT_TRUE@  qt/res/icons/unit_tbitstock.png \
+@ENABLE_QT_TRUE@  qt/res/icons/unit_tmbitstock.png \
+@ENABLE_QT_TRUE@  qt/res/icons/unit_tubitstock.png \
 @ENABLE_QT_TRUE@  qt/res/icons/yesvote.png \
 @ENABLE_QT_TRUE@  qt/res/icons/novote.png \
 @ENABLE_QT_TRUE@  qt/res/icons/abstainvote.png \
