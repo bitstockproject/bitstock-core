@@ -346,7 +346,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/bitstockproject/bitstock-core/issues"
+#define PACKAGE_BUGREPORT ""
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Bitstock Core"
@@ -358,7 +358,7 @@
 #define PACKAGE_TARNAME "bitstock"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://bitstock.investments/"
+#define PACKAGE_URL ""
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1.0.0"
