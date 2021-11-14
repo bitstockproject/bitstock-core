@@ -47,6 +47,12 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
+        <file alias="unit_bitstock">res/icons/unit_bitstock.png</file>
+        <file alias="unit_mbitstock">res/icons/unit_mbitstock.png</file>
+        <file alias="unit_ubitstock">res/icons/unit_ubitstock.png</file>
+        <file alias="unit_tbitstock">res/icons/unit_tbitstock.png</file>
+        <file alias="unit_tmbitstock">res/icons/unit_tmbitstock.png</file>
+        <file alias="unit_tubitstock">res/icons/unit_tubitstock.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
