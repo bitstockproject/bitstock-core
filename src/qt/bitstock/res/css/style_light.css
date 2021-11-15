@@ -57,7 +57,7 @@ HH       NAVIGATION
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 *[cssClass="container-nav"] {
-    background-color: qlineargradient(y1:0, y2: 1, stop: 0 #000000, stop:0.5 #000000, stop: 1 #003b61);
+    background-color: qlineargradient(y1:0, y2: 1, stop: 0 #493F21, stop:0.5 #493F21, stop: 1 #D4B855);
 }
 
 QPushButton[cssClass="img-nav-logo-bitstock"] {
@@ -323,12 +323,12 @@ HH       TOP BAR
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 *[cssClass="container-top"] {
-    background-color:#003b61;
+    background-color:#D4B855;
     border-image: url("://bg-dashboard-banner") 0 0 0 0 stretch stretch;
 }
 
 *[cssClass="container-topbar-no-image"] {
-    background-color:#003b61;
+    background-color:#D4B855;
 }
 
 *[cssClass="text-title-topbar"] {
@@ -2721,12 +2721,12 @@ QPushButton[cssClass="ic-step-confirm-welcome"] {
 
 
 *[cssClass="container-welcome"] {
-    background-color: #003b61;
+    background-color: #D4B855;
     border-image: url("://bg-welcome") 0 0 0 0 stretch stretch;
 }
 
 *[cssClass="container-welcome-no-image"] {
-    background-color:#003b61;
+    background-color:#D4B855;
 }
 
 *[cssClass="container-welcome-box"] {
