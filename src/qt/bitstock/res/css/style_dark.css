@@ -57,7 +57,7 @@ HH       NAVIGATION
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 *[cssClass="container-nav"] {
-    background-color: qlineargradient(y1:0, y2: 1, stop: 0 #141109, stop: 1 ##493F21);
+    background-color: qlineargradient(y1:0, y2: 1, stop: 0 #141109, stop: 1 #493F21);
     /*border-right: 1px solid rgba(73, 99, 145, 0.7);*/
 }
 
