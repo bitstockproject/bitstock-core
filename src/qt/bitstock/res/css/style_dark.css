@@ -479,7 +479,7 @@ QPushButton[cssClass="btn-check-sync"] {
     color:#FFFFFF;
     padding-right:6px;
     padding-left:6px;
-    border-bottom:2px solid #1a1fba;
+    border-bottom:2px solid #D4B855;
     border-radius:2px;
 }
 
@@ -490,13 +490,13 @@ QPushButton[cssClass="btn-check-sync-inactive"] {
     color:#FFFFFF;
     padding-right:6px;
     padding-left:6px;
-    border-bottom:2px solid #1a1fba;
+    border-bottom:2px solid #D4B855;
     border-radius:2px;
 }
 
 QPushButton[cssClass="btn-check-sync"]:checked {
     background-color:rgba(5, 98, 122, 0.6);
-    border-bottom:2px solid #1a1fba;
+    border-bottom:2px solid #D4B855;
     border-radius:2px;
 }
 
