@@ -21,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(BSOCK);
-    unitlist.append(mBSOCK);
-    unitlist.append(uBSOCK);
+    unitlist.append(BSCK);
+    unitlist.append(mBSCK);
+    unitlist.append(uBSCK);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case BSOCK:
-    case mBSOCK:
-    case uBSOCK:
+    case BSCK:
+    case mBSCK:
+    case uBSCK:
         return true;
     default:
         return false;
@@ -42,11 +42,11 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case BSOCK:
+    case BSCK:
         return QString("bitstock");
-    case mBSOCK:
+    case mBSCK:
         return QString("mbitstock");
-    case uBSOCK:
+    case uBSCK:
         return QString::fromUtf8("ubitstock");
     default:
         return QString("???");
@@ -59,23 +59,23 @@ QString BitcoinUnits::name(int unit, bool isZpiv)
     if(isZpiv) z = "z";
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case BSOCK:
-            return z + QString("BSOCK");
-        case mBSOCK:
-            return z + QString("mBSOCK");
-        case uBSOCK:
-            return z + QString::fromUtf8("μBSOCK");
+        case BSCK:
+            return z + QString("BSCK");
+        case mBSCK:
+            return z + QString("mBSCK");
+        case uBSCK:
+            return z + QString::fromUtf8("μBSCK");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case BSOCK:
-            return z + QString("tBSOCK");
-        case mBSOCK:
-            return z + QString("mtBSOCK");
-        case uBSOCK:
-            return z + QString::fromUtf8("μtBSOCK");
+        case BSCK:
+            return z + QString("tBSCK");
+        case mBSCK:
+            return z + QString("mtBSCK");
+        case uBSCK:
+            return z + QString::fromUtf8("μtBSCK");
         default:
             return QString("???");
         }
@@ -86,23 +86,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case BSOCK:
-            return QString("BSOCK");
-        case mBSOCK:
-            return QString("Milli-BSOCK (1 / 1" THIN_SP_UTF8 "000)");
-        case uBSOCK:
-            return QString("Micro-BSOCK (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case BSCK:
+            return QString("BSCK");
+        case mBSCK:
+            return QString("Milli-BSCK (1 / 1" THIN_SP_UTF8 "000)");
+        case uBSCK:
+            return QString("Micro-BSCK (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case BSOCK:
-            return QString("TestBSOCKs");
-        case mBSOCK:
-            return QString("Milli-TestBSOCK (1 / 1" THIN_SP_UTF8 "000)");
-        case uBSOCK:
-            return QString("Micro-TestBSOCK (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case BSCK:
+            return QString("TestBSCKs");
+        case mBSCK:
+            return QString("Milli-TestBSCK (1 / 1" THIN_SP_UTF8 "000)");
+        case uBSCK:
+            return QString("Micro-TestBSCK (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -112,11 +112,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case BSOCK:
+    case BSCK:
         return 100000000;
-    case mBSOCK:
+    case mBSCK:
         return 100000;
-    case uBSOCK:
+    case uBSCK:
         return 100;
     default:
         return 100000000;
@@ -126,11 +126,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case BSOCK:
+    case BSCK:
         return 8;
-    case mBSOCK:
+    case mBSCK:
         return 5;
-    case uBSOCK:
+    case uBSCK:
         return 2;
     default:
         return 0;
@@ -212,7 +212,7 @@ QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool p
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
-QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZBSOCK)
+QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZBSCK)
 {
     QSettings settings;
     int digits = settings.value("digits").toInt();
@@ -229,12 +229,12 @@ QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussi
         }
     }
 
-    return result + QString(" ") + name(unit, isZBSOCK);
+    return result + QString(" ") + name(unit, isZBSCK);
 }
 
-QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZBSOCK)
+QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZBSCK)
 {
-    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZBSOCK));
+    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZBSCK));
     str.replace(QChar(THIN_SP_CP), QString(COMMA_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }

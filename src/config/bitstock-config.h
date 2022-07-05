@@ -1,9 +1,9 @@
 /* src/config/bitstock-config.h.  Generated from bitstock-config.h.in by configure.  */
 /* src/config/bitstock-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef BSOCK_CONFIG_H
+#ifndef BSCK_CONFIG_H
 
-#define BSOCK_CONFIG_H
+#define BSCK_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -346,7 +346,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT ""
+#define PACKAGE_BUGREPORT "https://https://github.com/Bitstock-blockchain/BITSTOCK/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Bitstock Core"
@@ -358,7 +358,7 @@
 #define PACKAGE_TARNAME "bitstock"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL ""
+#define PACKAGE_URL "https://bitstock.investments/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1.0.0"
@@ -433,4 +433,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //BSOCK_CONFIG_H
+#endif //BSCK_CONFIG_H

@@ -43,9 +43,9 @@ public:
         Encrypt,        /** Encrypt unencrypted wallet */
         ToggleLock,     /** Toggle wallet lock state */
         ChangePass,     /** Change passphrase */
-        Send_BSOCK,       /** Send BSOCK */
-        Send_zBSOCK,      /** Send zBSOCK */
-        Mint_zBSOCK,      /** Mint zBSOCK */
+        Send_BSCK,       /** Send BSCK */
+        Send_zBSCK,      /** Send zBSCK */
+        Mint_zBSCK,      /** Mint zBSCK */
         BIP_38,         /** BIP38 menu */
         Multi_Sig,      /** Multi-Signature dialog */
         Sign_Message,   /** Sign/verify message dialog */

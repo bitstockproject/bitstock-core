@@ -19,7 +19,7 @@ from test_framework.util import (
     DecimalAmt
 )
 
-class zBSOCKwrappedSerialsTest(BitstockTestFramework):
+class zBSCKwrappedSerialsTest(BitstockTestFramework):
 
     def set_test_params(self):
         self.num_nodes = 3
@@ -127,4 +127,4 @@ class zBSOCKwrappedSerialsTest(BitstockTestFramework):
 
 
 if __name__ == '__main__':
-    zBSOCKwrappedSerialsTest().main()
+    zBSCKwrappedSerialsTest().main()

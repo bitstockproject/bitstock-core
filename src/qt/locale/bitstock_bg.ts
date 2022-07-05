@@ -200,7 +200,7 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSOCKs from being stolen by malware infecting your computer.</source>
+        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSCKs from being stolen by malware infecting your computer.</source>
         <translation>Bitstock сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Bitstock от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
@@ -208,8 +208,8 @@
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSOCK&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ BSOCK&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSCK&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ BSCK&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -530,8 +530,8 @@
 <context>
     <name>CoinControlPivWidget</name>
     <message>
-        <source>BSOCK:</source>
-        <translation>BSOCK:</translation>
+        <source>BSCK:</source>
+        <translation>BSCK:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -615,8 +615,8 @@
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>zBSOCK</source>
-        <translation>zBSOCK</translation>
+        <source>zBSCK</source>
+        <translation>zBSCK</translation>
     </message>
     <message>
         <source>All</source>
@@ -1057,37 +1057,37 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</source>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</translation>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BSOCK units to zBSOCK</source>
-        <translation>Включи автоматичното емитиране на BSOCK единици в zBSOCK</translation>
+        <source>Enable automatic minting of BSCK units to zBSCK</source>
+        <translation>Включи автоматичното емитиране на BSCK единици в zBSCK</translation>
     </message>
     <message>
-        <source>Enable zBSOCK Automint</source>
-        <translation>Включи Автоматично емитиране на zBSOCK</translation>
+        <source>Enable zBSCK Automint</source>
+        <translation>Включи Автоматично емитиране на zBSCK</translation>
     </message>
     <message>
-        <source>Percentage of incoming BSOCK which get automatically converted to zBSOCK via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите BSOCK, който автоматично да се конвертира в zBSOCK посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming BSCK which get automatically converted to zBSCK via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите BSCK, който автоматично да се конвертира в zBSCK посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zBSOCK</source>
-        <translation>Процент автоматично сечени zBSOCK</translation>
+        <source>Percentage of autominted zBSCK</source>
+        <translation>Процент автоматично сечени zBSCK</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zBSOCK докато не се съберат достатъчно BSOCK за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zBSCK докато не се съберат достатъчно BSCK за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zBSOCK Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zBSOCK</translation>
+        <source>Preferred Automint zBSCK Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zBSCK</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1682,8 +1682,8 @@ Address: %4
         <translation>Персонален резервен път:</translation>
     </message>
     <message>
-        <source>Custom zBSOCK Backup Path:</source>
-        <translation>Персонализиран zBSOCK резервен път:</translation>
+        <source>Custom zBSCK Backup Path:</source>
+        <translation>Персонализиран zBSCK резервен път:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1966,12 +1966,12 @@ Address: %4
         <translation>Похарчи Zerocoin</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance.</source>
-        <translation>В момента zBSOCK е в ремонт.</translation>
+        <source>zBSCK is currently undergoing maintenance.</source>
+        <translation>В момента zBSCK е в ремонт.</translation>
     </message>
     <message>
-        <source>Version 1 zBSOCK require a security level of 100 to successfully spend.</source>
-        <translation>Версия 1 zBSOCK изисква ниво на сигурност от 100 за успешно изразходване.</translation>
+        <source>Version 1 zBSCK require a security level of 100 to successfully spend.</source>
+        <translation>Версия 1 zBSCK изисква ниво на сигурност от 100 за успешно изразходване.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2728,12 +2728,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Получен посредством обфускация</translation>
     </message>
     <message>
-        <source>BSOCK Stake</source>
-        <translation>BSOCK Stake</translation>
+        <source>BSCK Stake</source>
+        <translation>BSCK Stake</translation>
     </message>
     <message>
-        <source>zBSOCK Stake</source>
-        <translation>zBSOCK Stake</translation>
+        <source>zBSCK Stake</source>
+        <translation>zBSCK Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2752,24 +2752,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted BSOCK to zBSOCK</source>
-        <translation>Конвертиран BSOCK във zBSOCK</translation>
+        <source>Converted BSCK to zBSCK</source>
+        <translation>Конвертиран BSCK във zBSCK</translation>
     </message>
     <message>
-        <source>Spent zBSOCK</source>
-        <translation>Похарчени zBSOCK</translation>
+        <source>Spent zBSCK</source>
+        <translation>Похарчени zBSCK</translation>
     </message>
     <message>
-        <source>Received BSOCK from zBSOCK</source>
-        <translation>Получен BSOCK от zBSOCK</translation>
+        <source>Received BSCK from zBSCK</source>
+        <translation>Получен BSCK от zBSCK</translation>
     </message>
     <message>
-        <source>Minted Change as zBSOCK from zBSOCK Spend</source>
-        <translation>Исечено ресто като zBSOCK от похарчените zBSOCK</translation>
+        <source>Minted Change as zBSCK from zBSCK Spend</source>
+        <translation>Исечено ресто като zBSCK от похарчените zBSCK</translation>
     </message>
     <message>
-        <source>Converted zBSOCK to BSOCK</source>
-        <translation>Конвертиран zBSOCK във BSOCK</translation>
+        <source>Converted zBSCK to BSCK</source>
+        <translation>Конвертиран zBSCK във BSCK</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2865,8 +2865,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSOCK.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 BSOCK.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSCK.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 BSCK.</translation>
     </message>
 </context>
 <context>
@@ -2890,8 +2890,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zBSOCK to Spend</source>
-        <translation>Изберете zBSOCK за Изпращане</translation>
+        <source>Select zBSCK to Spend</source>
+        <translation>Изберете zBSCK за Изпращане</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -2899,7 +2899,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zBSOCK</translation>
+        <translation>zBSCK</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2973,16 +2973,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zBSOCK minting (0-1, default: %u)</source>
-        <translation>Включи автоматичните бекъпи на портфейла след всяко zBSOCK емитиране (0-1, по подразбиране: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zBSCK minting (0-1, default: %u)</source>
+        <translation>Включи автоматичните бекъпи на портфейла след всяко zBSCK емитиране (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BSOCK inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за BSOCK входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for BSCK inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за BSCK входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zBSOCK inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за zBSOCK входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for zBSCK inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за zBSCK входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3017,12 +3017,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в BSOCK/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в BSCK/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в BSOCK/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в BSCK/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3125,12 +3125,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 BSOCK.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 BSCK.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 BSOCK.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 BSCK.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3177,8 +3177,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Трябва да зададете masternodeprivkey в конфигурационния файл. Консултирайте се с документацията за повече помощ.</translation>
     </message>
     <message>
-        <source>(4316 could be used only on mainnet)</source>
-        <translation>(4316 може да се ползва само в mainnet)</translation>
+        <source>(8316 could be used only on mainnet)</source>
+        <translation>(8316 може да се ползва само в mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3189,8 +3189,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(по подразбиране: 1)</translation>
     </message>
     <message>
-        <source>(must be 4316 for mainnet)</source>
-        <translation>(трябва да е 4316 за mainnet)</translation>
+        <source>(must be 8316 for mainnet)</source>
+        <translation>(трябва да е 8316 за mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -3397,8 +3397,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Неуспешно четене на блок</translation>
     </message>
     <message>
-        <source>Fee (in BSOCK/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в BSOCK/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+        <source>Fee (in BSCK/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в BSCK/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -3497,8 +3497,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the BSOCK and zBSOCK money supply statistics</source>
-        <translation>Индексирай наново BSOCK и zBSOCK данните по наличности</translation>
+        <source>Reindex the BSCK and zBSCK money supply statistics</source>
+        <translation>Индексирай наново BSCK и zBSCK данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3573,8 +3573,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предпочитани деноминации за автоматично изсечените Zerocoin (1/5/10/50/100/500/1000/5000), 0 за каквито и да е. (По подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zBSOCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zBSOCK. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBSCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zBSCK. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -3977,8 +3977,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Синхронизиране на вилицо-лъжиците...</translation>
     </message>
     <message>
-        <source>Syncing zBSOCK wallet...</source>
-        <translation>Синхронизиране на zBSOCK портфейла ...</translation>
+        <source>Syncing zBSCK wallet...</source>
+        <translation>Синхронизиране на zBSCK портфейла ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4085,8 +4085,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Потребителско име за JSON-RPC свръзките</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zBSOCK</source>
-        <translation>Стойността е под най-малката налична деноминация (= 1) в zBSOCK</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBSCK</source>
+        <translation>Стойността е под най-малката налична деноминация (= 1) в zBSCK</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

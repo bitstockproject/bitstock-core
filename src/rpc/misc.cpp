@@ -66,17 +66,17 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"testnet\": true|false,        (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"    (numeric) The money supply when this block was added to the blockchain\n"
 /*
-            "  \"zBSOCKsupply\" :\n"
+            "  \"zBSCKsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zBSOCK denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zBSOCK denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zBSOCK denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zBSOCK denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zBSOCK denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zBSOCK denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zBSOCK denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zBSOCK denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zBSOCK denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zBSCK denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zBSCK denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zBSCK denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zBSCK denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zBSCK denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zBSCK denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zBSCK denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zBSCK denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zBSCK denominations\n"
             "  }\n"
 */
             "  \"keypoololdest\": xxxxxx,      (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
@@ -154,7 +154,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
         zpivObj.push_back(Pair(std::to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zpivObj.push_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
-    obj.push_back(Pair("zBSOCKsupply", zpivObj));
+    obj.push_back(Pair("zBSCKsupply", zpivObj));
 */
 #ifdef ENABLE_WALLET
     if (pwalletMain) {

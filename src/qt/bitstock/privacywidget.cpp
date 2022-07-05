@@ -46,63 +46,63 @@ PrivacyWidget::PrivacyWidget(BitstockGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("Minting zBSOCK anonymizes your BSOCK by removing any\ntransaction history, making transactions untraceable "));
+    ui->labelSubtitle1->setText(tr("Minting zBSCK anonymizes your BSCK by removing any\ntransaction history, making transactions untraceable "));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
-    ui->labelSubtitle2->setText(tr("Mint new zBSOCK or convert back to BSOCK"));
+    ui->labelSubtitle2->setText(tr("Mint new zBSCK or convert back to BSCK"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
     setCssProperty(ui->labelSubtitleAmount, "text-title");
 
-    ui->lineEditAmount->setPlaceholderText("0.00 BSOCK ");
+    ui->lineEditAmount->setPlaceholderText("0.00 BSCK ");
     ui->lineEditAmount->setValidator(new QRegExpValidator(QRegExp("[0-9]+")));
     initCssEditLine(ui->lineEditAmount);
 
     /* Denom */
     ui->labelTitleDenom1->setText("Denom. with value 1:");
     setCssProperty(ui->labelTitleDenom1, "text-subtitle");
-    ui->labelValueDenom1->setText("0x1 = 0 zBSOCK");
+    ui->labelValueDenom1->setText("0x1 = 0 zBSCK");
     setCssProperty(ui->labelValueDenom1, "text-body2");
 
     ui->labelTitleDenom5->setText("Denom. with value 5:");
     setCssProperty(ui->labelTitleDenom5, "text-subtitle");
-    ui->labelValueDenom5->setText("0x5 = 0 zBSOCK");
+    ui->labelValueDenom5->setText("0x5 = 0 zBSCK");
     setCssProperty(ui->labelValueDenom5, "text-body2");
 
     ui->labelTitleDenom10->setText("Denom. with value 10:");
     setCssProperty(ui->labelTitleDenom10, "text-subtitle");
-    ui->labelValueDenom10->setText("0x10 = 0 zBSOCK");
+    ui->labelValueDenom10->setText("0x10 = 0 zBSCK");
     setCssProperty(ui->labelValueDenom10, "text-body2");
 
     ui->labelTitleDenom50->setText("Denom. with value 50:");
     setCssProperty(ui->labelTitleDenom50, "text-subtitle");
-    ui->labelValueDenom50->setText("0x50 = 0 zBSOCK");
+    ui->labelValueDenom50->setText("0x50 = 0 zBSCK");
     setCssProperty(ui->labelValueDenom50, "text-body2");
 
     ui->labelTitleDenom100->setText("Denom. with value 100:");
     setCssProperty(ui->labelTitleDenom100, "text-subtitle");
-    ui->labelValueDenom100->setText("0x100 = 0 zBSOCK");
+    ui->labelValueDenom100->setText("0x100 = 0 zBSCK");
     setCssProperty(ui->labelValueDenom100, "text-body2");
 
     ui->labelTitleDenom500->setText("Denom. with value 500:");
     setCssProperty(ui->labelTitleDenom500, "text-subtitle");
-    ui->labelValueDenom500->setText("0x500 = 0 zBSOCK");
+    ui->labelValueDenom500->setText("0x500 = 0 zBSCK");
     setCssProperty(ui->labelValueDenom500, "text-body2");
 
     ui->labelTitleDenom1000->setText("Denom. with value 1000:");
     setCssProperty(ui->labelTitleDenom1000, "text-subtitle");
-    ui->labelValueDenom1000->setText("0x1000 = 0 zBSOCK");
+    ui->labelValueDenom1000->setText("0x1000 = 0 zBSCK");
     setCssProperty(ui->labelValueDenom1000, "text-body2");
 
     ui->labelTitleDenom5000->setText("Denom. with value 5000:");
     setCssProperty(ui->labelTitleDenom5000, "text-subtitle");
-    ui->labelValueDenom5000->setText("0x5000 = 0 zBSOCK");
+    ui->labelValueDenom5000->setText("0x5000 = 0 zBSCK");
     setCssProperty(ui->labelValueDenom5000, "text-body2");
 
     ui->layoutDenom->setVisible(false);
 
     // List
-    ui->labelListHistory->setText(tr("Last zBSOCK Movements"));
+    ui->labelListHistory->setText(tr("Last zBSCK Movements"));
     setCssProperty(ui->labelListHistory, "text-title");
 
     //ui->emptyContainer->setVisible(false);
@@ -113,16 +113,16 @@ PrivacyWidget::PrivacyWidget(BitstockGUI* parent) :
     // Buttons
     setCssBtnPrimary(ui->pushButtonSave);
 
-    // Only Convert to BSOCK enabled.
+    // Only Convert to BSCK enabled.
     ui->containerViewPrivacyChecks->setVisible(false);
     onMintSelected(false);
 
-    ui->btnTotalzBSOCK->setTitleClassAndText("btn-title-grey", "Total 0 zBSOCK");
-    ui->btnTotalzBSOCK->setSubTitleClassAndText("text-subtitle", "Show denominations of zBSOCK owned.");
-    ui->btnTotalzBSOCK->setRightIconClass("ic-arrow");
+    ui->btnTotalzBSCK->setTitleClassAndText("btn-title-grey", "Total 0 zBSCK");
+    ui->btnTotalzBSCK->setSubTitleClassAndText("text-subtitle", "Show denominations of zBSCK owned.");
+    ui->btnTotalzBSCK->setRightIconClass("ic-arrow");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select BSOCK outputs to mint into zBSOCK.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select BSCK outputs to mint into zBSCK.");
 
     ui->btnDenomGeneration->setTitleClassAndText("btn-title-grey", "Denom Generation");
     ui->btnDenomGeneration->setSubTitleClassAndText("text-subtitle", "Select the denomination of the coins.");
@@ -131,10 +131,10 @@ PrivacyWidget::PrivacyWidget(BitstockGUI* parent) :
     ui->btnRescanMints->setTitleClassAndText("btn-title-grey", "Rescan Mints");
     ui->btnRescanMints->setSubTitleClassAndText("text-subtitle", "Find mints in the blockchain.");
 
-    ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", "Reset Spent zBSOCK");
+    ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", "Reset Spent zBSCK");
     ui->btnResetZerocoin->setSubTitleClassAndText("text-subtitle", "Reset zerocoin database.");
 
-    connect(ui->btnTotalzBSOCK, SIGNAL(clicked()), this, SLOT(onTotalZpivClicked()));
+    connect(ui->btnTotalzBSCK, SIGNAL(clicked()), this, SLOT(onTotalZpivClicked()));
     connect(ui->btnCoinControl, SIGNAL(clicked()), this, SLOT(onCoinControlClicked()));
     connect(ui->btnDenomGeneration, SIGNAL(clicked()), this, SLOT(onDenomClicked()));
     connect(ui->btnRescanMints, SIGNAL(clicked()), this, SLOT(onRescanMintsClicked()));
@@ -197,13 +197,13 @@ void PrivacyWidget::loadWalletModel(){
 void PrivacyWidget::onMintSelected(bool isMint){
     QString btnText;
     if(isMint){
-        btnText = tr("Mint zBSOCK");
+        btnText = tr("Mint zBSCK");
         ui->btnCoinControl->setVisible(true);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of BSOCK to mint into zBSOCK"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of BSCK to mint into zBSCK"));
     }else{
-        btnText = tr("Convert back to BSOCK");
+        btnText = tr("Convert back to BSCK");
         ui->btnCoinControl->setVisible(false);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of zBSOCK to convert back into BSOCK"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of zBSCK to convert back into BSCK"));
     }
     ui->pushButtonSave->setText(btnText);
 }
@@ -226,10 +226,10 @@ void PrivacyWidget::onTotalZpivClicked(){
     bool isVisible = ui->layoutDenom->isVisible();
     if(!isVisible){
         ui->layoutDenom->setVisible(true);
-        ui->btnTotalzBSOCK->setRightIconClass("btn-dropdown", true);
+        ui->btnTotalzBSCK->setRightIconClass("btn-dropdown", true);
     }else{
         ui->layoutDenom->setVisible(false);
-        ui->btnTotalzBSOCK->setRightIconClass("ic-arrow", true);
+        ui->btnTotalzBSCK->setRightIconClass("ic-arrow", true);
     }
 }
 
@@ -238,15 +238,15 @@ void PrivacyWidget::onSendClicked(){
         return;
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        warn(tr("Zerocoin"), tr("zBSOCK is currently undergoing maintenance"));
+        warn(tr("Zerocoin"), tr("zBSCK is currently undergoing maintenance"));
         return;
     }
 
     // Only convert enabled.
     bool isConvert = true;// ui->pushLeft->isChecked();
 
-    if(!GUIUtil::requestUnlock(walletModel, AskPassphraseDialog::Context::Mint_zBSOCK, true)){
-        inform(tr("You need to unlock the wallet to be able to %1 zBSOCK").arg(isConvert ? tr("convert") : tr("mint")));
+    if(!GUIUtil::requestUnlock(walletModel, AskPassphraseDialog::Context::Mint_zBSCK, true)){
+        inform(tr("You need to unlock the wallet to be able to %1 zBSCK").arg(isConvert ? tr("convert") : tr("mint")));
         return;
     }
 
@@ -277,7 +277,7 @@ void PrivacyWidget::mint(CAmount value){
         inform(tr(strError.data()));
     }else{
         // Mint succeed
-        inform(tr("zBSOCK minted successfully"));
+        inform(tr("zBSCK minted successfully"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -299,7 +299,7 @@ void PrivacyWidget::spend(CAmount value){
         inform(receipt.GetStatusMessage().data());
     }else{
         // Spend succeed
-        inform(tr("zBSOCK converted back to BSOCK"));
+        inform(tr("zBSCK converted back to BSCK"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -318,7 +318,7 @@ void PrivacyWidget::onCoinControlClicked(){
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any BSOCK to select."));
+            inform(tr("You don't have any BSCK to select."));
         }
     }
 }
@@ -339,7 +339,7 @@ void PrivacyWidget::onRescanMintsClicked(){
 }
 
 void PrivacyWidget::onResetZeroClicked(){
-    if (ask(tr("Reset Spent zBSOCK"),
+    if (ask(tr("Reset Spent zBSCK"),
         tr("Your zerocoin spends are going to be scanned from the blockchain from scratch"))
     ){
         std::string strResetMintResult = walletModel->resetSpentZerocoin();
@@ -402,7 +402,7 @@ void PrivacyWidget::updateDenomsSupply(){
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zBSOCK </b>";
+                        QString::number(nSumPerCoin) + " zBSCK </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -436,7 +436,7 @@ void PrivacyWidget::updateDenomsSupply(){
     }
 
     CAmount matureZerocoinBalance = walletModel->getZerocoinBalance() - walletModel->getUnconfirmedZerocoinBalance() - walletModel->getImmatureZerocoinBalance();
-    ui->btnTotalzBSOCK->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
+    ui->btnTotalzBSCK->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
 }
 
 void PrivacyWidget::changeTheme(bool isLightTheme, QString& theme){

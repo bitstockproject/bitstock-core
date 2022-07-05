@@ -200,16 +200,16 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSOCKs from being stolen by malware infecting your computer.</source>
-        <translation>Bitstock se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše BSOCK od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSCKs from being stolen by malware infecting your computer.</source>
+        <translation>Bitstock se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše BSCK od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSOCK&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše BSOCKove 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSCK&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše BSCKove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -611,8 +611,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zBSOCK</source>
-        <translation>zBSOCK</translation>
+        <source>zBSCK</source>
+        <translation>zBSCK</translation>
     </message>
     <message>
         <source>All</source>
@@ -1053,9 +1053,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</source>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</source>
         <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</translation>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1063,28 +1063,28 @@ https://www.transifex.com/bitstockproject/bitstockproject-translations</translat
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of BSOCK units to zBSOCK</source>
-        <translation>Omogućite automint BSOCK jedinica na zBSOCK</translation>
+        <source>Enable automatic minting of BSCK units to zBSCK</source>
+        <translation>Omogućite automint BSCK jedinica na zBSCK</translation>
     </message>
     <message>
-        <source>Enable zBSOCK Automint</source>
-        <translation>Omogući zBSOCK Automint</translation>
+        <source>Enable zBSCK Automint</source>
+        <translation>Omogući zBSCK Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming BSOCK which get automatically converted to zBSOCK via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih BSOCK koji se automatski pretvara u zBSOCK putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming BSCK which get automatically converted to zBSCK via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih BSCK koji se automatski pretvara u zBSCK putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zBSOCK</source>
-        <translation>Postotak automatiziranog zBSOCK</translation>
+        <source>Percentage of autominted zBSCK</source>
+        <translation>Postotak automatiziranog zBSCK</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno BSOCK za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno BSCK za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zBSOCK Denomination</source>
-        <translation>Preferirana Automint zBSOCK denominacijad</translation>
+        <source>Preferred Automint zBSCK Denomination</source>
+        <translation>Preferirana Automint zBSCK denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1680,8 +1680,8 @@ Adresa: %4
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zBSOCK Backup Path:</source>
-        <translation>Prilagođeni put zBSOCK sigurnosne kopije:</translation>
+        <source>Custom zBSCK Backup Path:</source>
+        <translation>Prilagođeni put zBSCK sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1964,12 +1964,12 @@ Adresa: %4
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zBSOCK.</translation>
+        <source>zBSCK is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zBSCK.</translation>
     </message>
     <message>
-        <source>Version 1 zBSOCK require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zBSOCK zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zBSCK require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zBSCK zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2725,12 +2725,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>BSOCK Stake</source>
-        <translation>BSOCK Stake</translation>
+        <source>BSCK Stake</source>
+        <translation>BSCK Stake</translation>
     </message>
     <message>
-        <source>zBSOCK Stake</source>
-        <translation>zBSOCK Stake</translation>
+        <source>zBSCK Stake</source>
+        <translation>zBSCK Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2749,24 +2749,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted BSOCK to zBSOCK</source>
-        <translation>Pretvoreni BSOCK u zBSOCK</translation>
+        <source>Converted BSCK to zBSCK</source>
+        <translation>Pretvoreni BSCK u zBSCK</translation>
     </message>
     <message>
-        <source>Spent zBSOCK</source>
-        <translation>Utrošeni zBSOCK</translation>
+        <source>Spent zBSCK</source>
+        <translation>Utrošeni zBSCK</translation>
     </message>
     <message>
-        <source>Received BSOCK from zBSOCK</source>
-        <translation>Primljeni BSOCK od zBSOCK</translation>
+        <source>Received BSCK from zBSCK</source>
+        <translation>Primljeni BSCK od zBSCK</translation>
     </message>
     <message>
-        <source>Minted Change as zBSOCK from zBSOCK Spend</source>
-        <translation>Mintana razlika zBSOCK od zBSOCK Utroška</translation>
+        <source>Minted Change as zBSCK from zBSCK Spend</source>
+        <translation>Mintana razlika zBSCK od zBSCK Utroška</translation>
     </message>
     <message>
-        <source>Converted zBSOCK to BSOCK</source>
-        <translation>Pretvoreni zBSOCK u BSOCK</translation>
+        <source>Converted zBSCK to BSCK</source>
+        <translation>Pretvoreni zBSCK u BSCK</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2862,8 +2862,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSOCK.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 BSOCK.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSCK.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 BSCK.</translation>
     </message>
 </context>
 <context>
@@ -2887,8 +2887,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zBSOCK to Spend</source>
-        <translation>Odabrani zBSOCK za utrošiti</translation>
+        <source>Select zBSCK to Spend</source>
+        <translation>Odabrani zBSCK za utrošiti</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -2970,16 +2970,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zBSOCK minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zBSOCK mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zBSCK minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zBSCK mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BSOCK inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za BSOCK unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for BSCK inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za BSCK unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zBSOCK inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zBSOCK unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zBSCK inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zBSCK unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3014,12 +3014,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u BSOCK / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u BSCK / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u BSOCK / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u BSCK / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3122,12 +3122,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 BSOCK.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 BSCK.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 BSOCK.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 BSCK.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3174,8 +3174,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Morate odrediti masternodeprivkey u konfiguraciji. Za pomoć pogledajte dokumentaciju.</translation>
     </message>
     <message>
-        <source>(4316 could be used only on mainnet)</source>
-        <translation>(4316 se može koristiti samo na mainnetu)</translation>
+        <source>(8316 could be used only on mainnet)</source>
+        <translation>(8316 se može koristiti samo na mainnetu)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3186,8 +3186,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 4316 for mainnet)</source>
-        <translation>(mora biti 4316 za glavnu mrežu)</translation>
+        <source>(must be 8316 for mainnet)</source>
+        <translation>(mora biti 8316 za glavnu mrežu)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -3399,8 +3399,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in BSOCK/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u BSOCK / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in BSCK/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u BSCK / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -3499,8 +3499,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the BSOCK and zBSOCK money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku BSOCK i zBSOCK ponude novca</translation>
+        <source>Reindex the BSCK and zBSCK money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku BSCK i zBSCK ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3574,8 +3574,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zBSOCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zBSOCK sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBSCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zBSCK sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -3978,8 +3978,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zBSOCK wallet...</source>
-        <translation>Sinkronizacija zBSOCK novčanika...</translation>
+        <source>Syncing zBSCK wallet...</source>
+        <translation>Sinkronizacija zBSCK novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4086,8 +4086,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zBSOCK</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zBSOCK-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBSCK</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zBSCK-a</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

@@ -372,16 +372,16 @@ para staking</translation>
         <translation>CANCELAR</translation>
     </message>
     <message>
-        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSOCKs from being stolen by malware infecting your computer.</source>
-        <translation>Bitstock se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus BSOCKs no sean robados mediante malware de su ordenador.</translation>
+        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSCKs from being stolen by malware infecting your computer.</source>
+        <translation>Bitstock se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus BSCKs no sean robados mediante malware de su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que desea cifrar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSOCK&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS BSOCK&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSCK&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS BSCK&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -481,8 +481,8 @@ para staking</translation>
         <translation>Ahorros</translation>
     </message>
     <message>
-        <source>0,00 BSOCK</source>
-        <translation>0,00 BSOCK</translation>
+        <source>0,00 BSCK</source>
+        <translation>0,00 BSCK</translation>
     </message>
     <message>
         <source>address</source>
@@ -559,8 +559,8 @@ para staking</translation>
         <translation>Presionar el botón</translation>
     </message>
     <message>
-        <source>0.00 BSOCK</source>
-        <translation>0.00 BSOCK</translation>
+        <source>0.00 BSCK</source>
+        <translation>0.00 BSCK</translation>
     </message>
     <message>
         <source>0</source>
@@ -770,8 +770,8 @@ para staking</translation>
         <translation>Presionar el botón</translation>
     </message>
     <message>
-        <source>BSOCK:</source>
-        <translation>BSOCK:</translation>
+        <source>BSCK:</source>
+        <translation>BSCK:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -945,8 +945,8 @@ el dispositivo que contiene la dirección del propietario.
         <translation>Monedas delegadas </translation>
     </message>
     <message>
-        <source>You don't have any BSOCK to select.</source>
-        <translation>Tú no tienes ningún BSOCK para seleccionar</translation>
+        <source>You don't have any BSCK to select.</source>
+        <translation>Tú no tienes ningún BSCK para seleccionar</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1073,12 +1073,12 @@ del propietario </translation>
         <translation>Estadísticas de Staking</translation>
     </message>
     <message>
-        <source>BSOCK</source>
-        <translation>BSOCK</translation>
+        <source>BSCK</source>
+        <translation>BSCK</translation>
     </message>
     <message>
-        <source>zBSOCK</source>
-        <translation>zBSOCK</translation>
+        <source>zBSCK</source>
+        <translation>zBSCK</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1109,8 +1109,8 @@ del propietario </translation>
         <translation>Puedes ver el historial de tu cuenta</translation>
     </message>
     <message>
-        <source>Amount of BSOCK and zBSOCK staked.</source>
-        <translation>Cantidad de BSOCK y zBSOCK por stake.</translation>
+        <source>Amount of BSCK and zBSCK staked.</source>
+        <translation>Cantidad de BSCK y zBSCK por stake.</translation>
     </message>
     <message>
         <source>All</source>
@@ -1165,8 +1165,8 @@ del propietario </translation>
         <translation>Aún no hay transacciones</translation>
     </message>
     <message>
-        <source>How to get BSOCK or zBSOCK</source>
-        <translation>Cómo obtener BSOCK o zBSOCK</translation>
+        <source>How to get BSCK or zBSCK</source>
+        <translation>Cómo obtener BSCK o zBSCK</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1610,7 +1610,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Dirección</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Bitstock Masternode you must dedicate 10.000 BSOCK (the unit of Bitstock) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Bitstock Masternode you must dedicate 10.000 BSCK (the unit of Bitstock) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>Para crear un Masternode de Bitstock debes desponer 10.000 Bitstock (la unidad de Bitstock) a la red (sin embargo, estas monedas siguen siendo tuyas y nunca saldrán de tu posesión). Puedes desactivar el nodo y desbloquear las monedas en cualquier momento.</translation>
     </message>
     <message>
@@ -1618,8 +1618,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Asegúrate de tener esta cantidad de monedas.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 BSOCK will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>Una transacción de 10,000 BSOCK se hará a una nueva dirección vacía en tu bitstockera.  La dirección está etiquetada bajo el nombre de masternode. </translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 BSCK will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Una transacción de 10,000 BSCK se hará a una nueva dirección vacía en tu bitstockera.  La dirección está etiquetada bajo el nombre de masternode. </translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1787,8 +1787,8 @@ Are you sure?</source>
         <translation>El archivo masternode.conf no existe</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 BSOCK required.</source>
-        <translation>No hay suficiente saldo para crear un masternode, se necesitan 10.000 BSOCK.</translation>
+        <source>Not enough balance to create a masternode, 10,000 BSCK required.</source>
+        <translation>No hay suficiente saldo para crear un masternode, se necesitan 10.000 BSCK.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -2018,45 +2018,45 @@ Are you sure?</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</source>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</source>
         <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</translation>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BSOCK units to zBSOCK</source>
-        <translation>Activar el minting automática de unidades BSOCK a zBSOCK</translation>
+        <source>Enable automatic minting of BSCK units to zBSCK</source>
+        <translation>Activar el minting automática de unidades BSCK a zBSCK</translation>
     </message>
     <message>
-        <source>Enable zBSOCK Automint</source>
-        <translation>Activar zBSOCK Automint</translation>
+        <source>Enable zBSCK Automint</source>
+        <translation>Activar zBSCK Automint</translation>
     </message>
     <message>
-        <source>Enable automatic zBSOCK minting from specific addresses</source>
-        <translation>Habilita el acuñado automático de zBSOCK desde direcciones específicas</translation>
+        <source>Enable automatic zBSCK minting from specific addresses</source>
+        <translation>Habilita el acuñado automático de zBSCK desde direcciones específicas</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Habilitar direcciones de Auto-acuñamiento</translation>
     </message>
     <message>
-        <source>Percentage of incoming BSOCK which get automatically converted to zBSOCK via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de BSOCK entrantes que serán automáticamente convertidos a zBSOCK a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming BSCK which get automatically converted to zBSCK via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de BSCK entrantes que serán automáticamente convertidos a zBSCK a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zBSOCK</source>
-        <translation>Porcentaje de zBSOCK autogenerados</translation>
+        <source>Percentage of autominted zBSCK</source>
+        <translation>Porcentaje de zBSCK autogenerados</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</source>
-        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes BSOCK disponibles para este tamaño de bitstocke</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</source>
+        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes BSCK disponibles para este tamaño de bitstocke</translation>
     </message>
     <message>
-        <source>Preferred Automint zBSOCK Denomination</source>
-        <translation>Tamaño de bitstocke zBSOCK preferido en la creación automática de dinero</translation>
+        <source>Preferred Automint zBSCK Denomination</source>
+        <translation>Tamaño de bitstocke zBSCK preferido en la creación automática de dinero</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2434,45 +2434,45 @@ Dirección: %4
         <translation>Acuñar</translation>
     </message>
     <message>
-        <source>Minting zBSOCK anonymizes your BSOCK by removing any
+        <source>Minting zBSCK anonymizes your BSCK by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Acuñando zBSOCK, haz anónimo tu BSOCK removiendo cualquier historial de transacción, haciendo transacciones imposibles de rastrear.</translation>
+        <translation>Acuñando zBSCK, haz anónimo tu BSCK removiendo cualquier historial de transacción, haciendo transacciones imposibles de rastrear.</translation>
     </message>
     <message>
-        <source>Mint new zBSOCK or convert back to BSOCK</source>
-        <translation>Acuñar nuevo zBSOCK o convertir de nuevo a BSOCK</translation>
+        <source>Mint new zBSCK or convert back to BSCK</source>
+        <translation>Acuñar nuevo zBSCK o convertir de nuevo a BSCK</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>Aún no hay transacciones</translation>
     </message>
     <message>
-        <source>Mint zBSOCK</source>
-        <translation>Acuñar zBSOCK</translation>
+        <source>Mint zBSCK</source>
+        <translation>Acuñar zBSCK</translation>
     </message>
     <message>
-        <source>Enter amount of BSOCK to mint into zBSOCK</source>
-        <translation>Ingresa un monto de BSOCK para acuñar a zBSOCK</translation>
+        <source>Enter amount of BSCK to mint into zBSCK</source>
+        <translation>Ingresa un monto de BSCK para acuñar a zBSCK</translation>
     </message>
     <message>
-        <source>Convert back to BSOCK</source>
-        <translation>Volver a convertir a BSOCK</translation>
+        <source>Convert back to BSCK</source>
+        <translation>Volver a convertir a BSCK</translation>
     </message>
     <message>
-        <source>Enter amount of zBSOCK to convert back into BSOCK</source>
-        <translation>Introduce la cantidad de zBSOCK para volver a convertirla en BSOCK</translation>
+        <source>Enter amount of zBSCK to convert back into BSCK</source>
+        <translation>Introduce la cantidad de zBSCK para volver a convertirla en BSCK</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance</source>
-        <translation>zBSOCK actualmente está sometiéndose a mantenimiento</translation>
+        <source>zBSCK is currently undergoing maintenance</source>
+        <translation>zBSCK actualmente está sometiéndose a mantenimiento</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zBSOCK</source>
-        <translation>Necesitas desbloquear la bitstockera para poder alcanzar el %1 zBSOCK</translation>
+        <source>You need to unlock the wallet to be able to %1 zBSCK</source>
+        <translation>Necesitas desbloquear la bitstockera para poder alcanzar el %1 zBSCK</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2487,16 +2487,16 @@ transaction history, making transactions untraceable </source>
         <translation>Valor inválido</translation>
     </message>
     <message>
-        <source>zBSOCK minted successfully</source>
-        <translation>zBSOCK acuñado éxitosamente</translation>
+        <source>zBSCK minted successfully</source>
+        <translation>zBSCK acuñado éxitosamente</translation>
     </message>
     <message>
-        <source>zBSOCK converted back to BSOCK</source>
-        <translation>zBSOCK reconvertido a BSOCK </translation>
+        <source>zBSCK converted back to BSCK</source>
+        <translation>zBSCK reconvertido a BSCK </translation>
     </message>
     <message>
-        <source>You don't have any BSOCK to select.</source>
-        <translation>Tú no tienes ningún BSOCK para seleccionar</translation>
+        <source>You don't have any BSCK to select.</source>
+        <translation>Tú no tienes ningún BSCK para seleccionar</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2874,8 +2874,8 @@ transaction history, making transactions untraceable </source>
         <translation>Ruta personalizada de la copia de seguridad:</translation>
     </message>
     <message>
-        <source>Custom zBSOCK Backup Path:</source>
-        <translation>Ruta personalizada de la copia de seguridad zBSOCK:</translation>
+        <source>Custom zBSCK Backup Path:</source>
+        <translation>Ruta personalizada de la copia de seguridad zBSCK:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3120,8 +3120,8 @@ transaction history, making transactions untraceable </source>
         <translation>Recibir</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive BSOCK.</source>
-        <translation>Escanear el código QR o copiar la dirección para recibir BSOCK.</translation>
+        <source>Scan the QR code or copy the address to receive BSCK.</source>
+        <translation>Escanear el código QR o copiar la dirección para recibir BSCK.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3222,8 +3222,8 @@ transaction history, making transactions untraceable </source>
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>BSOCK</source>
-        <translation>BSOCK</translation>
+        <source>BSCK</source>
+        <translation>BSCK</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3390,8 +3390,8 @@ transaction history, making transactions untraceable </source>
         <translation>Enviar</translation>
     </message>
     <message>
-        <source>You can transfer public coins (BSOCK) or private coins (zBSOCK)</source>
-        <translation>Puedes transferir monedas públicas (BSOCK) o monedas privadas (zBSOCK)</translation>
+        <source>You can transfer public coins (BSCK) or private coins (zBSCK)</source>
+        <translation>Puedes transferir monedas públicas (BSCK) o monedas privadas (zBSCK)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3422,12 +3422,12 @@ transaction history, making transactions untraceable </source>
         <translation>Total a enviar</translation>
     </message>
     <message>
-        <source>Send BSOCK</source>
-        <translation>Enviar BSOCK</translation>
+        <source>Send BSCK</source>
+        <translation>Enviar BSCK</translation>
     </message>
     <message>
-        <source>Send zBSOCK</source>
-        <translation>Enviar zBSOCK</translation>
+        <source>Send zBSCK</source>
+        <translation>Enviar zBSCK</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3482,8 +3482,8 @@ Estas monedas ya no serán puestas en Cold-Staked</translation>
         <translation>Gastar Zerocoin</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance.</source>
-        <translation>zBSOCK se encuentra actualmente en mantenimiento.</translation>
+        <source>zBSCK is currently undergoing maintenance.</source>
+        <translation>zBSCK se encuentra actualmente en mantenimiento.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3502,12 +3502,12 @@ Estas monedas ya no serán puestas en Cold-Staked</translation>
 %2</translation>
     </message>
     <message>
-        <source>zBSOCK transaction sent!</source>
-        <translation>¡Transacción de zBSOCK enviada!</translation>
+        <source>zBSCK transaction sent!</source>
+        <translation>¡Transacción de zBSCK enviada!</translation>
     </message>
     <message>
-        <source>Version 1 zBSOCK require a security level of 100 to successfully spend.</source>
-        <translation>La versión 1 zBSOCK requiere un nivel de seguridad de 100 para gastar exitosamente.</translation>
+        <source>Version 1 zBSCK require a security level of 100 to successfully spend.</source>
+        <translation>La versión 1 zBSCK requiere un nivel de seguridad de 100 para gastar exitosamente.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3546,12 +3546,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Tarifa personalizada %1</translation>
     </message>
     <message>
-        <source>You don't have any BSOCK to select.</source>
-        <translation>Tú no tienes ningún BSOCK para seleccionar</translation>
+        <source>You don't have any BSCK to select.</source>
+        <translation>Tú no tienes ningún BSCK para seleccionar</translation>
     </message>
     <message>
-        <source>You don't have any zBSOCK in your balance to select.</source>
-        <translation>No tienes ningún zBSOCK en tu saldo para seleccionar.</translation>
+        <source>You don't have any zBSCK in your balance to select.</source>
+        <translation>No tienes ningún zBSCK en tu saldo para seleccionar.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3933,29 +3933,29 @@ Verifica que tengas instalado un editor de texto predeterminado.</translation>
         <translation>1) ¿Qué es Bitstock?</translation>
     </message>
     <message>
-        <source>2) Why are my BSOCK unspendable?</source>
-        <translation>2) ¿Por qué mis BSOCK no se pueden gastar?</translation>
+        <source>2) Why are my BSCK unspendable?</source>
+        <translation>2) ¿Por qué mis BSCK no se pueden gastar?</translation>
     </message>
     <message>
-        <source>3) Bitstock privacy? What is Zerocoin (zBSOCK)?</source>
-        <translation>3) ¿Cómo es la privacidad de Bitstock? ¿Qué es Zerocoin (zBSOCK)?</translation>
+        <source>3) Bitstock privacy? What is Zerocoin (zBSCK)?</source>
+        <translation>3) ¿Cómo es la privacidad de Bitstock? ¿Qué es Zerocoin (zBSCK)?</translation>
     </message>
     <message>
-        <source>4) Why are my zBSOCK unspendable?</source>
-        <translation>4) ¿Por qué no se pueden gastar mis zBSOCK?</translation>
+        <source>4) Why are my zBSCK unspendable?</source>
+        <translation>4) ¿Por qué no se pueden gastar mis zBSCK?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zBSOCK automatically?</source>
-        <translation>5) ¿Por qué mi bitstockera convirtió el saldo en zBSOCK automáticamente?</translation>
+    into zBSCK automatically?</source>
+        <translation>5) ¿Por qué mi bitstockera convirtió el saldo en zBSCK automáticamente?</translation>
     </message>
     <message>
-        <source>6) How do I receive BSOCK/zBSOCK?</source>
-        <translation>6) ¿Cómo recibo BSOCK/zBSOCK?</translation>
+        <source>6) How do I receive BSCK/zBSCK?</source>
+        <translation>6) ¿Cómo recibo BSCK/zBSCK?</translation>
     </message>
     <message>
-        <source>7) How do I stake BSOCK/zBSOCK?</source>
-        <translation>7) ¿Cómo puedo hacer Stake de BSOCK/zBSOCK?</translation>
+        <source>7) How do I stake BSCK/zBSCK?</source>
+        <translation>7) ¿Cómo puedo hacer Stake de BSCK/zBSCK?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -3976,7 +3976,7 @@ Verifica que tengas instalado un editor de texto predeterminado.</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  Bitstock incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zBSOCK) and Zerocoin staking.
+                           to implement ZeroCoin(zBSCK) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Bitstock utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of Bitstock to participate in earning block rewards
@@ -3986,7 +3986,7 @@ Verifica que tengas instalado un editor de texto predeterminado.</translation>
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Bitstock es una forma de dinero digital en línea que utiliza la tecnología blockchain que se puede transferir a nivel global, de forma instantánea  y con tarifas casi nulas. Bitstock incorpora un sistema de seguridad y privacidad líder en el mercado y es también la primera criptomoneda PoS (Proof of Stake) que implementa el sistema de Stake de ZeroCoin(zBSOCK) y Zerocoin. 
+Bitstock es una forma de dinero digital en línea que utiliza la tecnología blockchain que se puede transferir a nivel global, de forma instantánea  y con tarifas casi nulas. Bitstock incorpora un sistema de seguridad y privacidad líder en el mercado y es también la primera criptomoneda PoS (Proof of Stake) que implementa el sistema de Stake de ZeroCoin(zBSCK) y Zerocoin. 
 &lt;/p&gt;&lt;p align="justify"&gt;
  Bitstock utiliza un algoritmo de consenso de Prueba de Stake (PoS), que permite a todos los propietarios de Bitstock participar en la obtención de recompensas de los nuevos bloques generados mientras aseguran la red con bitstockeras de nodo completo , así como también ejecutan Masternodos para crear y votar las propuestas.
 . &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -3996,8 +3996,8 @@ Bitstock es una forma de dinero digital en línea que utiliza la tecnología blo
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my BSOCK unspendable?</source>
-        <translation>¿Por qué mi BSOCK no se pueden gastar?</translation>
+        <source>Why are my BSCK unspendable?</source>
+        <translation>¿Por qué mi BSCK no se pueden gastar?</translation>
     </message>
     <message>
         <source>
@@ -4021,24 +4021,24 @@ Tu cartera Bitstock también necesita estar completamente sincronizada para que 
         <translation>3</translation>
     </message>
     <message>
-        <source>Bitstock privacy? What is Zerocoin (zBSOCK)?</source>
-        <translation>¿Cómo es la privacidad de Bitstock? ¿Qué es Zerocoin (zBSOCK)?</translation>
+        <source>Bitstock privacy? What is Zerocoin (zBSCK)?</source>
+        <translation>¿Cómo es la privacidad de Bitstock? ¿Qué es Zerocoin (zBSCK)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zBSOCK is an optional privacy-centric method of coin mixing on the
+                           zBSCK is an optional privacy-centric method of coin mixing on the
                            Bitstock blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://Bitstock.org/zpiv/'&gt;
-                           "Bitstock Zerocoin (zBSOCK) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://bitstock.investments/zpiv/'&gt;
+                           "Bitstock Zerocoin (zBSCK) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; 
-zBSOCK es un método opcional centrado en la privacidad de monedas en la Blockchain Bitstock. Básicamente, todas sus transacciones no pueden ser rastreadas en ningún explorador de bloques. Puedes leer más sobre los aspectos técnicos en el
- &lt;a style='color: #b088ff' href='https://Bitstock.org/zpiv/'&gt;
-"Documentación Técnica de Bitstock Zerocoin (zBSOCK) ". &lt;/a&gt;. 
+zBSCK es un método opcional centrado en la privacidad de monedas en la Blockchain Bitstock. Básicamente, todas sus transacciones no pueden ser rastreadas en ningún explorador de bloques. Puedes leer más sobre los aspectos técnicos en el
+ &lt;a style='color: #b088ff' href='https://bitstock.investments/zpiv/'&gt;
+"Documentación Técnica de Bitstock Zerocoin (zBSCK) ". &lt;/a&gt;. 
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4047,60 +4047,60 @@ zBSOCK es un método opcional centrado en la privacidad de monedas en la Blockch
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zBSOCK unspendable?</source>
-        <translation>¿Por qué mis zBSOCK se encuentran inutilizables?</translation>
+        <source>Why are my zBSCK unspendable?</source>
+        <translation>¿Por qué mis zBSCK se encuentran inutilizables?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zBSOCK will require 20 confirmations as well as 1
+                           After minting, zBSCK will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; Después de la acuñación, el zBSOCK requerirá 20 confirmaciones así como 1 acuñación adicional de la misma denominación en la red para ser elegible para el gasto.  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; Después de la acuñación, el zBSCK requerirá 20 confirmaciones así como 1 acuñación adicional de la misma denominación en la red para ser elegible para el gasto.  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zBSOCK automatically?</source>
-        <translation>¿Por qué mi bitstockera convierte el balance automáticamente en zBSOCK?</translation>
+        <source>Why did my wallet convert the balance into zBSCK automatically?</source>
+        <translation>¿Por qué mi bitstockera convierte el balance automáticamente en zBSCK?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the Bitstock wallet will convert 10% of your entire BSOCK
-                           balance to zBSOCK to assist the network. If you do not wish to
-                           stake zBSOCK or take advantage of the privacy benefit it brings,
+                           By default the Bitstock wallet will convert 10% of your entire BSCK
+                           balance to zBSCK to assist the network. If you do not wish to
+                           stake zBSCK or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your Bitstock wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zBSOCK Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zBSCK Automint”.
                            If you are not making use of the Bitstock-QT or GUI you can simply open
                            your bitstock.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zBSOCK in the
-                           &lt;a style='color: #b088ff' href='https://Bitstock.org/zpiv/'&gt; "Bitstock Zerocoin (zBSOCK) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zBSOCK, please read the "How do I stake"
+                           You can read more about zBSCK in the
+                           &lt;a style='color: #b088ff' href='https://bitstock.investments/zpiv/'&gt; "Bitstock Zerocoin (zBSCK) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zBSCK, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Por defecto, la bitstockera Bitstock convierte el 10% de tu saldo BSOCK completo
-a zBSOCK para ayudar a la red. Si no deseas hacer
-stake por zBSOCK o aprovechar el beneficio de privacidad que te brinda,
+Por defecto, la bitstockera Bitstock convierte el 10% de tu saldo BSCK completo
+a zBSCK para ayudar a la red. Si no deseas hacer
+stake por zBSCK o aprovechar el beneficio de privacidad que te brinda,
 puedes desactivar la acuñación automática en tu bitstockera Bitstock yendo
-a Ajustes-&gt;Opciones y deseleccionando "Activar zBSOCK Automint".
+a Ajustes-&gt;Opciones y deseleccionando "Activar zBSCK Automint".
 Si no estás haciendo uso de la Bitstock-QT o GUI puedes simplemente abrir
 tu archivo bitstock.conf y agregar &lt;i&gt; enablezeromint=0&lt;/i&gt; Sin las comillas
 luego reinicia tu bitstockera para deshabilitar la impresión automática.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-Puedes leer más sobre zBSOCK en el
-&lt;a style='color: #b088ff' href='https://Bitstock.org/zpiv/'&gt; "Documentación Técnica de Bitstock Zerocoin (zBSOCK)" &lt;/a&gt;.
-Si deseas conservar y hacer stake tu zBSOCK, lee la sección "¿Cómo puedo hacer stake?"de las preguntas frecuentes a continuación.
+Puedes leer más sobre zBSCK en el
+&lt;a style='color: #b088ff' href='https://bitstock.investments/zpiv/'&gt; "Documentación Técnica de Bitstock Zerocoin (zBSCK)" &lt;/a&gt;.
+Si deseas conservar y hacer stake tu zBSCK, lee la sección "¿Cómo puedo hacer stake?"de las preguntas frecuentes a continuación.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
@@ -4108,24 +4108,24 @@ Si deseas conservar y hacer stake tu zBSOCK, lee la sección "¿Cómo puedo hace
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive BSOCK/zBSOCK?</source>
-        <translation>¿Cómo recibo BSOCK/zBSOCK?</translation>
+        <source>How do I receive BSCK/zBSCK?</source>
+        <translation>¿Cómo recibo BSCK/zBSCK?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zBSOCK can be spent and sent to any Bitstock address. The receiver will
-                           receive standard Bitstock but the origin of the Bitstock is anonymized by the zBSOCK Protocol.
+                           zBSCK can be spent and sent to any Bitstock address. The receiver will
+                           receive standard Bitstock but the origin of the Bitstock is anonymized by the zBSCK Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zBSOCK you will need to mint your balance in the “Privacy” tab.
+                           If you want more zBSCK you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-El zBSOCK se puede gastar y enviar a cualquier dirección Bitstock. El receptor recibirá
-el Bitstock estándar, pero el origen del Bitstock es anonimizado por el protocolo zBSOCK.
+El zBSCK se puede gastar y enviar a cualquier dirección Bitstock. El receptor recibirá
+el Bitstock estándar, pero el origen del Bitstock es anonimizado por el protocolo zBSCK.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Si quieres más zBSOCK necesitarás acuñar tu saldo en la pestaña "Privacidad".
+Si quieres más zBSCK necesitarás acuñar tu saldo en la pestaña "Privacidad".
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
@@ -4133,8 +4133,8 @@ Si quieres más zBSOCK necesitarás acuñar tu saldo en la pestaña "Privacidad"
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake BSOCK/zBSOCK?</source>
-        <translation>¿Cómo hago stake BSOCK/zBSOCK?</translation>
+        <source>How do I stake BSCK/zBSCK?</source>
+        <translation>¿Cómo hago stake BSCK/zBSCK?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4152,7 +4152,7 @@ Si quieres más zBSOCK necesitarás acuñar tu saldo en la pestaña "Privacidad"
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node Bitstock core wallet with a
-                           requirement of 10,000 BSOCK secured collateral to provide extra services
+                           requirement of 10,000 BSCK secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4184,7 +4184,7 @@ Si quieres más zBSOCK necesitarás acuñar tu saldo en la pestaña "Privacidad"
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 BSOCK per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 BSCK per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4194,7 +4194,7 @@ Si quieres más zBSOCK necesitarás acuñar tu saldo en la pestaña "Privacidad"
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 Un Masternode es un ordenador que ejecuta una bitstockera central Bitstock de nodo
-completo con un requisito de 10.000 BSOCK de garantía asegurados para prestar servicios
+completo con un requisito de 10.000 BSCK de garantía asegurados para prestar servicios
 adicionales a la red y a cambio, recibir una parte de la recompensa del bloque
 regularmente. Estos servicios incluyen:
 &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4225,7 +4225,7 @@ Ventajas de los Masternodes:
 Requisitos: 
 &lt;/p&gt;
 &lt;p align="justify"&gt;&lt;ul&gt;
-&lt;li&gt;10.000 BSOCK por cada instancia de Masternode&lt;/li&gt;
+&lt;li&gt;10.000 BSCK por cada instancia de Masternode&lt;/li&gt;
 &lt;li&gt;Debe guardarse en una bitstockera principal&lt;/li&gt;
 &lt;li&gt;Necesita una dirección IP dedicada&lt;/li&gt;
 &lt;li&gt;La bitstockera Masternode permanecerá en línea&lt;/li&gt;
@@ -5069,12 +5069,12 @@ Are you sure?
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>480.0685 BSOCK</source>
-        <translation>480.0685 BSOCK</translation>
+        <source>480.0685 BSCK</source>
+        <translation>480.0685 BSCK</translation>
     </message>
     <message>
-        <source>1,000 zBSOCK</source>
-        <translation>1,000 zBSOCK</translation>
+        <source>1,000 zBSCK</source>
+        <translation>1,000 zBSCK</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5085,24 +5085,24 @@ Are you sure?
         <translation>Pendiente</translation>
     </message>
     <message>
-        <source>6.943 BSOCK</source>
-        <translation>6.943 BSOCK</translation>
+        <source>6.943 BSCK</source>
+        <translation>6.943 BSCK</translation>
     </message>
     <message>
         <source>Immature</source>
         <translation>No está completamente desarrollado </translation>
     </message>
     <message>
-        <source>10 BSOCK</source>
-        <translation>10 BSOCK</translation>
+        <source>10 BSCK</source>
+        <translation>10 BSCK</translation>
     </message>
     <message>
-        <source>60 zBSOCK</source>
-        <translation>60 zBSOCK</translation>
+        <source>60 zBSCK</source>
+        <translation>60 zBSCK</translation>
     </message>
     <message>
-        <source>10 zBSOCK</source>
-        <translation>10 zBSOCK</translation>
+        <source>10 zBSCK</source>
+        <translation>10 zBSCK</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5382,16 +5382,16 @@ Are you sure?
         <translation>Recibido por medio de Ofuscación</translation>
     </message>
     <message>
-        <source>BSOCK Stake</source>
-        <translation>Stake BSOCK</translation>
+        <source>BSCK Stake</source>
+        <translation>Stake BSCK</translation>
     </message>
     <message>
-        <source>zBSOCK Stake</source>
-        <translation>Stake zBSOCK</translation>
+        <source>zBSCK Stake</source>
+        <translation>Stake zBSCK</translation>
     </message>
     <message>
-        <source>BSOCK Cold Stake</source>
-        <translation>Cold Stake de BSOCK</translation>
+        <source>BSCK Cold Stake</source>
+        <translation>Cold Stake de BSCK</translation>
     </message>
     <message>
         <source>Stake delegation</source>
@@ -5414,24 +5414,24 @@ Are you sure?
         <translation>Ofuscación Crea Billetes</translation>
     </message>
     <message>
-        <source>Converted BSOCK to zBSOCK</source>
-        <translation>BSOCK convertidos a zBSOCK</translation>
+        <source>Converted BSCK to zBSCK</source>
+        <translation>BSCK convertidos a zBSCK</translation>
     </message>
     <message>
-        <source>Spent zBSOCK</source>
-        <translation>Gastar zBSOCK</translation>
+        <source>Spent zBSCK</source>
+        <translation>Gastar zBSCK</translation>
     </message>
     <message>
-        <source>Received BSOCK from zBSOCK</source>
-        <translation>BSOCK recibidos desde zBSOCK</translation>
+        <source>Received BSCK from zBSCK</source>
+        <translation>BSCK recibidos desde zBSCK</translation>
     </message>
     <message>
-        <source>Minted Change as zBSOCK from zBSOCK Spend</source>
-        <translation>Cambio de acuñación en zBSOCK al Gastar zBSOCK</translation>
+        <source>Minted Change as zBSCK from zBSCK Spend</source>
+        <translation>Cambio de acuñación en zBSCK al Gastar zBSCK</translation>
     </message>
     <message>
-        <source>Converted zBSOCK to BSOCK</source>
-        <translation>zBSOCK convertidos a BSOCK</translation>
+        <source>Converted zBSCK to BSCK</source>
+        <translation>zBSCK convertidos a BSCK</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5525,8 +5525,8 @@ Are you sure?
         <translation>Monto total</translation>
     </message>
     <message>
-        <source>2 BSOCK</source>
-        <translation>2 BSOCK</translation>
+        <source>2 BSCK</source>
+        <translation>2 BSCK</translation>
     </message>
     <message>
         <source>Coin inputs:</source>
@@ -5549,8 +5549,8 @@ Are you sure?
         <translation>Comisión:</translation>
     </message>
     <message>
-        <source>0.0001 BSOCK</source>
-        <translation>0.0001 BSOCK</translation>
+        <source>0.0001 BSCK</source>
+        <translation>0.0001 BSCK</translation>
     </message>
     <message>
         <source>Change address:</source>
@@ -5636,8 +5636,8 @@ Are you sure?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 BSOCK</source>
-        <translation>+0.000585 BSOCK</translation>
+        <source>+0.000585 BSCK</source>
+        <translation>+0.000585 BSCK</translation>
     </message>
 </context>
 <context>
@@ -5647,8 +5647,8 @@ Are you sure?
         <translation>Enviar Monedas</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSOCK.</source>
-        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 BSOCK.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSCK.</source>
+        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 BSCK.</translation>
     </message>
 </context>
 <context>
@@ -5746,8 +5746,8 @@ Bitstock Core Wallet</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zBSOCK to Spend</source>
-        <translation>Selecciona zBSOCK para Gastar</translation>
+        <source>Select zBSCK to Spend</source>
+        <translation>Selecciona zBSCK para Gastar</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -5782,8 +5782,8 @@ Bitstock Core Wallet</translation>
         <translation>Seleccionar/Deseleccionar Todos</translation>
     </message>
     <message>
-        <source>Select zBSOCK Denominations to Spend</source>
-        <translation>Selecciona la Denominación zBSOCK para gastar:</translation>
+        <source>Select zBSCK Denominations to Spend</source>
+        <translation>Selecciona la Denominación zBSCK para gastar:</translation>
     </message>
 </context>
 <context>
@@ -5845,20 +5845,20 @@ Bitstock Core Wallet</translation>
         <translation>Habilitar acuñado automático de Zerocoin desde una dirección específica (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zBSOCK minting (0-1, default: %u)</source>
-        <translation>Habilite copias de seguridad automáticas del monedero que se activan después de cada acuñación zBSOCK (0-1, predeterminado: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zBSCK minting (0-1, default: %u)</source>
+        <translation>Habilite copias de seguridad automáticas del monedero que se activan después de cada acuñación zBSCK (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>Activar funcionalidad de cold staking (0-1, por defecto: %u). Desactivado si staking=0</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BSOCK inputs (0-1, default: %u)</source>
-        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas BSOCK (0-1, predeterminado: %u)</translation>
+        <source>Enable or disable staking functionality for BSCK inputs (0-1, default: %u)</source>
+        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas BSCK (0-1, predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zBSOCK inputs (0-1, default: %u)</source>
-        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas zBSOCK (0-1, predeterminado: %u)</translation>
+        <source>Enable or disable staking functionality for zBSCK inputs (0-1, default: %u)</source>
+        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas zBSCK (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5893,12 +5893,12 @@ Bitstock Core Wallet</translation>
         <translation>Ejecutar comando cuando el mejor bloque cambie (%s en cmd es reemplazado por el block hash)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Comisiones (en BSOCK/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Comisiones (en BSCK/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Comisiones (en BSOCK/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Comisiones (en BSCK/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6017,12 +6017,12 @@ Bitstock Core Wallet</translation>
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 BSOCK.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 BSCK.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 BSOCK.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 BSCK.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6073,8 +6073,8 @@ Bitstock Core Wallet</translation>
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(4316 could be used only on mainnet)</source>
-        <translation>(4316 puede ser utilizado solo en mainnet)</translation>
+        <source>(8316 could be used only on mainnet)</source>
+        <translation>(8316 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6085,8 +6085,8 @@ Bitstock Core Wallet</translation>
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 4316 for mainnet)</source>
-        <translation>(debe ser 4316 para un mainnet)</translation>
+        <source>(must be 8316 for mainnet)</source>
+        <translation>(debe ser 8316 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -6317,8 +6317,8 @@ Bitstock Core Wallet</translation>
         <translation>Falló al leer el bloque</translation>
     </message>
     <message>
-        <source>Fee (in BSOCK/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en BSOCK/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
+        <source>Fee (in BSCK/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en BSCK/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6417,20 +6417,20 @@ Bitstock Core Wallet</translation>
         <translation>Porcentaje de Zerocoin creadas automáticamente (10-100, por defecto: %u)</translation>
     </message>
     <message>
-        <source>Recalculating BSOCK supply...</source>
-        <translation>Recalculando suministro BSOCK...</translation>
+        <source>Recalculating BSCK supply...</source>
+        <translation>Recalculando suministro BSCK...</translation>
     </message>
     <message>
-        <source>Recalculating minted ZBSOCK...</source>
-        <translation>Recalculando acuñado ZBSOCK...</translation>
+        <source>Recalculating minted ZBSCK...</source>
+        <translation>Recalculando acuñado ZBSCK...</translation>
     </message>
     <message>
-        <source>Recalculating spent ZBSOCK...</source>
-        <translation>Recalculando gasto ZBSOCK...</translation>
+        <source>Recalculating spent ZBSCK...</source>
+        <translation>Recalculando gasto ZBSCK...</translation>
     </message>
     <message>
-        <source>Reindex the BSOCK and zBSOCK money supply statistics</source>
-        <translation>Reindexar as estatísticas de fornecimento de dinheiro BSOCK e zBSOCK</translation>
+        <source>Reindex the BSCK and zBSCK money supply statistics</source>
+        <translation>Reindexar as estatísticas de fornecimento de dinheiro BSCK e zBSCK</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6509,8 +6509,8 @@ Bitstock Core Wallet</translation>
         <translation>Denominación preferida para acuñado automatico de Zerocoin (1/5/10/50/100/500/1000/5000), 0 para ninguna preferencia. predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zBSOCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Especifique la ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad zBSOCK automática. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad. Si también se establece backuppath, se realizarán 4 copias de seguridad</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBSCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Especifique la ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad zBSCK automática. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad. Si también se establece backuppath, se realizarán 4 copias de seguridad</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6941,8 +6941,8 @@ Bitstock Core Wallet</translation>
         <translation>Sincronizando con la red... </translation>
     </message>
     <message>
-        <source>Syncing zBSOCK wallet...</source>
-        <translation>Sincronizando el monedero zBSOCK...</translation>
+        <source>Syncing zBSCK wallet...</source>
+        <translation>Sincronizando el monedero zBSCK...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7057,8 +7057,8 @@ Bitstock Core Wallet</translation>
         <translation>Nombre de usuario para conexiones JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zBSOCK</source>
-        <translation>El valor está por debajo de la denominación más pequeña disponible (= 1) de zBSOCK</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBSCK</source>
+        <translation>El valor está por debajo de la denominación más pequeña disponible (= 1) de zBSCK</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

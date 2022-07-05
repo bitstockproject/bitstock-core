@@ -59,7 +59,7 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 
 private slots:
-    void onBSOCKSelected(bool _isBSOCK);
+    void onBSCKSelected(bool _isBSCK);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -87,7 +87,7 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isBSOCK = true;
+    bool isBSCK = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();

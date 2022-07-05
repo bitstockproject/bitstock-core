@@ -99,7 +99,7 @@
            <item>
             <widget class="QLabel" name="labelAmount">
              <property name="text">
-              <string>0,00 BSOCK</string>
+              <string>0,00 BSCK</string>
              </property>
             </widget>
            </item>

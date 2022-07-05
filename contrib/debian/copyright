@@ -57,9 +57,9 @@ Copyright: md2k7
 License: Expat
 Comment: Site: https://bitcointalk.org/index.php?topic=15276.0
 
-Files: src/qt/res/icons/configure.png, src/qt/res/icons/quit.png,
+Files: src/qt/res/icons/configure.png,
       src/qt/res/icons/editcopy.png, src/qt/res/icons/editpaste.png,
-      src/qt/res/icons/add.png, src/qt/res/icons/edit.png,
+      src/qt/res/icons/edit.png,
       src/qt/res/icons/remove.png
 Copyright: http://www.everaldo.com
 License: LGPL

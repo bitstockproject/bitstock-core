@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Bitstock_ZBSOCKTRACKER_H
-#define Bitstock_ZBSOCKTRACKER_H
+#ifndef Bitstock_ZBSCKTRACKER_H
+#define Bitstock_ZBSCKTRACKER_H
 
 #include "zerocoin.h"
 #include "witness.h"
@@ -11,9 +11,9 @@
 #include <list>
 
 class CDeterministicMint;
-class CzBSOCKWallet;
+class CzBSCKWallet;
 
-class CzBSOCKTracker
+class CzBSCKTracker
 {
 private:
     bool fInitialized;
@@ -22,9 +22,9 @@ private:
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzBSOCKTracker(std::string strWalletFile);
-    ~CzBSOCKTracker();
-    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzBSOCKWallet* zBSOCKWallet = NULL);
+    CzBSCKTracker(std::string strWalletFile);
+    ~CzBSCKTracker();
+    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzBSCKWallet* zBSCKWallet = NULL);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
     bool HasPubcoin(const CBigNum& bnValue) const;
@@ -51,4 +51,4 @@ public:
     void Clear();
 };
 
-#endif //Bitstock_ZBSOCKTRACKER_H
+#endif //Bitstock_ZBSCKTRACKER_H

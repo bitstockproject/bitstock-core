@@ -3,8 +3,8 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
 
-#ifndef Bitstock_LIGHBSOCKZTTHREAD_H
-#define Bitstock_LIGHBSOCKZTTHREAD_H
+#ifndef Bitstock_LIGHBSCKZTTHREAD_H
+#define Bitstock_LIGHBSCKZTTHREAD_H
 
 #include <atomic>
 #include "genwit.h"
@@ -51,7 +51,7 @@ public:
 
     void StartLightZpivThread(boost::thread_group& threadGroup) {
         LogPrintf("%s thread start\n", "bitstock-light-thread");
-        threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZBSOCKSimplified, this));
+        threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZBSCKSimplified, this));
     }
 
     void StopLightZpivThread() {
@@ -61,10 +61,10 @@ public:
 
 private:
 
-    void ThreadLightZBSOCKSimplified();
+    void ThreadLightZBSCKSimplified();
 
     void rejectWork(CGenWit& wit, int blockHeight, uint32_t errorNumber);
 
 };
 
-#endif //Bitstock_LIGHBSOCKZTTHREAD_H
+#endif //Bitstock_LIGHBSCKZTTHREAD_H

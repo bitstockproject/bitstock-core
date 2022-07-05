@@ -1013,7 +1013,7 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
     //Reject serial's that are already in the blockchain
     int nHeightTx = 0;
     if (IsSerialInBlockchain(spend->getCoinSerialNumber(), nHeightTx))
-        return error("%s : zBSOCK spend with serial %s is already in block %d\n", __func__,
+        return error("%s : zBSCK spend with serial %s is already in block %d\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), nHeightTx);
 
     return true;
@@ -1021,11 +1021,11 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
 
 bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const libzerocoin::CoinSpend* spend, CBlockIndex* pindex, const uint256& hashBlock)
 {
-    //Check to see if the zBSOCK is properly signed
+    //Check to see if the zBSCK is properly signed
     if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
         try {
             if (!spend->HasValidSignature())
-                return error("%s: V2 zBSOCK spend does not have a valid signature\n", __func__);
+                return error("%s: V2 zBSCK spend does not have a valid signature\n", __func__);
         } catch (const libzerocoin::InvalidSerialException& e) {
             // Check if we are in the range of the attack
             if(!isBlockBetweenFakeSerialAttackRange(pindex->nHeight))
@@ -1038,7 +1038,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
         if (tx.IsCoinStake())
             expectedType = libzerocoin::SpendType::STAKE;
         if (spend->getSpendType() != expectedType) {
-            return error("%s: trying to spend zBSOCK without the correct spend type. txid=%s\n", __func__,
+            return error("%s: trying to spend zBSCK without the correct spend type. txid=%s\n", __func__,
                          tx.GetHash().GetHex());
         }
     }
@@ -1049,7 +1049,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
     if (!spend->HasValidSerial(Params().Zerocoin_Params(fUseV1Params)))  {
         // Up until this block our chain was not checking serials correctly..
         if (!isBlockBetweenFakeSerialAttackRange(pindex->nHeight))
-            return error("%s : zBSOCK spend with serial %s from tx %s is not in valid range\n", __func__,
+            return error("%s : zBSCK spend with serial %s from tx %s is not in valid range\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
         else
             LogPrintf("%s:: HasValidSerial :: Invalid serial detected within range in block %d\n", __func__, pindex->nHeight);
@@ -1098,7 +1098,7 @@ bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidati
             }
             libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
             PublicCoinSpend publicSpend(params);
-            if (!ZBSOCKModule::parseCoinSpend(txin, tx, prevOut, publicSpend)){
+            if (!ZBSCKModule::parseCoinSpend(txin, tx, prevOut, publicSpend)){
                 return state.DoS(100, error("CheckZerocoinSpend(): public zerocoin spend parse failed"));
             }
             newSpend = publicSpend;
@@ -1121,7 +1121,7 @@ bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidati
         if (isPublicSpend) {
             libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
             PublicCoinSpend ret(params);
-            if (!ZBSOCKModule::validateInput(txin, prevOut, tx, ret)){
+            if (!ZBSCKModule::validateInput(txin, prevOut, tx, ret)){
                 return state.DoS(100, error("CheckZerocoinSpend(): public zerocoin spend did not verify"));
             }
         } else
@@ -1411,7 +1411,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("%s : zBSOCK spend tx %s already in block %d",
+                return state.Invalid(error("%s : zBSCK spend tx %s already in block %d",
                         __func__, tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1433,7 +1433,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 if (isPublicSpend) {
                     libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                     PublicCoinSpend publicSpend(params);
-                    if (!ZBSOCKModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                    if (!ZBSCKModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                         return false;
                     }
                     if (!ContextualCheckZerocoinSpend(tx, &publicSpend, chainActive.Tip(), 0))
@@ -1480,7 +1480,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 }
             }
 
-            // Check that zBSOCK mints (if included) are not already known
+            // Check that zBSCK mints (if included) are not already known
             for (auto& out : tx.vout) {
                 if (!out.IsZerocoinMint())
                     continue;
@@ -1998,42 +1998,56 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        if (nHeight < 200 && nHeight > 0)
-            return 250000 * COIN;
-    }
 
-    int64_t nSubsidy = 0;
-    if (nHeight > 484340)	return 1 * COIN;
-    if (nHeight > 441140)	return 1 * COIN;
-    if (nHeight > 354740)	return 1.5 * COIN;
-    if (nHeight > 311540)	return 2 * COIN;
-    if (nHeight > 268340)	return 2.5 * COIN;
-    if (nHeight > 225140)	return 3 * COIN;
-    if (nHeight > 138740)	return 2.5 * COIN;
-    if (nHeight > 52340)	return 2 * COIN;
-    if (nHeight > 22100)	return 1.5 * COIN;
-    if (nHeight > 500)		return 1 * COIN;
-    if (nHeight > 1)		return 0.1 * COIN;
-    if (nHeight == 1)		return 100000 * COIN; // premine 1% of Max. Supply
-    if (nHeight !=1)		return 1 * COIN;
+    if (nHeight > 1500000)   return 12 * COIN;
+    if (nHeight > 1200000)   return 30 * COIN;
+    if (nHeight > 1000000)   return 60 * COIN;
+    if (nHeight >  950000)   return 80 * COIN;
+    if (nHeight >  900000)   return 100 * COIN;
+    if (nHeight >  850000)   return 90 * COIN;
+    if (nHeight >  800000)   return 80 * COIN;
+    if (nHeight >  750000)   return 70 * COIN;
+    if (nHeight >  700000)   return 60 * COIN;
+    if (nHeight >  650000)   return 50 * COIN;
+    if (nHeight >  600000)   return 42 * COIN;
+    if (nHeight >  550000)   return 36 * COIN;
+    if (nHeight >  500000)   return 30 * COIN;
+    if (nHeight >  450000)   return 26 * COIN;
+    if (nHeight >  400000)   return 22 * COIN;
+    if (nHeight >  350000)   return 18 * COIN;
+    if (nHeight >  300000)   return 14 * COIN;
+    if (nHeight >  250000)	 return 10 * COIN;
+    if (nHeight >  200000)	 return 8 * COIN;
+    if (nHeight >  150000)	 return 4 * COIN;
+    if (nHeight >  100000)	 return 2 * COIN;
+    if (nHeight >   60000)	 return 1.5 * COIN;
+    if (nHeight >       1)	 return 0.5 * COIN;
+    if (nHeight ==      1)	 return 10000 * COIN;
+    
     return 0 * COIN;
-
-    // Check if we reached the coin max supply.
-    int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-
-    if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
-        nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
-
-    if (nMoneySupply >= Params().MaxMoneyOut())
-        nSubsidy = 0;
-
-    return nSubsidy;
 }
 
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZBSOCKStake)
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZBSCKStake)
 {
-    return GetBlockValue(nHeight) * 0.70;
+    
+    if (nHeight > 1200000)
+        return GetBlockValue(nHeight) * 0.90;
+    
+    return GetBlockValue(nHeight) * 0.80;
+
+}
+
+int64_t GetDevPayment(int nHeight, int64_t blockValue)
+{
+    int64_t nDevPayment = 0;
+
+    nDevPayment = GetBlockValue(nHeight) * 0.01;
+
+    // sanity check, should never happen
+    if (nDevPayment > blockValue)
+        return 0;
+
+    return nDevPayment;
 }
 
 bool IsInitialBlockDownload()
@@ -2221,7 +2235,7 @@ void AddInvalidSpendsToMap(const CBlock& block)
                     libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                     PublicCoinSpend publicSpend(params);
                     CValidationState state;
-                    if (!ZBSOCKModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                    if (!ZBSCKModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                         throw std::runtime_error("Failed to parse public spend");
                     }
                     spend = &publicSpend;
@@ -2427,7 +2441,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
                             libzerocoin::ZerocoinParams *params = Params().Zerocoin_Params(false);
                             PublicCoinSpend publicSpend(params);
                             CValidationState state;
-                            if (!ZBSOCKModule::ParseZerocoinPublicSpend(txin, tx, state, publicSpend)) {
+                            if (!ZBSCKModule::ParseZerocoinPublicSpend(txin, tx, state, publicSpend)) {
                                 return error("Failed to parse public spend");
                             }
                             serial = publicSpend.getCoinSerialNumber();
@@ -2603,16 +2617,16 @@ void AddWrappedSerialsInflation()
     uiInterface.ShowProgress("", 100);
 }
 
-void RecalculateZBSOCKMinted()
+void RecalculateZBSCKMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
-    uiInterface.ShowProgress(_("Recalculating minted ZBSOCK..."), 0);
+    uiInterface.ShowProgress(_("Recalculating minted ZBSCK..."), 0);
     while (true) {
         // Log Message and feedback message every 1000 blocks
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainActive.Height() - Params().Zerocoin_StartHeight()))));
-            uiInterface.ShowProgress(_("Recalculating minted ZBSOCK..."), percent);
+            uiInterface.ShowProgress(_("Recalculating minted ZBSCK..."), percent);
         }
 
         //overwrite possibly wrong vMintsInBlock data
@@ -2635,18 +2649,18 @@ void RecalculateZBSOCKMinted()
     uiInterface.ShowProgress("", 100);
 }
 
-void RecalculateZBSOCKSpent()
+void RecalculateZBSCKSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
-    uiInterface.ShowProgress(_("Recalculating spent ZBSOCK..."), 0);
+    uiInterface.ShowProgress(_("Recalculating spent ZBSCK..."), 0);
     while (true) {
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainActive.Height() - Params().Zerocoin_StartHeight()))));
-            uiInterface.ShowProgress(_("Recalculating spent ZBSOCK..."), percent);
+            uiInterface.ShowProgress(_("Recalculating spent ZBSCK..."), percent);
         }
 
-        //Rewrite zBSOCK supply
+        //Rewrite zBSCK supply
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
@@ -2655,13 +2669,13 @@ void RecalculateZBSOCKSpent()
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-        //Add mints to zBSOCK supply
+        //Add mints to zBSCK supply
         for (auto denom : libzerocoin::zerocoinDenomList) {
             long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
             pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
         }
 
-        //Remove spends from zBSOCK supply
+        //Remove spends from zBSCK supply
         for (auto denom : listDenomsSpent)
             pindex->mapZerocoinSupply.at(denom)--;
 
@@ -2682,7 +2696,7 @@ void RecalculateZBSOCKSpent()
     uiInterface.ShowProgress("", 100);
 }
 
-bool RecalculateBSOCKSupply(int nHeightStart)
+bool RecalculateBSCKSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -2692,12 +2706,12 @@ bool RecalculateBSOCKSupply(int nHeightStart)
     if (nHeightStart == Params().Zerocoin_StartHeight())
         nSupplyPrev = CAmount(5449796547496199);
 
-    uiInterface.ShowProgress(_("Recalculating BSOCK supply..."), 0);
+    uiInterface.ShowProgress(_("Recalculating BSCK supply..."), 0);
     while (true) {
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)((pindex->nHeight - nHeightStart) * 100) / (chainActive.Height() - nHeightStart))));
-            uiInterface.ShowProgress(_("Recalculating BSOCK supply..."), percent);
+            uiInterface.ShowProgress(_("Recalculating BSCK supply..."), percent);
         }
 
         CBlock block;
@@ -2807,7 +2821,7 @@ bool ReindexAccumulators(std::list<uint256>& listMissingCheckpoints, std::string
     return true;
 }
 
-bool UpdateZBSOCKSupply(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
+bool UpdateZBSCKSupply(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
 {
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -2867,7 +2881,7 @@ bool UpdateZBSOCKSupply(const CBlock& block, CBlockIndex* pindex, bool fJustChec
         LogPrint("zero", "%s coins for denomination %d pubcoin %s\n", __func__, denom, pindex->mapZerocoinSupply.at(denom));
 
     // Update Wrapped Serials amount
-    // A one-time event where only the zBSOCK supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the zBSCK supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == Params().Zerocoin_Block_EndFakeSerial() + 1
             && pindex->GetZerocoinSupply() < Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount()) {
         for (auto denom : libzerocoin::zerocoinDenomList) {
@@ -2992,7 +3006,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 if (isPublicSpend) {
                     libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                     PublicCoinSpend publicSpend(params);
-                    if (!ZBSOCKModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                    if (!ZBSCKModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                         return false;
                     }
                     nValueIn += publicSpend.getDenomination() * COIN;
@@ -3010,7 +3024,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            // Check that zBSOCK mints are not already known
+            // Check that zBSCK mints are not already known
             if (tx.HasZerocoinMintOutputs()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -3039,7 +3053,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            // Check that zBSOCK mints are not already known
+            // Check that zBSCK mints are not already known
             if (tx.HasZerocoinMintOutputs()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -3090,14 +3104,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-        RecalculateZBSOCKMinted();
-        RecalculateZBSOCKSpent();
-        RecalculateBSOCKSupply(Params().Zerocoin_StartHeight());
+        RecalculateZBSCKMinted();
+        RecalculateZBSCKSpent();
+        RecalculateBSCKSupply(Params().Zerocoin_StartHeight());
     }
 
-    //Track zBSOCK money supply in the block index
-    if (!UpdateZBSOCKSupply(block, pindex, fJustCheck))
-        return state.DoS(100, error("%s: Failed to calculate new zBSOCK supply for block=%s height=%d", __func__,
+    //Track zBSCK money supply in the block index
+    if (!UpdateZBSCKSupply(block, pindex, fJustCheck))
+        return state.DoS(100, error("%s: Failed to calculate new zBSCK supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
     // track money supply and mint amount info
@@ -3119,6 +3133,26 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
                                     FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
                          REJECT_INVALID, "bad-cb-amount");
+    }
+
+    if (pindex->nHeight > Params().LAST_POW_BLOCK()) {
+      CAmount nDevReward = GetDevPayment(pindex->pprev->nHeight + 1, nExpectedMint);
+
+      if (nDevReward > 0) {
+        CTxDestination destination = CBitcoinAddress(Params().DevAddress()).Get();
+        CScript DEV_SCRIPT = GetScriptForDestination(destination);
+        bool DevPaid = false;
+
+        for (const auto& output : block.vtx[1].vout) {
+            if (output.scriptPubKey == DEV_SCRIPT && output.nValue == nDevReward) {
+                DevPaid = true;
+                break;
+            }
+        }
+        if (!DevPaid) {
+            return state.DoS(100, error("ConnectBlock(): no dev reward"), REJECT_INVALID, "no-dev-reward");
+        }
+      }
     }
 
     // Ensure that accumulator checkpoints are valid and in the same state as this instance of the chain
@@ -3160,7 +3194,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         setDirtyBlockIndex.insert(pindex);
     }
 
-    //Record zBSOCK serials
+    //Record zBSCK serials
     if (pwalletMain) {
         std::set<uint256> setAddedTx;
         for (const std::pair<libzerocoin::CoinSpend, uint256>& pSpend : vSpends) {
@@ -4089,7 +4123,7 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
     const CTxOut& lastOut = tx.vout[outs-1];
     if (outs >=3 && lastOut.scriptPubKey != tx.vout[outs-2].scriptPubKey) {
         // last output can either be a mn reward or a budget payment
-        // cold staking is active much after nPublicZCSpends so GetMasternodePayment is always 3 BSOCK.
+        // cold staking is active much after nPublicZCSpends so GetMasternodePayment is always 3 BSCK.
         // TODO: double check this if/when MN rewards change
         if (lastOut.nValue == 3 * COIN)
             return true;
@@ -4253,7 +4287,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         ))
             return error("%s : CheckTransaction failed", __func__);
 
-        // double check that there are no double spent zBSOCK spends in this block
+        // double check that there are no double spent zBSCK spends in this block
         if (tx.HasZerocoinSpendInputs()) {
             for (const CTxIn& txIn : tx.vin) {
                 bool isPublicSpend = txIn.IsZerocoinPublicSpend();
@@ -4262,7 +4296,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                     if (isPublicSpend) {
                         libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                         PublicCoinSpend publicSpend(params);
-                        if (!ZBSOCKModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                        if (!ZBSCKModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                             return false;
                         }
                         spend = publicSpend;
@@ -4275,7 +4309,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                         spend = TxInToZerocoinSpend(txIn);
                     }
                     if (std::count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zBSOCK serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of zBSCK serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -4589,17 +4623,17 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
         // Inputs
         std::vector<CTxIn> pivInputs;
-        std::vector<CTxIn> zBSOCKInputs;
+        std::vector<CTxIn> zBSCKInputs;
 
         for (const CTxIn& stakeIn : stakeTxIn.vin) {
             if(stakeIn.IsZerocoinSpend()){
-                zBSOCKInputs.push_back(stakeIn);
+                zBSCKInputs.push_back(stakeIn);
             }else{
                 pivInputs.push_back(stakeIn);
             }
         }
-        const bool hasBSOCKInputs = !pivInputs.empty();
-        const bool hasZBSOCKInputs = !zBSOCKInputs.empty();
+        const bool hasBSCKInputs = !pivInputs.empty();
+        const bool hasZBSCKInputs = !zBSCKInputs.empty();
 
         // ZC started after PoS.
         // Check for serial double spent on the same block, TODO: Move this to the proper method..
@@ -4621,7 +4655,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                         if (isPublicSpend) {
                             libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                             PublicCoinSpend publicSpend(params);
-                            if (!ZBSOCKModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                            if (!ZBSCKModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                                 return false;
                             }
                             spend = publicSpend;
@@ -4637,7 +4671,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     }
                 }
                 if(tx.IsCoinStake()) continue;
-                if(hasBSOCKInputs) {
+                if(hasBSCKInputs) {
                     // Check if coinstake input is double spent inside the same block
                     for (const CTxIn& pivIn : pivInputs)
                         if(pivIn.prevout == in.prevout)
@@ -4679,11 +4713,11 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     for (const CTxIn& in: t.vin) {
                         // If this input is a zerocoin spend, and the coinstake has zerocoin inputs
                         // then store the serials for later check
-                        if(hasZBSOCKInputs && in.IsZerocoinSpend())
+                        if(hasZBSCKInputs && in.IsZerocoinSpend())
                             vBlockSerials.push_back(TxInToZerocoinSpend(in).getCoinSerialNumber());
 
                         // Loop through every input of the staking tx
-                        if (hasBSOCKInputs) {
+                        if (hasBSCKInputs) {
                             for (const CTxIn& stakeIn : pivInputs)
                                 // check if the tx input is double spending any coinstake input
                                 if (stakeIn.prevout == in.prevout)
@@ -4703,9 +4737,9 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             // Split height
             splitHeight = prev->nHeight;
 
-            // Now that this loop if completed. Check if we have zBSOCK inputs.
-            if(hasZBSOCKInputs) {
-                for (const CTxIn& zPivInput : zBSOCKInputs) {
+            // Now that this loop if completed. Check if we have zBSCK inputs.
+            if(hasZBSCKInputs) {
+                for (const CTxIn& zPivInput : zBSCKInputs) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
 
                     // First check if the serials were not already spent on the forked blocks.
@@ -4768,7 +4802,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             }
         } else {
             if(!isBlockFromFork)
-                for (const CTxIn& zPivInput : zBSOCKInputs) {
+                for (const CTxIn& zPivInput : zBSCKInputs) {
                         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
                         if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex, 0))
                             return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,

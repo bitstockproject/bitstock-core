@@ -922,7 +922,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw std::runtime_error(
             "createrawzerocoinstake mint_input \n"
-            "\nCreates raw zBSOCK coinstakes (without MN output). Only for regtest\n" +
+            "\nCreates raw zBSCK coinstakes (without MN output). Only for regtest\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -946,7 +946,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK is currently disabled due to maintenance.");
 
     std::string serial_hash = params[0].get_str();
     if (!IsHex(serial_hash))
@@ -963,7 +963,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
 
     CMutableTransaction coinstake_tx;
 
-    // create the zerocoinmint output (one spent denom + three 1-zBSOCK denom)
+    // create the zerocoinmint output (one spent denom + three 1-zBSCK denom)
     libzerocoin::CoinDenomination staked_denom = input_mint.GetDenomination();
     std::vector<CTxOut> vOutMint(5);
     // Mark coin stake transaction
@@ -971,11 +971,11 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
     scriptEmpty.clear();
     vOutMint[0] = CTxOut(0, scriptEmpty);
     CDeterministicMint dMint;
-    if (!pwalletMain->CreateZBSOCKOutPut(staked_denom, vOutMint[1], dMint))
+    if (!pwalletMain->CreateZBSCKOutPut(staked_denom, vOutMint[1], dMint))
         throw JSONRPCError(RPC_WALLET_ERROR, "failed to create new zpiv output");
 
     for (int i=2; i<5; i++) {
-        if (!pwalletMain->CreateZBSOCKOutPut(libzerocoin::ZQ_ONE, vOutMint[i], dMint))
+        if (!pwalletMain->CreateZBSCKOutPut(libzerocoin::ZQ_ONE, vOutMint[i], dMint))
             throw JSONRPCError(RPC_WALLET_ERROR, "failed to create new zpiv output");
     }
     coinstake_tx.vout = vOutMint;
@@ -1007,7 +1007,7 @@ UniValue createrawzerocoinspend(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw std::runtime_error(
             "createrawzerocoinspend mint_input ( \"address\" isPublicSpend )\n"
-            "\nCreates raw zBSOCK public spend.\n" +
+            "\nCreates raw zBSCK public spend.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -1042,7 +1042,7 @@ UniValue createrawzerocoinspend(const UniValue& params, bool fHelp)
     }
 
     if (Params().NetworkID() != CBaseChainParams::REGTEST && !isPublicSpend)
-        throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK old spend only available in regtest for tests purposes");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK old spend only available in regtest for tests purposes");
 
     assert(pwalletMain != NULL);
     EnsureWalletIsUnlocked();

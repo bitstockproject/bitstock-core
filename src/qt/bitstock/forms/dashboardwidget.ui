@@ -684,7 +684,7 @@
                 <item>
                  <widget class="QLabel" name="labelPiv">
                   <property name="text">
-                   <string>BSOCK</string>
+                   <string>BSCK</string>
                   </property>
                  </widget>
                 </item>

@@ -474,7 +474,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     CWalletDB walletdb(strWalletFile, "cr+");
 
     CWallet wallet(strWalletFile);
-    CzBSOCKWallet zWallet(wallet.strWalletFile);
+    CzBSCKWallet zWallet(wallet.strWalletFile);
     zWallet.SetMasterSeed(seedMaster);
     wallet.setZWallet(&zWallet);
 
@@ -486,7 +486,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     for (int i = 0; i < nTests; i++) {
         libzerocoin::PrivateCoin coin(Params().Zerocoin_Params(false), denom, false);
         CDeterministicMint dMint;
-        zWallet.GenerateDeterministicZBSOCK(denom, coin, dMint);
+        zWallet.GenerateDeterministicZBSCK(denom, coin, dMint);
         vCoins.emplace_back(coin);
     }
 

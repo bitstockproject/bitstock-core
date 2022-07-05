@@ -372,16 +372,16 @@ for staking</source>
         <translation>删除</translation>
     </message>
     <message>
-        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSOCKs from being stolen by malware infecting your computer.</source>
-        <translation>Bitstock将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取BSOCKs。</translation>
+        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSCKs from being stolen by malware infecting your computer.</source>
+        <translation>Bitstock将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取BSCKs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>您确定加密您的钱包吗？</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSOCK&lt;/b&gt;!</source>
-        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的BSOCK&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSCK&lt;/b&gt;!</source>
+        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的BSCK&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -481,8 +481,8 @@ for staking</source>
         <translation>存款</translation>
     </message>
     <message>
-        <source>0,00 BSOCK</source>
-        <translation>0,00 BSOCK</translation>
+        <source>0,00 BSCK</source>
+        <translation>0,00 BSCK</translation>
     </message>
     <message>
         <source>address</source>
@@ -559,8 +559,8 @@ for staking</source>
         <translation>按钮</translation>
     </message>
     <message>
-        <source>0.00 BSOCK</source>
-        <translation>0.00 BSOCK</translation>
+        <source>0.00 BSCK</source>
+        <translation>0.00 BSCK</translation>
     </message>
     <message>
         <source>0</source>
@@ -770,8 +770,8 @@ for staking</source>
         <translation>按钮</translation>
     </message>
     <message>
-        <source>BSOCK:</source>
-        <translation>BSOCK:</translation>
+        <source>BSCK:</source>
+        <translation>BSCK:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -945,8 +945,8 @@ Do you wish to proceed?</source>
         <translation>委托硬币</translation>
     </message>
     <message>
-        <source>You don't have any BSOCK to select.</source>
-        <translation>您没有任何BSOCK可选择。</translation>
+        <source>You don't have any BSCK to select.</source>
+        <translation>您没有任何BSCK可选择。</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1073,12 +1073,12 @@ address</source>
         <translation>加注数据</translation>
     </message>
     <message>
-        <source>BSOCK</source>
-        <translation>BSOCK</translation>
+        <source>BSCK</source>
+        <translation>BSCK</translation>
     </message>
     <message>
-        <source>zBSOCK</source>
-        <translation>zBSOCK</translation>
+        <source>zBSCK</source>
+        <translation>zBSCK</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1109,8 +1109,8 @@ address</source>
         <translation>您可以查看您的帐户的历史</translation>
     </message>
     <message>
-        <source>Amount of BSOCK and zBSOCK staked.</source>
-        <translation>已加注的BSOCK 和 zBSOCK 金额</translation>
+        <source>Amount of BSCK and zBSCK staked.</source>
+        <translation>已加注的BSCK 和 zBSCK 金额</translation>
     </message>
     <message>
         <source>All</source>
@@ -1165,8 +1165,8 @@ address</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>How to get BSOCK or zBSOCK</source>
-        <translation>如何获取BSOCK 或 zBSOCK</translation>
+        <source>How to get BSCK or zBSCK</source>
+        <translation>如何获取BSCK 或 zBSCK</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1611,16 +1611,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>地址</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Bitstock Masternode you must dedicate 10.000 BSOCK (the unit of Bitstock) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;创建一个Bitstock 主节点，你必须奉献给网络10.000 BSOCK (Bitstock的单位)(但是，这些币仍属于你，永远都是属于你的财产)。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Bitstock Masternode you must dedicate 10.000 BSCK (the unit of Bitstock) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;创建一个Bitstock 主节点，你必须奉献给网络10.000 BSCK (Bitstock的单位)(但是，这些币仍属于你，永远都是属于你的财产)。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
         <translation>确保你有这么多币</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 BSOCK will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 BSOCK的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 BSCK will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 BSCK的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1792,8 +1792,8 @@ Are you sure?</source>
         <translation>主节点配置文件不存在</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 BSOCK required.</source>
-        <translation>没有足够的余额创建主节点，需要10,000 BSOCK。</translation>
+        <source>Not enough balance to create a masternode, 10,000 BSCK required.</source>
+        <translation>没有足够的余额创建主节点，需要10,000 BSCK。</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -2023,45 +2023,45 @@ Are you sure?</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</source>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</source>
         <translation>语言缺失或翻译不完整?帮助贡献翻译在这里:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</translation>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>端口使用&amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BSOCK units to zBSOCK</source>
-        <translation>启动自动铸造BSOCK到zBSOCK</translation>
+        <source>Enable automatic minting of BSCK units to zBSCK</source>
+        <translation>启动自动铸造BSCK到zBSCK</translation>
     </message>
     <message>
-        <source>Enable zBSOCK Automint</source>
-        <translation>启动自动铸造zBSOCK</translation>
+        <source>Enable zBSCK Automint</source>
+        <translation>启动自动铸造zBSCK</translation>
     </message>
     <message>
-        <source>Enable automatic zBSOCK minting from specific addresses</source>
-        <translation>启用从特定地址自动生成zBSOCK</translation>
+        <source>Enable automatic zBSCK minting from specific addresses</source>
+        <translation>启用从特定地址自动生成zBSCK</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>启动自动铸造地址</translation>
     </message>
     <message>
-        <source>Percentage of incoming BSOCK which get automatically converted to zBSOCK via Zerocoin Protocol (min: 10%)</source>
-        <translation>通过零币协议自动转换为zBSOCK的传入BSOCK的百分比(最小:10%)</translation>
+        <source>Percentage of incoming BSCK which get automatically converted to zBSCK via Zerocoin Protocol (min: 10%)</source>
+        <translation>通过零币协议自动转换为zBSCK的传入BSCK的百分比(最小:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zBSOCK</source>
-        <translation>自动铸造的zBSOCK百分比</translation>
+        <source>Percentage of autominted zBSCK</source>
+        <translation>自动铸造的zBSCK百分比</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</source>
-        <translation>等待自动转换为零币，直到足够的BSOCK为这种面额可用</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</source>
+        <translation>等待自动转换为零币，直到足够的BSCK为这种面额可用</translation>
     </message>
     <message>
-        <source>Preferred Automint zBSOCK Denomination</source>
-        <translation>首选自动铸造zBSOCK面额</translation>
+        <source>Preferred Automint zBSCK Denomination</source>
+        <translation>首选自动铸造zBSCK面额</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2439,46 +2439,46 @@ Address: %4
         <translation>铸造</translation>
     </message>
     <message>
-        <source>Minting zBSOCK anonymizes your BSOCK by removing any
+        <source>Minting zBSCK anonymizes your BSCK by removing any
 transaction history, making transactions untraceable </source>
-        <translation>铸造zBSOCK会通过删除任何
-交易历史匿名化您的BSOCK，使交易无法被跟踪</translation>
+        <translation>铸造zBSCK会通过删除任何
+交易历史匿名化您的BSCK，使交易无法被跟踪</translation>
     </message>
     <message>
-        <source>Mint new zBSOCK or convert back to BSOCK</source>
-        <translation>铸造新的zBSOCK或转换回BSOCK</translation>
+        <source>Mint new zBSCK or convert back to BSCK</source>
+        <translation>铸造新的zBSCK或转换回BSCK</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>Mint zBSOCK</source>
-        <translation>铸造zBSOCK</translation>
+        <source>Mint zBSCK</source>
+        <translation>铸造zBSCK</translation>
     </message>
     <message>
-        <source>Enter amount of BSOCK to mint into zBSOCK</source>
-        <translation>输入一定量的BSOCK铸造成zBSOCK</translation>
+        <source>Enter amount of BSCK to mint into zBSCK</source>
+        <translation>输入一定量的BSCK铸造成zBSCK</translation>
     </message>
     <message>
-        <source>Convert back to BSOCK</source>
-        <translation>转换回BSOCK</translation>
+        <source>Convert back to BSCK</source>
+        <translation>转换回BSCK</translation>
     </message>
     <message>
-        <source>Enter amount of zBSOCK to convert back into BSOCK</source>
-        <translation>输入一定量的zBSOCK转换回BSOCK</translation>
+        <source>Enter amount of zBSCK to convert back into BSCK</source>
+        <translation>输入一定量的zBSCK转换回BSCK</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>零币</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance</source>
-        <translation>zBSOCK目前正在维护中</translation>
+        <source>zBSCK is currently undergoing maintenance</source>
+        <translation>zBSCK目前正在维护中</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zBSOCK</source>
-        <translation>你需要解锁钱包才能%1 zBSOCK</translation>
+        <source>You need to unlock the wallet to be able to %1 zBSCK</source>
+        <translation>你需要解锁钱包才能%1 zBSCK</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2493,16 +2493,16 @@ transaction history, making transactions untraceable </source>
         <translation>无效值</translation>
     </message>
     <message>
-        <source>zBSOCK minted successfully</source>
-        <translation>zBSOCK铸造成功</translation>
+        <source>zBSCK minted successfully</source>
+        <translation>zBSCK铸造成功</translation>
     </message>
     <message>
-        <source>zBSOCK converted back to BSOCK</source>
-        <translation>zBSOCK 转换回BSOCK</translation>
+        <source>zBSCK converted back to BSCK</source>
+        <translation>zBSCK 转换回BSCK</translation>
     </message>
     <message>
-        <source>You don't have any BSOCK to select.</source>
-        <translation>您没有任何BSOCK可选择。</translation>
+        <source>You don't have any BSCK to select.</source>
+        <translation>您没有任何BSCK可选择。</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2880,8 +2880,8 @@ transaction history, making transactions untraceable </source>
         <translation>自定义备份路径:</translation>
     </message>
     <message>
-        <source>Custom zBSOCK Backup Path:</source>
-        <translation>自定义zBSOCK备份路径:</translation>
+        <source>Custom zBSCK Backup Path:</source>
+        <translation>自定义zBSCK备份路径:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3126,8 +3126,8 @@ transaction history, making transactions untraceable </source>
         <translation>接收</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive BSOCK.</source>
-        <translation>扫描二维码或复制地址接收BSOCK</translation>
+        <source>Scan the QR code or copy the address to receive BSCK.</source>
+        <translation>扫描二维码或复制地址接收BSCK</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3228,8 +3228,8 @@ transaction history, making transactions untraceable </source>
         <translation>金额</translation>
     </message>
     <message>
-        <source>BSOCK</source>
-        <translation>BSOCK</translation>
+        <source>BSCK</source>
+        <translation>BSCK</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3397,8 +3397,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>发送</translation>
     </message>
     <message>
-        <source>You can transfer public coins (BSOCK) or private coins (zBSOCK)</source>
-        <translation>您可以转换公共币(BSOCK)或私人币(zBSOCK)</translation>
+        <source>You can transfer public coins (BSCK) or private coins (zBSCK)</source>
+        <translation>您可以转换公共币(BSCK)或私人币(zBSCK)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3429,12 +3429,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>花费总金额</translation>
     </message>
     <message>
-        <source>Send BSOCK</source>
-        <translation>花费BSOCK</translation>
+        <source>Send BSCK</source>
+        <translation>花费BSCK</translation>
     </message>
     <message>
-        <source>Send zBSOCK</source>
-        <translation>花费zBSOCK</translation>
+        <source>Send zBSCK</source>
+        <translation>花费zBSCK</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3489,8 +3489,8 @@ These coins will no longer be cold-staked.</source>
         <translation>花费零币</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance.</source>
-        <translation>zBSOCK目前正在维护中</translation>
+        <source>zBSCK is currently undergoing maintenance.</source>
+        <translation>zBSCK目前正在维护中</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3509,12 +3509,12 @@ These coins will no longer be cold-staked.</source>
 %2</translation>
     </message>
     <message>
-        <source>zBSOCK transaction sent!</source>
-        <translation>zBSOCK交易已发送！</translation>
+        <source>zBSCK transaction sent!</source>
+        <translation>zBSCK交易已发送！</translation>
     </message>
     <message>
-        <source>Version 1 zBSOCK require a security level of 100 to successfully spend.</source>
-        <translation>版本1 zBSOCK要求安全级别为100才能成功使用。</translation>
+        <source>Version 1 zBSCK require a security level of 100 to successfully spend.</source>
+        <translation>版本1 zBSCK要求安全级别为100才能成功使用。</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3553,12 +3553,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>定制费用%1</translation>
     </message>
     <message>
-        <source>You don't have any BSOCK to select.</source>
-        <translation>您没有任何BSOCK可供选择。</translation>
+        <source>You don't have any BSCK to select.</source>
+        <translation>您没有任何BSCK可供选择。</translation>
     </message>
     <message>
-        <source>You don't have any zBSOCK in your balance to select.</source>
-        <translation>你的余额中没有zBSOCK可供选择。</translation>
+        <source>You don't have any zBSCK in your balance to select.</source>
+        <translation>你的余额中没有zBSCK可供选择。</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3940,30 +3940,30 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>1）什么是Bitstock?</translation>
     </message>
     <message>
-        <source>2) Why are my BSOCK unspendable?</source>
-        <translation>2) 我的BSOCK为什么不能用？</translation>
+        <source>2) Why are my BSCK unspendable?</source>
+        <translation>2) 我的BSCK为什么不能用？</translation>
     </message>
     <message>
-        <source>3) Bitstock privacy? What is Zerocoin (zBSOCK)?</source>
-        <translation>3）Bitstock 隐私？什么是零币(zBSOCK)？</translation>
+        <source>3) Bitstock privacy? What is Zerocoin (zBSCK)?</source>
+        <translation>3）Bitstock 隐私？什么是零币(zBSCK)？</translation>
     </message>
     <message>
-        <source>4) Why are my zBSOCK unspendable?</source>
-        <translation>4) 我的zBSOCK为什么不能用？</translation>
+        <source>4) Why are my zBSCK unspendable?</source>
+        <translation>4) 我的zBSCK为什么不能用？</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zBSOCK automatically?</source>
+    into zBSCK automatically?</source>
         <translation>5）为什么我的钱包把余额自动转换成
-zBSOCK了?</translation>
+zBSCK了?</translation>
     </message>
     <message>
-        <source>6) How do I receive BSOCK/zBSOCK?</source>
-        <translation>6）如何接收BSOCK/zBSOCK?</translation>
+        <source>6) How do I receive BSCK/zBSCK?</source>
+        <translation>6）如何接收BSCK/zBSCK?</translation>
     </message>
     <message>
-        <source>7) How do I stake BSOCK/zBSOCK?</source>
-        <translation>7）如何加注BSOCK/zBSOCK?</translation>
+        <source>7) How do I stake BSCK/zBSCK?</source>
+        <translation>7）如何加注BSCK/zBSCK?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -3984,7 +3984,7 @@ zBSOCK了?</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  Bitstock incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zBSOCK) and Zerocoin staking.
+                           to implement ZeroCoin(zBSCK) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Bitstock utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of Bitstock to participate in earning block rewards
@@ -3998,7 +3998,7 @@ Bitstock是一种使用区块链技术的数字在线货币
 全球范围内快捷交易，即时，基本为
 零的交易费用。Bitstock是市场上领先的安全和
 隐私加密货币，也是第一个PoS(股权证明)加密货币
-实现零币(zBSOCK)和零币加注。 
+实现零币(zBSCK)和零币加注。 
 &lt;/p&gt;&lt;p align="justify"&gt;
 Bitstock使用了一个股权证明(PoS)一致系统算法，
 允许所有Bitstock的所有者参与赚取区块奖励
@@ -4010,8 +4010,8 @@ Bitstock使用了一个股权证明(PoS)一致系统算法，
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my BSOCK unspendable?</source>
-        <translation>我的BSOCK为什么不能用？</translation>
+        <source>Why are my BSCK unspendable?</source>
+        <translation>我的BSCK为什么不能用？</translation>
     </message>
     <message>
         <source>
@@ -4038,28 +4038,28 @@ Bitstock使用了一个股权证明(PoS)一致系统算法，
         <translation>3</translation>
     </message>
     <message>
-        <source>Bitstock privacy? What is Zerocoin (zBSOCK)?</source>
-        <translation>Bitstock 隐私？什么是零币(zBSOCK)？</translation>
+        <source>Bitstock privacy? What is Zerocoin (zBSCK)?</source>
+        <translation>Bitstock 隐私？什么是零币(zBSCK)？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zBSOCK is an optional privacy-centric method of coin mixing on the
+                           zBSCK is an optional privacy-centric method of coin mixing on the
                            Bitstock blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://Bitstock.org/zpiv/'&gt;
-                           "Bitstock Zerocoin (zBSOCK) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://bitstock.investments/zpiv/'&gt;
+                           "Bitstock Zerocoin (zBSCK) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zBSOCK是一种可选的以隐私为中心的隐私币
+zBSCK是一种可选的以隐私为中心的隐私币
 它是Bitstock区块链的一员，基本上在任何块资源管理器
-所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://Bitstock.org/zpiv/'&gt;
+所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://bitstock.investments/zpiv/'&gt;
 
 你可以阅读更多关于技术方面的文章&lt;/a&gt;
 
-Bitstock零币(zBSOCK)技术文件
+Bitstock零币(zBSCK)技术文件
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4068,20 +4068,20 @@ Bitstock零币(zBSOCK)技术文件
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zBSOCK unspendable?</source>
-        <translation>我的BSOCK为什么不能用？</translation>
+        <source>Why are my zBSCK unspendable?</source>
+        <translation>我的BSCK为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zBSOCK will require 20 confirmations as well as 1
+                           After minting, zBSCK will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-铸币后，zBSOCK将需要20个确认和1个确认
+铸币后，zBSCK将需要20个确认和1个确认
 在网络上增加相同面额的铸币
 才够资格消费。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -4091,32 +4091,32 @@ Bitstock零币(zBSOCK)技术文件
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zBSOCK automatically?</source>
-        <translation>为什么我的钱包会自动将余额转换成zBSOCK ?</translation>
+        <source>Why did my wallet convert the balance into zBSCK automatically?</source>
+        <translation>为什么我的钱包会自动将余额转换成zBSCK ?</translation>
     </message>
     <message>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive BSOCK/zBSOCK?</source>
-        <translation>我怎么接收BSOCK/zBSOCK?</translation>
+        <source>How do I receive BSCK/zBSCK?</source>
+        <translation>我怎么接收BSCK/zBSCK?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zBSOCK can be spent and sent to any Bitstock address. The receiver will
-                           receive standard Bitstock but the origin of the Bitstock is anonymized by the zBSOCK Protocol.
+                           zBSCK can be spent and sent to any Bitstock address. The receiver will
+                           receive standard Bitstock but the origin of the Bitstock is anonymized by the zBSCK Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zBSOCK you will need to mint your balance in the “Privacy” tab.
+                           If you want more zBSCK you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-可以使用zBSOCK并将其发送到任何Bitstock地址。接收机将
-接收标准的Bitstock，但是根据zBSOCK协议，Bitstock的来源是匿名的。
+可以使用zBSCK并将其发送到任何Bitstock地址。接收机将
+接收标准的Bitstock，但是根据zBSCK协议，Bitstock的来源是匿名的。
 &lt;/p&gt;&lt;p align="justify"&gt;
-如果你想要更多的zBSOCK，你将需要在“隐私”标签上铸造你的余额。
+如果你想要更多的zBSCK，你将需要在“隐私”标签上铸造你的余额。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
@@ -4124,8 +4124,8 @@ Bitstock零币(zBSOCK)技术文件
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake BSOCK/zBSOCK?</source>
-        <translation>我怎么加注BSOCK/zBSOCK?</translation>
+        <source>How do I stake BSCK/zBSCK?</source>
+        <translation>我怎么加注BSCK/zBSCK?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4143,7 +4143,7 @@ Bitstock零币(zBSOCK)技术文件
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node Bitstock core wallet with a
-                           requirement of 10,000 BSOCK secured collateral to provide extra services
+                           requirement of 10,000 BSCK secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4175,7 +4175,7 @@ Bitstock零币(zBSOCK)技术文件
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 BSOCK per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 BSCK per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4185,7 +4185,7 @@ Bitstock零币(zBSOCK)技术文件
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 主节点是运行完整节点Bitstock核心钱包的计算机
-需要10,000个BSOCK作抵押以提供额外服务
+需要10,000个BSCK作抵押以提供额外服务
 到网络，会收到一部分的区块奖励作为定期
 回报
 这些服务包括:
@@ -4217,7 +4217,7 @@ Bitstock零币(zBSOCK)技术文件
 要求：
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;每个主节点实例有10,000 BSOCK&lt;/li&gt;
+&lt;li&gt;每个主节点实例有10,000 BSCK&lt;/li&gt;
 &lt;li&gt;必须存储在核心钱包&lt;/li&gt;
 &lt;li&gt;需要专用IP地址&lt;/li&gt;
 主节点钱包保持在线&lt;li&gt;
@@ -5059,12 +5059,12 @@ Are you sure?
         <translation>来自</translation>
     </message>
     <message>
-        <source>480.0685 BSOCK</source>
-        <translation>480.0685 BSOCK</translation>
+        <source>480.0685 BSCK</source>
+        <translation>480.0685 BSCK</translation>
     </message>
     <message>
-        <source>1,000 zBSOCK</source>
-        <translation>1,000 zBSOCK</translation>
+        <source>1,000 zBSCK</source>
+        <translation>1,000 zBSCK</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5075,24 +5075,24 @@ Are you sure?
         <translation>进行当中：</translation>
     </message>
     <message>
-        <source>6.943 BSOCK</source>
-        <translation>6.943 BSOCK</translation>
+        <source>6.943 BSCK</source>
+        <translation>6.943 BSCK</translation>
     </message>
     <message>
         <source>Immature</source>
         <translation>不成熟</translation>
     </message>
     <message>
-        <source>10 BSOCK</source>
-        <translation>10 BSOCK</translation>
+        <source>10 BSCK</source>
+        <translation>10 BSCK</translation>
     </message>
     <message>
-        <source>60 zBSOCK</source>
-        <translation>60 BSOCK</translation>
+        <source>60 zBSCK</source>
+        <translation>60 BSCK</translation>
     </message>
     <message>
-        <source>10 zBSOCK</source>
-        <translation>10 BSOCK</translation>
+        <source>10 zBSCK</source>
+        <translation>10 BSCK</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5408,16 +5408,16 @@ Are you sure?
         <translation>模糊接收</translation>
     </message>
     <message>
-        <source>BSOCK Stake</source>
-        <translation>BSOCK加注</translation>
+        <source>BSCK Stake</source>
+        <translation>BSCK加注</translation>
     </message>
     <message>
-        <source>zBSOCK Stake</source>
-        <translation>zBSOCK 加注</translation>
+        <source>zBSCK Stake</source>
+        <translation>zBSCK 加注</translation>
     </message>
     <message>
-        <source>BSOCK Cold Stake</source>
-        <translation>BSOCK冷饮</translation>
+        <source>BSCK Cold Stake</source>
+        <translation>BSCK冷饮</translation>
     </message>
     <message>
         <source>Stake delegation</source>
@@ -5440,24 +5440,24 @@ Are you sure?
         <translation>模糊创建命名</translation>
     </message>
     <message>
-        <source>Converted BSOCK to zBSOCK</source>
-        <translation>转换BSOCK为zBSOCK</translation>
+        <source>Converted BSCK to zBSCK</source>
+        <translation>转换BSCK为zBSCK</translation>
     </message>
     <message>
-        <source>Spent zBSOCK</source>
-        <translation>已经花费zBSOCK</translation>
+        <source>Spent zBSCK</source>
+        <translation>已经花费zBSCK</translation>
     </message>
     <message>
-        <source>Received BSOCK from zBSOCK</source>
-        <translation>从zBSOCK接收BSOCK</translation>
+        <source>Received BSCK from zBSCK</source>
+        <translation>从zBSCK接收BSCK</translation>
     </message>
     <message>
-        <source>Minted Change as zBSOCK from zBSOCK Spend</source>
-        <translation>铸币的变化，从zBSOCK花费zBSOCK</translation>
+        <source>Minted Change as zBSCK from zBSCK Spend</source>
+        <translation>铸币的变化，从zBSCK花费zBSCK</translation>
     </message>
     <message>
-        <source>Converted zBSOCK to BSOCK</source>
-        <translation>转换BSOCK为zBSOCK</translation>
+        <source>Converted zBSCK to BSCK</source>
+        <translation>转换BSCK为zBSCK</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5551,8 +5551,8 @@ Are you sure?
         <translation>总金额</translation>
     </message>
     <message>
-        <source>2 BSOCK</source>
-        <translation>2 BSOCK</translation>
+        <source>2 BSCK</source>
+        <translation>2 BSCK</translation>
     </message>
     <message>
         <source>Coin inputs:</source>
@@ -5575,8 +5575,8 @@ Are you sure?
         <translation>费用：</translation>
     </message>
     <message>
-        <source>0.0001 BSOCK</source>
-        <translation>0.0001 BSOCK</translation>
+        <source>0.0001 BSCK</source>
+        <translation>0.0001 BSCK</translation>
     </message>
     <message>
         <source>Change address:</source>
@@ -5662,8 +5662,8 @@ Are you sure?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 BSOCK</source>
-        <translation>+0.000585 BSOCK</translation>
+        <source>+0.000585 BSCK</source>
+        <translation>+0.000585 BSCK</translation>
     </message>
 </context>
 <context>
@@ -5673,8 +5673,8 @@ Are you sure?
         <translation>发送币</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSOCK.</source>
-        <translation>SwiftX目前还不支持发送这么高的值。当前的交易限制为%1 BSOCK。</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSCK.</source>
+        <translation>SwiftX目前还不支持发送这么高的值。当前的交易限制为%1 BSCK。</translation>
     </message>
 </context>
 <context>
@@ -5772,8 +5772,8 @@ Bitstock核心钱包</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zBSOCK to Spend</source>
-        <translation>选择zBSOCK 花费</translation>
+        <source>Select zBSCK to Spend</source>
+        <translation>选择zBSCK 花费</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -5808,8 +5808,8 @@ Bitstock核心钱包</translation>
         <translation>选择／删除所有</translation>
     </message>
     <message>
-        <source>Select zBSOCK Denominations to Spend</source>
-        <translation>选择zBSOCK 面额花费</translation>
+        <source>Select zBSCK Denominations to Spend</source>
+        <translation>选择zBSCK 面额花费</translation>
     </message>
 </context>
 <context>
@@ -5871,20 +5871,20 @@ Bitstock核心钱包</translation>
         <translation>启用从特定地址自动生成零币(0-1，默认:%u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zBSOCK minting (0-1, default: %u)</source>
-        <translation>启用每次zBSOCK生成后触发的自动钱包备份(0-1，默认值:%u)</translation>
+        <source>Enable automatic wallet backups triggered after each zBSCK minting (0-1, default: %u)</source>
+        <translation>启用每次zBSCK生成后触发的自动钱包备份(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>启用冷堆叠（0-1，默认值：%u）。 如果累计= 0，则禁用</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BSOCK inputs (0-1, default: %u)</source>
-        <translation>启用或禁用BSOCK输入标记功能(0-1，默认值:%u)</translation>
+        <source>Enable or disable staking functionality for BSCK inputs (0-1, default: %u)</source>
+        <translation>启用或禁用BSCK输入标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zBSOCK inputs (0-1, default: %u)</source>
-        <translation>启用或禁用zBSOCK输入的标记功能(0-1，默认值:%u)</translation>
+        <source>Enable or disable staking functionality for zBSCK inputs (0-1, default: %u)</source>
+        <translation>启用或禁用zBSCK输入的标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5919,12 +5919,12 @@ Bitstock核心钱包</translation>
         <translation>当最佳区块更改时执行命令(cmd中的%s被块散列替换)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>小于此值的费用(以BSOCK/Kb为单位)视为零中继费用(默认值:%s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>小于此值的费用(以BSCK/Kb为单位)视为零中继费用(默认值:%s)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>小于此值的费用(以BSOCK/Kb为单位)被认为是交易创建的零费用(默认值:%s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>小于此值的费用(以BSCK/Kb为单位)被认为是交易创建的零费用(默认值:%s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6043,12 +6043,12 @@ Bitstock核心钱包</translation>
         <translation>无法为这笔交易找到足够的模糊基金。</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>无法找到不等于10000 BSOCK的模糊非计价基金来进行这笔交易。</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>无法找到不等于10000 BSCK的模糊非计价基金来进行这笔交易。</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>无法为这次交易找到不等于10000 BSOCK的足够资金。</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>无法为这次交易找到不等于10000 BSCK的足够资金。</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6099,7 +6099,7 @@ Bitstock核心钱包</translation>
         <translation>您必须在配置中指定一个主节点privkey。有关帮助，请参阅文档。</translation>
     </message>
     <message>
-        <source>(4316 could be used only on mainnet)</source>
+        <source>(8316 could be used only on mainnet)</source>
         <translation>(43013只可在网上使用)</translation>
     </message>
     <message>
@@ -6111,7 +6111,7 @@ Bitstock核心钱包</translation>
         <translation>(默认: 1)</translation>
     </message>
     <message>
-        <source>(must be 4316 for mainnet)</source>
+        <source>(must be 8316 for mainnet)</source>
         <translation>(主网必须为43013)</translation>
     </message>
     <message>
@@ -6343,8 +6343,8 @@ Bitstock核心钱包</translation>
         <translation>读取区块失败</translation>
     </message>
     <message>
-        <source>Fee (in BSOCK/kB) to add to transactions you send (default: %s)</source>
-        <translation>将费用(以BSOCK/kB为单位)添加到您发送的交易中(默认:%s)</translation>
+        <source>Fee (in BSCK/kB) to add to transactions you send (default: %s)</source>
+        <translation>将费用(以BSCK/kB为单位)添加到您发送的交易中(默认:%s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6443,20 +6443,20 @@ Bitstock核心钱包</translation>
         <translation>自动铸造零币的百分比(1-100，默认:%u)</translation>
     </message>
     <message>
-        <source>Recalculating BSOCK supply...</source>
-        <translation>重新计算BSOCK供应量……</translation>
+        <source>Recalculating BSCK supply...</source>
+        <translation>重新计算BSCK供应量……</translation>
     </message>
     <message>
-        <source>Recalculating minted ZBSOCK...</source>
-        <translation>重新计算铸造ZBSOCK……</translation>
+        <source>Recalculating minted ZBSCK...</source>
+        <translation>重新计算铸造ZBSCK……</translation>
     </message>
     <message>
-        <source>Recalculating spent ZBSOCK...</source>
-        <translation>重新计算ZBSOCK……</translation>
+        <source>Recalculating spent ZBSCK...</source>
+        <translation>重新计算ZBSCK……</translation>
     </message>
     <message>
-        <source>Reindex the BSOCK and zBSOCK money supply statistics</source>
-        <translation>重新索引BSOCK和zBSOCK货币供应统计数据</translation>
+        <source>Reindex the BSCK and zBSCK money supply statistics</source>
+        <translation>重新索引BSCK和zBSCK货币供应统计数据</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6535,8 +6535,8 @@ Bitstock核心钱包</translation>
         <translation>自动铸造零币的首选面额(1/5/10/50/100/500/1000/5000)，0为无偏好。默认值: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zBSOCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>指定自定义备份路径，以添加任何自动zBSOCK备份的副本。如果将其设置为dir，则每个备份将生成一个时间戳文件。如果设置为文件，将重写到该文件的每次备份。如果还设置了备份文件，则会进行4次备份</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBSCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>指定自定义备份路径，以添加任何自动zBSCK备份的副本。如果将其设置为dir，则每个备份将生成一个时间戳文件。如果设置为文件，将重写到该文件的每次备份。如果还设置了备份文件，则会进行4次备份</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6967,8 +6967,8 @@ Bitstock核心钱包</translation>
         <translation>正在同步分叉...</translation>
     </message>
     <message>
-        <source>Syncing zBSOCK wallet...</source>
-        <translation>正在同步zBSOCK钱包……</translation>
+        <source>Syncing zBSCK wallet...</source>
+        <translation>正在同步zBSCK钱包……</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7083,8 +7083,8 @@ Bitstock核心钱包</translation>
         <translation>JSON-RPC连接的用户名</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zBSOCK</source>
-        <translation>值小于zBSOCK的最小可用面额(= 1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBSCK</source>
+        <translation>值小于zBSCK的最小可用面额(= 1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

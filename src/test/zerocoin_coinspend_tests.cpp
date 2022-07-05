@@ -40,7 +40,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_wrapped_serial_spend_test)
     std::string strWalletFile = "unittestwallet.dat";
     CWalletDB walletdb(strWalletFile, "cr+");
     CWallet wallet(strWalletFile);
-    CzBSOCKWallet *czBSOCKWallet = new CzBSOCKWallet(wallet.strWalletFile);
+    CzBSCKWallet *czBSCKWallet = new CzBSCKWallet(wallet.strWalletFile);
 
     // Get the 5 created mints.
     libzerocoin::CoinDenomination denom = libzerocoin::CoinDenomination::ZQ_FIFTY;
@@ -48,8 +48,8 @@ BOOST_AUTO_TEST_CASE(zerocoin_wrapped_serial_spend_test)
     for (unsigned int i = 0; i < TESTS_COINS_TO_ACCUMULATE; i++) {
         libzerocoin::PrivateCoin coin(ZCParams, denom, false);
         CDeterministicMint dMint;
-        czBSOCKWallet->GenerateDeterministicZBSOCK(denom, coin, dMint, true);
-        czBSOCKWallet->UpdateCount();
+        czBSCKWallet->GenerateDeterministicZBSCK(denom, coin, dMint, true);
+        czBSCKWallet->UpdateCount();
         vCoins.emplace_back(coin);
     }
 

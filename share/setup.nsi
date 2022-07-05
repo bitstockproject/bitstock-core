@@ -6,7 +6,7 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define COMPANY "Bitstock Core project"
-!define URL https://www.bitstock.org
+!define URL https://www.bitstock.investments
 
 # MUI Symbol Definitions
 !define MUI_ICON "/home/vm/Crypto/Bitstock/share/pixmaps/bitstock.ico"

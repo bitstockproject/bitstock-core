@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
-#ifndef Bitstock_ZBSOCKMODULE_H
-#define Bitstock_ZBSOCKMODULE_H
+#ifndef Bitstock_ZBSCKMODULE_H
+#define Bitstock_ZBSCKMODULE_H
 
 #include "libzerocoin/bignum.h"
 #include "libzerocoin/Denominations.h"
@@ -81,7 +81,7 @@ public:
 
 class CValidationState;
 
-namespace ZBSOCKModule {
+namespace ZBSCKModule {
     bool createInput(CTxIn &in, CZerocoinMint& mint, uint256 hashTxOut, const int spendVersion);
     PublicCoinSpend parseCoinSpend(const CTxIn &in);
     bool parseCoinSpend(const CTxIn &in, const CTransaction& tx, const CTxOut &prevOut, PublicCoinSpend& publicCoinSpend);
@@ -99,4 +99,4 @@ namespace ZBSOCKModule {
 };
 
 
-#endif //Bitstock_ZBSOCKMODULE_H
+#endif //Bitstock_ZBSCKMODULE_H

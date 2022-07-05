@@ -200,16 +200,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSOCKs from being stolen by malware infecting your computer.</source>
-        <translation>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSOCKs from being stolen by malware infecting your computer.</translation>
+        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSCKs from being stolen by malware infecting your computer.</source>
+        <translation>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSCKs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSOCK&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSOCK&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSCK&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSCK&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -611,8 +611,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zBSOCK</source>
-        <translation>zBSOCK</translation>
+        <source>zBSCK</source>
+        <translation>zBSCK</translation>
     </message>
     <message>
         <source>All</source>
@@ -1053,37 +1053,37 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</source>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</translation>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BSOCK units to zBSOCK</source>
-        <translation>Enable automatic minting of BSOCK units to zBSOCK</translation>
+        <source>Enable automatic minting of BSCK units to zBSCK</source>
+        <translation>Enable automatic minting of BSCK units to zBSCK</translation>
     </message>
     <message>
-        <source>Enable zBSOCK Automint</source>
-        <translation>Enable zBSOCK Automint</translation>
+        <source>Enable zBSCK Automint</source>
+        <translation>Enable zBSCK Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming BSOCK which get automatically converted to zBSOCK via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage of incoming BSOCK which get automatically converted to zBSOCK via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming BSCK which get automatically converted to zBSCK via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage of incoming BSCK which get automatically converted to zBSCK via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zBSOCK</source>
-        <translation>Percentage of autominted zBSOCK</translation>
+        <source>Percentage of autominted zBSCK</source>
+        <translation>Percentage of autominted zBSCK</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</source>
-        <translation>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</source>
+        <translation>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</translation>
     </message>
     <message>
-        <source>Preferred Automint zBSOCK Denomination</source>
-        <translation>Preferred Automint zBSOCK Denomination</translation>
+        <source>Preferred Automint zBSCK Denomination</source>
+        <translation>Preferred Automint zBSCK Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1686,8 +1686,8 @@ Address: %4
         <translation>Custom Backup Path:</translation>
     </message>
     <message>
-        <source>Custom zBSOCK Backup Path:</source>
-        <translation>Custom zBSOCK Backup Path:</translation>
+        <source>Custom zBSCK Backup Path:</source>
+        <translation>Custom zBSCK Backup Path:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1978,12 +1978,12 @@ Address: %4
         <translation>Spend Zerocoin</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance.</source>
-        <translation>zBSOCK is currently undergoing maintenance.</translation>
+        <source>zBSCK is currently undergoing maintenance.</source>
+        <translation>zBSCK is currently undergoing maintenance.</translation>
     </message>
     <message>
-        <source>Version 1 zBSOCK require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zBSOCK require a security level of 100 to successfully spend.</translation>
+        <source>Version 1 zBSCK require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zBSCK require a security level of 100 to successfully spend.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2774,12 +2774,12 @@ Please check the address and try again.</translation>
         <translation>Received via Obfuscation</translation>
     </message>
     <message>
-        <source>BSOCK Stake</source>
-        <translation>BSOCK Stake</translation>
+        <source>BSCK Stake</source>
+        <translation>BSCK Stake</translation>
     </message>
     <message>
-        <source>zBSOCK Stake</source>
-        <translation>zBSOCK Stake</translation>
+        <source>zBSCK Stake</source>
+        <translation>zBSCK Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2798,24 +2798,24 @@ Please check the address and try again.</translation>
         <translation>Obfuscation Create Denominations</translation>
     </message>
     <message>
-        <source>Converted BSOCK to zBSOCK</source>
-        <translation>Converted BSOCK to zBSOCK</translation>
+        <source>Converted BSCK to zBSCK</source>
+        <translation>Converted BSCK to zBSCK</translation>
     </message>
     <message>
-        <source>Spent zBSOCK</source>
-        <translation>Spent zBSOCK</translation>
+        <source>Spent zBSCK</source>
+        <translation>Spent zBSCK</translation>
     </message>
     <message>
-        <source>Received BSOCK from zBSOCK</source>
-        <translation>Received BSOCK from zBSOCK</translation>
+        <source>Received BSCK from zBSCK</source>
+        <translation>Received BSCK from zBSCK</translation>
     </message>
     <message>
-        <source>Minted Change as zBSOCK from zBSOCK Spend</source>
-        <translation>Minted Change as zBSOCK from zBSOCK Spend</translation>
+        <source>Minted Change as zBSCK from zBSCK Spend</source>
+        <translation>Minted Change as zBSCK from zBSCK Spend</translation>
     </message>
     <message>
-        <source>Converted zBSOCK to BSOCK</source>
-        <translation>Converted zBSOCK to BSOCK</translation>
+        <source>Converted zBSCK to BSCK</source>
+        <translation>Converted zBSCK to BSCK</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2911,8 +2911,8 @@ Please check the address and try again.</translation>
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSOCK.</source>
-        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSOCK.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSCK.</source>
+        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSCK.</translation>
     </message>
 </context>
 <context>
@@ -2936,8 +2936,8 @@ Please check the address and try again.</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zBSOCK to Spend</source>
-        <translation>Select zBSOCK to Spend</translation>
+        <source>Select zBSCK to Spend</source>
+        <translation>Select zBSCK to Spend</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3015,16 +3015,16 @@ Please check the address and try again.</translation>
         <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zBSOCK minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zBSOCK minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zBSCK minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zBSCK minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BSOCK inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for BSOCK inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for BSCK inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for BSCK inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zBSOCK inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zBSOCK inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zBSCK inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zBSCK inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3059,12 +3059,12 @@ Please check the address and try again.</translation>
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in BSOCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in BSCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in BSOCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in BSCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3171,12 +3171,12 @@ Please check the address and try again.</translation>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSOCK.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSCK.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 BSOCK.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 BSCK.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3223,8 +3223,8 @@ Please check the address and try again.</translation>
         <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
-        <source>(4316 could be used only on mainnet)</source>
-        <translation>(4316 could be used only on mainnet)</translation>
+        <source>(8316 could be used only on mainnet)</source>
+        <translation>(8316 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3235,8 +3235,8 @@ Please check the address and try again.</translation>
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 4316 for mainnet)</source>
-        <translation>(must be 4316 for mainnet)</translation>
+        <source>(must be 8316 for mainnet)</source>
+        <translation>(must be 8316 for mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -3455,8 +3455,8 @@ Please check the address and try again.</translation>
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in BSOCK/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in BSOCK/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in BSCK/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in BSCK/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -3555,8 +3555,8 @@ Please check the address and try again.</translation>
         <translation>Percentage of automatically minted Zerocoin  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the BSOCK and zBSOCK money supply statistics</source>
-        <translation>Reindex the BSOCK and zBSOCK money supply statistics</translation>
+        <source>Reindex the BSCK and zBSCK money supply statistics</source>
+        <translation>Reindex the BSCK and zBSCK money supply statistics</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3631,8 +3631,8 @@ Please check the address and try again.</translation>
         <translation>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zBSOCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zBSOCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBSCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zBSCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4035,8 +4035,8 @@ Please check the address and try again.</translation>
         <translation>Synchronising sporks...</translation>
     </message>
     <message>
-        <source>Syncing zBSOCK wallet...</source>
-        <translation>Syncing zBSOCK wallet...</translation>
+        <source>Syncing zBSCK wallet...</source>
+        <translation>Syncing zBSCK wallet...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4147,8 +4147,8 @@ Please check the address and try again.</translation>
         <translation>Username for JSON-RPC connections</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zBSOCK</source>
-        <translation>Value is below the smallest available denomination (= 1) of zBSOCK</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBSCK</source>
+        <translation>Value is below the smallest available denomination (= 1) of zBSCK</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

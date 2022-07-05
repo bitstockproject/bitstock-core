@@ -335,7 +335,6 @@ BITCOIN_QT_H = \
   qt/bitstock/splash.h
 
 RES_ICONS = \
-  qt/res/icons/add.png \
   qt/res/icons/address-book.png \
   qt/res/icons/automint_active.png \
   qt/res/icons/automint_inactive.png \
@@ -344,7 +343,6 @@ RES_ICONS = \
   qt/res/icons/bitcoin_testnet.ico \
   qt/res/icons/bitcoin_testnet.png \
   qt/res/icons/bitcoin_regtest.png \
-  qt/res/icons/browse.png \
   qt/res/icons/clock1.png \
   qt/res/icons/clock2.png \
   qt/res/icons/clock3.png \
@@ -360,7 +358,6 @@ RES_ICONS = \
   qt/res/icons/edit.png \
   qt/res/icons/editcopy.png \
   qt/res/icons/editpaste.png \
-  qt/res/icons/explorer.png \
   qt/res/icons/export.png \
   qt/res/icons/eye.png \
   qt/res/icons/eye_minus.png \
@@ -374,7 +371,6 @@ RES_ICONS = \
   qt/res/icons/onion.png \
   qt/res/icons/overview.png \
   qt/res/icons/qrcode.png \
-  qt/res/icons/quit.png \
   qt/res/icons/receive.png \
   qt/res/icons/receive_dark.png \
   qt/res/icons/privacy.png \
@@ -398,16 +394,9 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-mint.svg \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
-  qt/res/icons/unit_bitstock.png \
-  qt/res/icons/unit_mbitstock.png \
-  qt/res/icons/unit_ubitstock.png \
-  qt/res/icons/unit_tbitstock.png \
-  qt/res/icons/unit_tmbitstock.png \
-  qt/res/icons/unit_tubitstock.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
   qt/res/icons/abstainvote.png \
-  qt/bitstock/res/img/bg-dashboard-banner.png \
   qt/bitstock/res/img/bg-multi-number-dark.svg \
   qt/bitstock/res/img/ic-check-locked.svg \
   qt/bitstock/res/img/ic-nav-address.svg \
@@ -418,7 +407,6 @@ RES_ICONS = \
   qt/bitstock/res/img/ic-nav-cold-staking-active.svg \
   qt/bitstock/res/img/ic-nav-dashboard-active.svg \
   qt/bitstock/res/img/ic-wallet-status-locked.svg \
-  qt/bitstock/res/img/bg-splash.svg \
   qt/bitstock/res/img/bg-splash.png \
   qt/bitstock/res/img/ic-check-mint.svg \
   qt/bitstock/res/img/ic-nav-dashboard-hover.svg \
@@ -429,22 +417,13 @@ RES_ICONS = \
   qt/bitstock/res/img/ic-check-peers.svg \
   qt/bitstock/res/img/ic-nav-master-active.svg \
   qt/bitstock/res/img/ic-watch-password-white.svg \
-  qt/bitstock/res/img/bg-welcome-container.jpg \
   qt/bitstock/res/img/bg-welcome-container.png \
-  qt/bitstock/res/img/bg-welcome-container.svg \
-  qt/bitstock/res/img/bg-welcome-container@2x.png \
-  qt/bitstock/res/img/bg-welcome-container@3x.png \
   qt/bitstock/res/img/ic-check-staking-off.svg \
   qt/bitstock/res/img/ic-nav-master-hover.svg \
   qt/bitstock/res/img/ic-watch-password.svg \
-  qt/bitstock/res/img/bg-welcome.jpg \
-  qt/bitstock/res/img/bg-welcome.svg \
-  qt/bitstock/res/img/bg-welcome@2x.jpg \
-  qt/bitstock/res/img/bg-welcome@3x.jpg \
   qt/bitstock/res/img/bg-welcome.png \
   qt/bitstock/res/img/ic-check-staking.svg \
   qt/bitstock/res/img/ic-nav-master.svg \
-  qt/bitstock/res/img/img-dashboard-banner.jpg \
   qt/bitstock/res/img/btn-radio-active.svg \
   qt/bitstock/res/img/ic-check-sync-off.svg \
   qt/bitstock/res/img/ic-nav-privacy-active.svg \
@@ -514,16 +493,12 @@ RES_ICONS = \
   qt/bitstock/res/img/ic-arrow-drop-up.svg \
   qt/bitstock/res/img/ic-coin-zpiv.svg \
   qt/bitstock/res/img/ic-received.svg \
-  qt/bitstock/res/img/img-logo-bitstock.png \
   qt/bitstock/res/img/ic-arrow-drop-white-down.svg \
   qt/bitstock/res/img/ic-combo-box.svg \
   qt/bitstock/res/img/ic-send.svg \
-  qt/bitstock/res/img/img-logo-bitstock@2x.png \
   qt/bitstock/res/img/ic-arrow-purple-down.svg \
   qt/bitstock/res/img/ic-connect.svg \
   qt/bitstock/res/img/ic-submenu-lock.svg \
-  qt/bitstock/res/img/img-logo-bitstock@3x.png \
-  qt/bitstock/res/img/img-logo-bitstock.svg \
   qt/bitstock/res/img/ic-arrow-right-white.svg \
   qt/bitstock/res/img/ic-arrow-left-white.svg \
   qt/bitstock/res/img/ic-arrow-left.svg \
@@ -539,7 +514,6 @@ RES_ICONS = \
   qt/bitstock/res/img/ic-arrow-white-left.svg \
   qt/bitstock/res/img/ic-exit.svg \
   qt/bitstock/res/img/ic-switch-liliac-on.svg \
-  qt/bitstock/res/img/img-nav-logo.svg \
   qt/bitstock/res/img/ic-arrow-white-right.svg \
   qt/bitstock/res/img/ic-expand.svg \
   qt/bitstock/res/img/ic-switch-off.svg \
@@ -732,7 +706,6 @@ BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
 endif
 
 RES_IMAGES = \
-  qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
   qt/res/images/splash_regtest.png \

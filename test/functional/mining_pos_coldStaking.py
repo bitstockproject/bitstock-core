@@ -286,7 +286,7 @@ class Bitstock_ColdStakingTest(BitstockTestFramework):
         assert_greater_than(len(stakeInputs), 0)
         # Create the block
         new_block = self.stake_next_block(1, stakeInputs, None, staker_privkey)
-        # Add output (dummy key address) to coinstake (taking 100 BSOCK from the pot)
+        # Add output (dummy key address) to coinstake (taking 100 BSCK from the pot)
         self.add_output_to_coinstake(new_block, 100)
         self.log.info("New block created (rawtx) by cold-staking. Trying to submit...")
         # Try to submit the block

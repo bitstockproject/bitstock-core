@@ -257,7 +257,7 @@ static void http_request_cb(struct evhttp_request* req, void* arg)
 
     // Early address-based allow check
     if (!ClientAllowed(hreq->GetPeer())) {
-        hreq->WriteReply(HTTP_FORBSOCKDEN);
+        hreq->WriteReply(HTTP_FORBSCKDEN);
         return;
     }
 

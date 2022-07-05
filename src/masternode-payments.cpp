@@ -321,7 +321,7 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
 }
 
 
-void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake, bool fZBSOCKStake)
+void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake, bool fZBSCKStake)
 {
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
@@ -329,7 +329,7 @@ void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStak
     if (sporkManager.IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) && budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1)) {
         budget.FillBlockPayee(txNew, nFees, fProofOfStake);
     } else {
-        masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake, fZBSOCKStake);
+        masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake, fZBSCKStake);
     }
 }
 
@@ -342,7 +342,7 @@ std::string GetRequiredPaymentsString(int nBlockHeight)
     }
 }
 
-void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake, bool fZBSOCKStake)
+void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake, bool fZBSCKStake)
 {
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
@@ -363,7 +363,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     }
 
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
-    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZBSOCKStake);
+    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZBSCKStake);
 
     if (hasPayment) {
         if (fProofOfStake) {
@@ -374,6 +374,14 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
              */
             unsigned int i = txNew.vout.size();
             txNew.vout.resize(i + 1);
+
+            CAmount nDevReward = GetDevPayment(pindexPrev->nHeight + 1, blockValue);;
+            if (nDevReward > 0) {
+                CTxDestination destination = CBitcoinAddress(Params().DevAddress()).Get();
+                CScript DEV_SCRIPT = GetScriptForDestination(destination);
+                txNew.vout.push_back(CTxOut(nDevReward, CScript(DEV_SCRIPT.begin(), DEV_SCRIPT.end())));
+            }
+
             txNew.vout[i].scriptPubKey = payee;
             txNew.vout[i].nValue = masternodePayment;
 
@@ -381,12 +389,12 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
             if (!txNew.vout[1].IsZerocoinMint()) {
                 if (i == 2) {
                     // Majority of cases; do it quick and move on
-                    txNew.vout[i - 1].nValue -= masternodePayment;
+                    txNew.vout[i - 1].nValue -= masternodePayment + nDevReward;
                 } else if (i > 2) {
                     // special case, stake is split between (i-1) outputs
                     unsigned int outputs = i-1;
-                    CAmount mnPaymentSplit = masternodePayment / outputs;
-                    CAmount mnPaymentRemainder = masternodePayment - (mnPaymentSplit * outputs);
+                    CAmount mnPaymentSplit = (masternodePayment + nDevReward) / outputs;
+                    CAmount mnPaymentRemainder = (masternodePayment + nDevReward) - (mnPaymentSplit * outputs);
                     for (unsigned int j=1; j<=outputs; j++) {
                         txNew.vout[j].nValue -= mnPaymentSplit;
                     }
@@ -406,6 +414,20 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         CBitcoinAddress address2(address1);
 
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
+    } else {
+        if (fProofOfStake) {
+            unsigned int i = txNew.vout.size();
+
+            CAmount nDevReward = GetDevPayment(pindexPrev->nHeight + 1, blockValue);;
+            if (nDevReward > 0) {
+                CTxDestination destination = CBitcoinAddress(Params().DevAddress()).Get();
+                CScript DEV_SCRIPT = GetScriptForDestination(destination);
+                txNew.vout.push_back(CTxOut(nDevReward, CScript(DEV_SCRIPT.begin(), DEV_SCRIPT.end())));
+            }
+
+            // subtract dev payment from the stake reward
+            txNew.vout[i - 1].nValue -= nDevReward;
+        }
     }
 }
 

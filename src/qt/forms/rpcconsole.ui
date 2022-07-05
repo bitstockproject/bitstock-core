@@ -1333,7 +1333,7 @@
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>Custom zBSOCK Backup Path:</string>
+          <string>Custom zBSCK Backup Path:</string>
          </property>
         </widget>
        </item>

@@ -66,7 +66,7 @@ CoinControlDialog::CoinControlDialog(QWidget* parent, bool fMultisigEnabled) : Q
 
     // Title
 
-    ui->labelTitle->setText("Select BSOCK Denominations to Spend");
+    ui->labelTitle->setText("Select BSCK Denominations to Spend");
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
     // Label Style
@@ -685,7 +685,7 @@ void CoinControlDialog::updateLabels(WalletModel* model, QDialog* dialog)
     }
 
     // actually update labels
-    int nDisplayUnit = BitcoinUnits::BSOCK;
+    int nDisplayUnit = BitcoinUnits::BSCK;
     if (model && model->getOptionsModel())
         nDisplayUnit = model->getOptionsModel()->getDisplayUnit();
 

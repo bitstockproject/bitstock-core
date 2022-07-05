@@ -42,7 +42,7 @@ ReceiveWidget::ReceiveWidget(BitstockGUI* parent) :
 
     // Title
     ui->labelTitle->setText(tr("Receive"));
-    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive BSOCK."));
+    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive BSCK."));
     setCssTitleScreen(ui->labelTitle);
     setCssSubtitleScreen(ui->labelSubtitle1);
 

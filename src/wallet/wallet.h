@@ -89,30 +89,30 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 BSOCK at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 BSCK at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zBSOCK send
+// Possible states for zBSCK send
 enum ZerocoinSpendStatus {
-    ZBSOCK_SPEND_OKAY = 0,                            // No error
-    ZBSOCK_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZBSOCK_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZBSOCK_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZBSOCK_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZBSOCK_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZBSOCK_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZBSOCK_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZBSOCK_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZBSOCK_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZBSOCK_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZBSOCK_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZBSOCK_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZBSOCK_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZBSOCK_SPENT_USED_ZBSOCK = 14,                      // Coin has already been spend
-    ZBSOCK_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
-    ZBSOCK_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    ZBSCK_SPEND_OKAY = 0,                            // No error
+    ZBSCK_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZBSCK_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZBSCK_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZBSCK_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZBSCK_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZBSCK_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZBSCK_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZBSCK_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZBSCK_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZBSCK_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZBSCK_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZBSCK_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZBSCK_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZBSCK_SPENT_USED_ZBSCK = 14,                      // Coin has already been spend
+    ZBSCK_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
+    ZBSCK_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
 
 struct CompactTallyItem {
@@ -257,7 +257,7 @@ public:
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, std::list<CDeterministicMint>& listDMintsRestored);
     void ZPivBackupWallet();
     bool GetZerocoinKey(const CBigNum& bnSerial, CKey& key);
-    bool CreateZBSOCKOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
+    bool CreateZBSCKOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
     bool GetMint(const uint256& hashSerial, CZerocoinMint& mint);
     bool GetMintFromStakeHash(const uint256& hashStake, CZerocoinMint& mint);
     bool DatabaseMint(CDeterministicMint& dMint);
@@ -280,7 +280,7 @@ public:
      */
     mutable CCriticalSection cs_wallet;
 
-    CzBSOCKWallet* zwalletMain;
+    CzBSCKWallet* zwalletMain;
 
     std::set<CBitcoinAddress> setAutoConvertAddresses;
 
@@ -288,7 +288,7 @@ public:
     bool fWalletUnlockAnonymizeOnly;
     std::string strWalletFile;
     bool fBackupMints;
-    std::unique_ptr<CzBSOCKTracker> zpivTracker;
+    std::unique_ptr<CzBSCKTracker> zpivTracker;
 
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
@@ -320,8 +320,8 @@ public:
     ~CWallet();
     void SetNull();
     int getZeromintPercentage();
-    void setZWallet(CzBSOCKWallet* zwallet);
-    CzBSOCKWallet* getZWallet();
+    void setZWallet(CzBSCKWallet* zwallet);
+    CzBSCKWallet* getZWallet();
     bool isZeromintEnabled();
     void setZPivAutoBackups(bool fEnabled);
     bool isMultiSendEnabled();
@@ -358,7 +358,7 @@ public:
     std::map<CBitcoinAddress, std::vector<COutput> > AvailableCoinsByAddress(bool fConfirmed = true, CAmount maxCoinValue = 0);
     bool SelectCoinsMinConf(const CAmount& nTargetValue, int nConfMine, int nConfTheirs, std::vector<COutput> vCoins, std::set<std::pair<const CWalletTx*, unsigned int> >& setCoinsRet, CAmount& nValueRet) const;
 
-    /// Get 10000 BSOCK output and keys which can be used for the Masternode
+    /// Get 10000 BSCK output and keys which can be used for the Masternode
     bool GetMasternodeVinAndKeys(CTxIn& txinRet, CPubKey& pubKeyRet, CKey& keyRet, std::string strTxHash = "", std::string strOutputIndex = "");
     /// Extract txin information and keys from output
     bool GetVinAndKeysFromOutput(COutput out, CTxIn& txinRet, CPubKey& pubKeyRet, CKey& keyRet, bool fColdStake = false);
@@ -575,8 +575,8 @@ public:
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 
-    /** zBSOCK reset */
-    boost::signals2::signal<void()> NotifyzBSOCKReset;
+    /** zBSCK reset */
+    boost::signals2::signal<void()> NotifyzBSCKReset;
 
     /** notify wallet file backed up */
     boost::signals2::signal<void (const bool& fSuccess, const std::string& filename)> NotifyWalletBacked;

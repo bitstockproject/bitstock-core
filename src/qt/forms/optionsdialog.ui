@@ -141,20 +141,20 @@
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintEnable">
               <property name="toolTip">
-               <string>Enable automatic minting of BSOCK units to zBSOCK</string>
+               <string>Enable automatic minting of BSCK units to zBSCK</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>Enable zBSOCK Automint</string>
+               <string>Enable zBSCK Automint</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintAddresses">
               <property name="toolTip">
-               <string>Enable automatic zBSOCK minting from specific addresses</string>
+               <string>Enable automatic zBSCK minting from specific addresses</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
@@ -171,10 +171,10 @@
             <item>
              <widget class="QLabel" name="percentage_label">
               <property name="toolTip">
-               <string>Percentage of incoming BSOCK which get automatically converted to zBSOCK via Zerocoin Protocol (min: 10%)</string>
+               <string>Percentage of incoming BSCK which get automatically converted to zBSCK via Zerocoin Protocol (min: 10%)</string>
               </property>
               <property name="text">
-               <string>Percentage of autominted zBSOCK</string>
+               <string>Percentage of autominted zBSCK</string>
               </property>
              </widget>
             </item>
@@ -204,10 +204,10 @@
                </size>
               </property>
               <property name="toolTip">
-               <string>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</string>
+               <string>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</string>
               </property>
               <property name="text">
-               <string>Preferred Automint zBSOCK Denomination</string>
+               <string>Preferred Automint zBSCK Denomination</string>
               </property>
              </widget>
             </item>
@@ -220,7 +220,7 @@
                </size>
               </property>
               <property name="toolTip">
-               <string>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</string>
+               <string>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</string>
               </property>
               <property name="maxVisibleItems">
                <number>9</number>
@@ -532,7 +532,8 @@
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>Language missing or translation incomplete? Help contributing translations</string>
+          <string>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

@@ -760,12 +760,12 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/locale/bitstock_sv.ts qt/locale/bitstock_tr.ts \
 	qt/locale/bitstock_uk.ts qt/locale/bitstock_vi.ts \
 	qt/locale/bitstock_zh_CN.ts qt/locale/bitstock_zh_TW.ts \
-	qt/paymentrequest.proto qt/res/icons/add.png \
+	qt/paymentrequest.proto \
 	qt/res/icons/address-book.png qt/res/icons/automint_active.png \
 	qt/res/icons/automint_inactive.png qt/res/icons/bitcoin.ico \
 	qt/res/icons/bitcoin.png qt/res/icons/bitcoin_testnet.ico \
 	qt/res/icons/bitcoin_testnet.png \
-	qt/res/icons/bitcoin_regtest.png qt/res/icons/browse.png \
+	qt/res/icons/bitcoin_regtest.png \
 	qt/res/icons/clock1.png qt/res/icons/clock2.png \
 	qt/res/icons/clock3.png qt/res/icons/clock4.png \
 	qt/res/icons/clock5.png qt/res/icons/configure.png \
@@ -773,14 +773,14 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/connect2_16.png qt/res/icons/connect3_16.png \
 	qt/res/icons/connect4_16.png qt/res/icons/debugwindow.png \
 	qt/res/icons/edit.png qt/res/icons/editcopy.png \
-	qt/res/icons/editpaste.png qt/res/icons/explorer.png \
+	qt/res/icons/editpaste.png \
 	qt/res/icons/export.png qt/res/icons/eye.png \
 	qt/res/icons/eye_minus.png qt/res/icons/eye_plus.png \
 	qt/res/icons/filesave.png qt/res/icons/history.png \
 	qt/res/icons/key.png qt/res/icons/lock_closed.png \
 	qt/res/icons/lock_open.png qt/res/icons/masternodes.png \
 	qt/res/icons/onion.png qt/res/icons/overview.png \
-	qt/res/icons/qrcode.png qt/res/icons/quit.png \
+	qt/res/icons/qrcode.png \
 	qt/res/icons/receive.png qt/res/icons/receive_dark.png \
 	qt/res/icons/privacy.png qt/res/icons/remove.png \
 	qt/res/icons/send.png qt/res/icons/send_dark.png \
@@ -796,14 +796,8 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/ic-transaction-mint.svg \
 	qt/res/icons/ic-transaction-sent.svg \
 	qt/res/icons/ic-transaction-staked.svg \
-	qt/res/icons/unit_bitstock.png \
-	qt/res/icons/unit_mbitstock.png \
-	qt/res/icons/unit_ubitstock.png \
-	qt/res/icons/unit_tbitstock.png \
-	qt/res/icons/unit_tmbitstock.png \
-	qt/res/icons/unit_tubitstock.png qt/res/icons/yesvote.png \
+	qt/res/icons/yesvote.png \
 	qt/res/icons/novote.png qt/res/icons/abstainvote.png \
-	qt/bitstock/res/img/bg-dashboard-banner.png \
 	qt/bitstock/res/img/bg-multi-number-dark.svg \
 	qt/bitstock/res/img/ic-check-locked.svg \
 	qt/bitstock/res/img/ic-nav-address.svg \
@@ -814,7 +808,6 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/bitstock/res/img/ic-nav-cold-staking-active.svg \
 	qt/bitstock/res/img/ic-nav-dashboard-active.svg \
 	qt/bitstock/res/img/ic-wallet-status-locked.svg \
-	qt/bitstock/res/img/bg-splash.svg \
 	qt/bitstock/res/img/bg-splash.png \
 	qt/bitstock/res/img/ic-check-mint.svg \
 	qt/bitstock/res/img/ic-nav-dashboard-hover.svg \
@@ -825,22 +818,13 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/bitstock/res/img/ic-check-peers.svg \
 	qt/bitstock/res/img/ic-nav-master-active.svg \
 	qt/bitstock/res/img/ic-watch-password-white.svg \
-	qt/bitstock/res/img/bg-welcome-container.jpg \
 	qt/bitstock/res/img/bg-welcome-container.png \
-	qt/bitstock/res/img/bg-welcome-container.svg \
-	qt/bitstock/res/img/bg-welcome-container@2x.png \
-	qt/bitstock/res/img/bg-welcome-container@3x.png \
 	qt/bitstock/res/img/ic-check-staking-off.svg \
 	qt/bitstock/res/img/ic-nav-master-hover.svg \
 	qt/bitstock/res/img/ic-watch-password.svg \
-	qt/bitstock/res/img/bg-welcome.jpg \
-	qt/bitstock/res/img/bg-welcome.svg \
-	qt/bitstock/res/img/bg-welcome@2x.jpg \
-	qt/bitstock/res/img/bg-welcome@3x.jpg \
 	qt/bitstock/res/img/bg-welcome.png \
 	qt/bitstock/res/img/ic-check-staking.svg \
 	qt/bitstock/res/img/ic-nav-master.svg \
-	qt/bitstock/res/img/img-dashboard-banner.jpg \
 	qt/bitstock/res/img/btn-radio-active.svg \
 	qt/bitstock/res/img/ic-check-sync-off.svg \
 	qt/bitstock/res/img/ic-nav-privacy-active.svg \
@@ -910,16 +894,12 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/bitstock/res/img/ic-arrow-drop-up.svg \
 	qt/bitstock/res/img/ic-coin-zpiv.svg \
 	qt/bitstock/res/img/ic-received.svg \
-	qt/bitstock/res/img/img-logo-bitstock.png \
 	qt/bitstock/res/img/ic-arrow-drop-white-down.svg \
 	qt/bitstock/res/img/ic-combo-box.svg \
 	qt/bitstock/res/img/ic-send.svg \
-	qt/bitstock/res/img/img-logo-bitstock@2x.png \
 	qt/bitstock/res/img/ic-arrow-purple-down.svg \
 	qt/bitstock/res/img/ic-connect.svg \
 	qt/bitstock/res/img/ic-submenu-lock.svg \
-	qt/bitstock/res/img/img-logo-bitstock@3x.png \
-	qt/bitstock/res/img/img-logo-bitstock.svg \
 	qt/bitstock/res/img/ic-arrow-right-white.svg \
 	qt/bitstock/res/img/ic-arrow-left-white.svg \
 	qt/bitstock/res/img/ic-arrow-left.svg \
@@ -935,7 +915,6 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/bitstock/res/img/ic-arrow-white-left.svg \
 	qt/bitstock/res/img/ic-exit.svg \
 	qt/bitstock/res/img/ic-switch-liliac-on.svg \
-	qt/bitstock/res/img/img-nav-logo.svg \
 	qt/bitstock/res/img/ic-arrow-white-right.svg \
 	qt/bitstock/res/img/ic-expand.svg \
 	qt/bitstock/res/img/ic-switch-off.svg \
@@ -1003,7 +982,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/bitstock/res/img/ic-transaction-cs-contract.svg \
 	qt/bitstock/res/img/ic-transaction-cs-contract-inactive.svg \
 	qt/bitstock/res/img/ani-loading-dark.gif \
-	qt/bitstock/res/img/ani-loading.gif qt/res/images/about.png \
+	qt/bitstock/res/img/ani-loading.gif \
 	qt/res/images/splash.png qt/res/images/splash_testnet.png \
 	qt/res/images/splash_regtest.png \
 	qt/res/images/bitstock_logo_horizontal.png \
@@ -3155,7 +3134,6 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/bitstock/splash.h
 
 @ENABLE_QT_TRUE@RES_ICONS = \
-@ENABLE_QT_TRUE@  qt/res/icons/add.png \
 @ENABLE_QT_TRUE@  qt/res/icons/address-book.png \
 @ENABLE_QT_TRUE@  qt/res/icons/automint_active.png \
 @ENABLE_QT_TRUE@  qt/res/icons/automint_inactive.png \
@@ -3164,7 +3142,6 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/icons/bitcoin_testnet.ico \
 @ENABLE_QT_TRUE@  qt/res/icons/bitcoin_testnet.png \
 @ENABLE_QT_TRUE@  qt/res/icons/bitcoin_regtest.png \
-@ENABLE_QT_TRUE@  qt/res/icons/browse.png \
 @ENABLE_QT_TRUE@  qt/res/icons/clock1.png \
 @ENABLE_QT_TRUE@  qt/res/icons/clock2.png \
 @ENABLE_QT_TRUE@  qt/res/icons/clock3.png \
@@ -3180,7 +3157,6 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/icons/edit.png \
 @ENABLE_QT_TRUE@  qt/res/icons/editcopy.png \
 @ENABLE_QT_TRUE@  qt/res/icons/editpaste.png \
-@ENABLE_QT_TRUE@  qt/res/icons/explorer.png \
 @ENABLE_QT_TRUE@  qt/res/icons/export.png \
 @ENABLE_QT_TRUE@  qt/res/icons/eye.png \
 @ENABLE_QT_TRUE@  qt/res/icons/eye_minus.png \
@@ -3194,7 +3170,6 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/icons/onion.png \
 @ENABLE_QT_TRUE@  qt/res/icons/overview.png \
 @ENABLE_QT_TRUE@  qt/res/icons/qrcode.png \
-@ENABLE_QT_TRUE@  qt/res/icons/quit.png \
 @ENABLE_QT_TRUE@  qt/res/icons/receive.png \
 @ENABLE_QT_TRUE@  qt/res/icons/receive_dark.png \
 @ENABLE_QT_TRUE@  qt/res/icons/privacy.png \
@@ -3218,16 +3193,9 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-mint.svg \
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-sent.svg \
 @ENABLE_QT_TRUE@  qt/res/icons/ic-transaction-staked.svg \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_bitstock.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_mbitstock.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_ubitstock.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_tbitstock.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_tmbitstock.png \
-@ENABLE_QT_TRUE@  qt/res/icons/unit_tubitstock.png \
 @ENABLE_QT_TRUE@  qt/res/icons/yesvote.png \
 @ENABLE_QT_TRUE@  qt/res/icons/novote.png \
 @ENABLE_QT_TRUE@  qt/res/icons/abstainvote.png \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-dashboard-banner.png \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-multi-number-dark.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-check-locked.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-nav-address.svg \
@@ -3238,7 +3206,6 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-nav-cold-staking-active.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-nav-dashboard-active.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-wallet-status-locked.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-splash.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-splash.png \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-check-mint.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-nav-dashboard-hover.svg \
@@ -3249,22 +3216,13 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-check-peers.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-nav-master-active.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-watch-password-white.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome-container.jpg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome-container.png \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome-container.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome-container@2x.png \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome-container@3x.png \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-check-staking-off.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-nav-master-hover.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-watch-password.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome.jpg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome@2x.jpg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome@3x.jpg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/bg-welcome.png \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-check-staking.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-nav-master.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/img-dashboard-banner.jpg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/btn-radio-active.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-check-sync-off.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-nav-privacy-active.svg \
@@ -3334,16 +3292,12 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-arrow-drop-up.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-coin-zpiv.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-received.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/img-logo-bitstock.png \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-arrow-drop-white-down.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-combo-box.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-send.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/img-logo-bitstock@2x.png \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-arrow-purple-down.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-connect.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-submenu-lock.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/img-logo-bitstock@3x.png \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/img-logo-bitstock.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-arrow-right-white.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-arrow-left-white.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-arrow-left.svg \
@@ -3359,7 +3313,6 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-arrow-white-left.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-exit.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-switch-liliac-on.svg \
-@ENABLE_QT_TRUE@  qt/bitstock/res/img/img-nav-logo.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-arrow-white-right.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-expand.svg \
 @ENABLE_QT_TRUE@  qt/bitstock/res/img/ic-switch-off.svg \
@@ -3542,7 +3495,6 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP) \
 @ENABLE_QT_TRUE@	$(am__append_28) $(am__append_29)
 @ENABLE_QT_TRUE@RES_IMAGES = \
-@ENABLE_QT_TRUE@  qt/res/images/about.png \
 @ENABLE_QT_TRUE@  qt/res/images/splash.png \
 @ENABLE_QT_TRUE@  qt/res/images/splash_testnet.png \
 @ENABLE_QT_TRUE@  qt/res/images/splash_regtest.png \

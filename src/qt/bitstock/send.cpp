@@ -46,7 +46,7 @@ SendWidget::SendWidget(BitstockGUI* parent) :
     ui->labelTitle->setFont(fontLight);
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (BSOCK)"));
+    ui->labelSubtitle1->setText(tr("You can transfer public coins (BSCK)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     /* Address */
@@ -98,7 +98,7 @@ SendWidget::SendWidget(BitstockGUI* parent) :
     ui->labelTitleTotalSend->setText(tr("Total to send"));
     setCssProperty(ui->labelTitleTotalSend, "text-title");
 
-    ui->labelAmountSend->setText("0.00 BSOCK");
+    ui->labelAmountSend->setText("0.00 BSCK");
     setCssProperty(ui->labelAmountSend, "text-body1");
 
     // Total Remaining
@@ -302,7 +302,7 @@ void SendWidget::onSendClicked(){
     // this way we let users unlock by walletpassphrase or by menu
     // and make many transactions while unlocking through this dialog
     // will call relock
-    if(!GUIUtil::requestUnlock(walletModel, sendPiv ? AskPassphraseDialog::Context::Send_BSOCK : AskPassphraseDialog::Context::Send_zBSOCK, true)){
+    if(!GUIUtil::requestUnlock(walletModel, sendPiv ? AskPassphraseDialog::Context::Send_BSCK : AskPassphraseDialog::Context::Send_zBSCK, true)){
         // Unlock wallet was cancelled
         inform(tr("Cannot send, wallet locked"));
         return;
@@ -373,7 +373,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
         return false;
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        emit message(tr("Spend Zerocoin"), tr("zBSOCK is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
+        emit message(tr("Spend Zerocoin"), tr("zBSCK is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
         return false;
     }
 
@@ -384,7 +384,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
         outputs.push_back(std::pair<CBitcoinAddress*, CAmount>(new CBitcoinAddress(rec.address.toStdString()),rec.amount));
     }
 
-    // use mints from zBSOCK selector if applicable
+    // use mints from zBSCK selector if applicable
     std::vector<CMintMeta> vMintsToFetch;
     std::vector<CZerocoinMint> vMintsSelected;
     if (!ZPivControlDialog::setSelectedMints.empty()) {
@@ -436,17 +436,17 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
             changeAddress
     )
             ) {
-        inform(tr("zBSOCK transaction sent!"));
+        inform(tr("zBSCK transaction sent!"));
         ZPivControlDialog::setSelectedMints.clear();
         clearAll();
         return true;
     } else {
         QString body;
-        if (receipt.GetStatus() == ZBSOCK_SPEND_V1_SEC_LEVEL) {
-            body = tr("Version 1 zBSOCK require a security level of 100 to successfully spend.");
+        if (receipt.GetStatus() == ZBSCK_SPEND_V1_SEC_LEVEL) {
+            body = tr("Version 1 zBSCK require a security level of 100 to successfully spend.");
         } else {
             int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-            const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zBSOCK transaction
+            const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zBSCK transaction
             if (nNeededSpends > nMaxSpends) {
                 body = tr("Too much inputs (") + QString::number(nNeededSpends, 10) +
                        tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
@@ -456,7 +456,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
                 body = QString::fromStdString(receipt.GetStatusMessage());
             }
         }
-        emit message("zBSOCK transaction failed", body, CClientUIInterface::MSG_ERROR);
+        emit message("zBSCK transaction failed", body, CClientUIInterface::MSG_ERROR);
         return false;
     }
 }
@@ -565,7 +565,7 @@ void SendWidget::onChangeCustomFeeClicked(){
 }
 
 void SendWidget::onCoinControlClicked(){
-    if(isBSOCK){
+    if(isBSCK){
         if (walletModel->getBalance() > 0) {
             if (!coinControlDialog) {
                 coinControlDialog = new CoinControlDialog();
@@ -577,7 +577,7 @@ void SendWidget::onCoinControlClicked(){
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
             refreshAmounts();
         } else {
-            inform(tr("You don't have any BSOCK to select."));
+            inform(tr("You don't have any BSCK to select."));
         }
     }else{
         if (walletModel->getZerocoinBalance() > 0) {
@@ -587,7 +587,7 @@ void SendWidget::onCoinControlClicked(){
             ui->btnCoinControl->setActive(!ZPivControlDialog::setSelectedMints.empty());
             zPivControl->deleteLater();
         } else {
-            inform(tr("You don't have any zBSOCK in your balance to select."));
+            inform(tr("You don't have any zBSCK in your balance to select."));
         }
     }
 }
@@ -596,9 +596,9 @@ void SendWidget::onValueChanged() {
     refreshAmounts();
 }
 
-void SendWidget::onBSOCKSelected(bool _isBSOCK){
-    isBSOCK = _isBSOCK;
-    setCssProperty(coinIcon, _isBSOCK ? "coin-icon-piv" : "coin-icon-piv");
+void SendWidget::onBSCKSelected(bool _isBSCK){
+    isBSCK = _isBSCK;
+    setCssProperty(coinIcon, _isBSCK ? "coin-icon-piv" : "coin-icon-piv");
     refreshView();
     updateStyle(coinIcon);
 }

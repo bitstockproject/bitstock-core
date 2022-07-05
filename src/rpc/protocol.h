@@ -20,7 +20,7 @@ enum HTTPStatusCode {
     HTTP_OK                    = 200,
     HTTP_BAD_REQUEST           = 400,
     HTTP_UNAUTHORIZED          = 401,
-    HTTP_FORBSOCKDEN             = 403,
+    HTTP_FORBSCKDEN             = 403,
     HTTP_NOT_FOUND             = 404,
     HTTP_BAD_METHOD            = 405,
     HTTP_INTERNAL_SERVER_ERROR = 500,
@@ -38,7 +38,7 @@ enum RPCErrorCode {
 
     //! General application defined errors
     RPC_MISC_ERROR                      = -1, //! std::exception thrown in command handling
-    RPC_FORBSOCKDEN_BY_SAFE_MODE          = -2, //! Server is in safe mode, and command is not allowed in safe mode
+    RPC_FORBSCKDEN_BY_SAFE_MODE          = -2, //! Server is in safe mode, and command is not allowed in safe mode
     RPC_TYPE_ERROR                      = -3, //! Unexpected type was passed as parameter
     RPC_INVALID_ADDRESS_OR_KEY          = -5, //! Invalid address or key
     RPC_OUT_OF_MEMORY                   = -7, //! Ran out of memory during operation

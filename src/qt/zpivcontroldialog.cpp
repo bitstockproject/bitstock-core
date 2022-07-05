@@ -36,7 +36,7 @@ ZPivControlDialog::ZPivControlDialog(QWidget *parent) :
     ui->frame->setProperty("cssClass", "container-dialog");
 
     // Title
-    ui->labelTitle->setText(tr("Select zBSOCK Denominations to Spend"));
+    ui->labelTitle->setText(tr("Select zBSCK Denominations to Spend"));
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
 
@@ -151,9 +151,9 @@ void ZPivControlDialog::updateList()
             if(nConfirmations < Params().Zerocoin_MintRequiredConfirmations())
                 strReason = strprintf("Needs %d more confirmations", Params().Zerocoin_MintRequiredConfirmations() - nConfirmations);
             else if (model->getEncryptionStatus() == WalletModel::EncryptionStatus::Locked)
-                strReason = "Your wallet is locked. Impossible to spend zBSOCK.";
+                strReason = "Your wallet is locked. Impossible to spend zBSCK.";
             else if (!mint.isSeedCorrect)
-                strReason = "The zBSOCK seed used to mint this zBSOCK is not the same as currently hold in the wallet";
+                strReason = "The zBSCK seed used to mint this zBSCK is not the same as currently hold in the wallet";
             else
                 strReason = strprintf("Needs %d more mints added to network", Params().Zerocoin_RequiredAccumulation());
 

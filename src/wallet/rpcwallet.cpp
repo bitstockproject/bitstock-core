@@ -529,7 +529,7 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"bitstockaddress\"  (string, required) The bitstock address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in BSOCK to send. eg 0.1\n"
+            "2. \"amount\"      (numeric, required) The amount in BSCK to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -666,7 +666,7 @@ UniValue delegatestake(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"stakingaddress\"      (string, required) The bitstock staking address to delegate.\n"
-            "2. \"amount\"              (numeric, required) The amount in BSOCK to delegate for staking. eg 100\n"
+            "2. \"amount\"              (numeric, required) The amount in BSCK to delegate for staking. eg 100\n"
             "3. \"owneraddress\"        (string, optional) The bitstock address corresponding to the key that will be able to spend the stake. \n"
             "                               If not provided, or empty string, a new wallet address is generated.\n"
             "4. \"fExternalOwner\"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.\n"
@@ -710,7 +710,7 @@ UniValue rawdelegatestake(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"stakingaddress\"      (string, required) The bitstock staking address to delegate.\n"
-            "2. \"amount\"              (numeric, required) The amount in BSOCK to delegate for staking. eg 100\n"
+            "2. \"amount\"              (numeric, required) The amount in BSCK to delegate for staking. eg 100\n"
             "3. \"owneraddress\"        (string, optional) The bitstock address corresponding to the key that will be able to spend the stake. \n"
             "                               If not provided, or empty string, a new wallet address is generated.\n"
             "4. \"fExternalOwner\"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.\n"
@@ -782,7 +782,7 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"bitstockaddress\"  (string, required) The bitstock address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in BSOCK to send. eg 0.1\n"
+            "2. \"amount\"      (numeric, required) The amount in BSCK to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -834,7 +834,7 @@ UniValue listaddressgroupings(const UniValue& params, bool fHelp)
             "  [\n"
             "    [\n"
             "      \"bitstockaddress\",     (string) The bitstock address\n"
-            "      amount,                 (numeric) The amount in BSOCK\n"
+            "      amount,                 (numeric) The amount in BSCK\n"
             "      \"account\"             (string, optional) The account (DEPRECATED)\n"
             "    ]\n"
             "    ,...\n"
@@ -933,7 +933,7 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount   (numeric) The total amount in BSOCK received at this address.\n"
+            "amount   (numeric) The total amount in BSCK received at this address.\n"
 
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n" +
@@ -989,7 +989,7 @@ UniValue getreceivedbyaccount(const UniValue& params, bool fHelp)
             "2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in BSOCK received for this account.\n"
+            "amount              (numeric) The total amount in BSCK received for this account.\n"
 
             "\nExamples:\n"
             "\nAmount received by the default account with at least 1 confirmation\n" +
@@ -1102,7 +1102,7 @@ UniValue getbalance(const UniValue& params, bool fHelp)
             "4. includeDelegated (bool, optional, default=true) Also include balance delegated to cold stakers\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in BSOCK received for this account.\n"
+            "amount              (numeric) The total amount in BSCK received for this account.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1144,7 +1144,7 @@ UniValue getcoldstakingbalance(const UniValue& params, bool fHelp)
             "1. \"account\"      (string, optional) DEPRECATED. The selected account, or \"*\" for entire wallet. It may be the default account using \"\".\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in BSOCK received for this account in P2CS contracts.\n"
+            "amount              (numeric) The total amount in BSCK received for this account in P2CS contracts.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1176,7 +1176,7 @@ UniValue getdelegatedbalance(const UniValue& params, bool fHelp)
             "1. \"account\"      (string, optional) DEPRECATED. The selected account, or \"*\" for entire wallet. It may be the default account using \"\".\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in BSOCK received for this account in P2CS contracts.\n"
+            "amount              (numeric) The total amount in BSCK received for this account in P2CS contracts.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the wallet\n" +
@@ -1216,7 +1216,7 @@ UniValue movecmd(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. \"fromaccount\"   (string, required) The name of the account to move funds from. May be the default account using \"\".\n"
             "2. \"toaccount\"     (string, required) The name of the account to move funds to. May be the default account using \"\".\n"
-            "3. amount            (numeric, required) Quantity of BSOCK to move between accounts.\n"
+            "3. amount            (numeric, required) Quantity of BSCK to move between accounts.\n"
             "4. minconf           (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"       (string, optional) An optional comment, stored in the wallet only.\n"
 
@@ -1224,9 +1224,9 @@ UniValue movecmd(const UniValue& params, bool fHelp)
             "true|false           (boolean) true if successful.\n"
 
             "\nExamples:\n"
-            "\nMove 0.01 BSOCK from the default account to the account named tabby\n" +
+            "\nMove 0.01 BSCK from the default account to the account named tabby\n" +
             HelpExampleCli("move", "\"\" \"tabby\" 0.01") +
-            "\nMove 0.01 BSOCK from timotei to akiko with a comment\n" +
+            "\nMove 0.01 BSCK from timotei to akiko with a comment\n" +
             HelpExampleCli("move", "\"timotei\" \"akiko\" 0.01 1 \"happy birthday!\"") +
             "\nAs a json rpc call\n" +
             HelpExampleRpc("move", "\"timotei\", \"akiko\", 0.01, 1, \"happy birthday!\""));
@@ -1288,7 +1288,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
             "2. \"tobitstockaddress\"  (string, required) The bitstock address to send funds to.\n"
-            "3. amount                (numeric, required) The amount in BSOCK. (transaction fee is added on top).\n"
+            "3. amount                (numeric, required) The amount in BSCK. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
             "                                     This is not part of the transaction, just kept in your wallet.\n"
@@ -1301,7 +1301,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
             "\"transactionid\"        (string) The transaction id.\n"
 
             "\nExamples:\n"
-            "\nSend 0.01 BSOCK from the default account to the address, must have at least 1 confirmation\n" +
+            "\nSend 0.01 BSCK from the default account to the address, must have at least 1 confirmation\n" +
             HelpExampleCli("sendfrom", "\"\" \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" 0.01") +
             "\nSend 0.01 from the tabby account to the given address, funds must have at least 6 confirmations\n" +
             HelpExampleCli("sendfrom", "\"tabby\" \"DMJRSsuU9zfyrvxVaAEFQqK4MxZg6vgeS6\" 0.01 6 \"donation\" \"seans outpost\"") +
@@ -1355,7 +1355,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
             "1. \"fromaccount\"         (string, required) DEPRECATED. The account to send the funds from. Should be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The bitstock address is the key, the numeric amount in BSOCK is the value\n"
+            "      \"address\":amount   (numeric) The bitstock address is the key, the numeric amount in BSCK is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1626,7 +1626,7 @@ UniValue listreceivedbyaddress(const UniValue& params, bool fHelp)
             "    \"involvesWatchonly\" : \"true\",    (bool) Only returned if imported addresses were involved in transaction\n"
             "    \"address\" : \"receivingaddress\",  (string) The receiving address\n"
             "    \"account\" : \"accountname\",       (string) DEPRECATED. The account of the receiving address. The default account is \"\".\n"
-            "    \"amount\" : x.xxx,                  (numeric) The total amount in BSOCK received by the address\n"
+            "    \"amount\" : x.xxx,                  (numeric) The total amount in BSCK received by the address\n"
             "    \"confirmations\" : n                (numeric) The number of confirmations of the most recent transaction included\n"
             "    \"bcconfirmations\" : n              (numeric) The number of blockchain confirmations of the most recent transaction included\n"
             "  }\n"
@@ -1859,11 +1859,11 @@ UniValue listtransactions(const UniValue& params, bool fHelp)
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in BSOCK. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in BSCK. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in BSOCK. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in BSCK. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -2055,10 +2055,10 @@ UniValue listsinceblock(const UniValue& params, bool fHelp)
             "    \"account\":\"accountname\",       (string) DEPRECATED. The account name associated with the transaction. Will be \"\" for the default account.\n"
             "    \"address\":\"bitstockaddress\",    (string) The bitstock address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in BSOCK. This is negative for the 'send' category, and for the 'move' category for moves \n"
+            "    \"amount\": x.xxx,          (numeric) The amount in BSCK. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in BSOCK. This is negative and only available for the 'send' category of transactions.\n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in BSCK. This is negative and only available for the 'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"bcconfirmations\" : n,    (numeric) The number of blockchain confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"blockhash\": \"hashvalue\",     (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.\n"
@@ -2138,7 +2138,7 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "{\n"
-            "  \"amount\" : x.xxx,        (numeric) The transaction amount in BSOCK\n"
+            "  \"amount\" : x.xxx,        (numeric) The transaction amount in BSCK\n"
             "  \"confirmations\" : n,     (numeric) The number of confirmations\n"
             "  \"bcconfirmations\" : n,   (numeric) The number of blockchain confirmations\n"
             "  \"blockhash\" : \"hash\",  (string) The block hash\n"
@@ -2152,7 +2152,7 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
             "      \"account\" : \"accountname\",  (string) DEPRECATED. The account name involved in the transaction, can be \"\" for the default account.\n"
             "      \"address\" : \"bitstockaddress\",   (string) The bitstock address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
-            "      \"amount\" : x.xxx                  (numeric) The amount in BSOCK\n"
+            "      \"amount\" : x.xxx                  (numeric) The amount in BSCK\n"
             "      \"vout\" : n,                       (numeric) the vout value\n"
             "    }\n"
             "    ,...\n"
@@ -2306,7 +2306,7 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
         throw std::runtime_error(
             "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
-            "This is needed prior to performing transactions related to private keys such as sending BSOCKs\n"
+            "This is needed prior to performing transactions related to private keys such as sending BSCKs\n"
 
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
@@ -2471,7 +2471,7 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending BSOCKs\n" +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending BSCKs\n" +
             HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n" +
             HelpExampleCli("signmessage", "\"bitstockaddress\" \"test message\"") +
@@ -2515,7 +2515,7 @@ UniValue lockunspent(const UniValue& params, bool fHelp)
             "lockunspent unlock [{\"txid\":\"txid\",\"vout\":n},...]\n"
             "\nUpdates list of temporarily unspendable outputs.\n"
             "Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.\n"
-            "A locked transaction output will not be chosen by automatic coin selection, when spending BSOCKs.\n"
+            "A locked transaction output will not be chosen by automatic coin selection, when spending BSCKs.\n"
             "Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list\n"
             "is always cleared (by virtue of process exit) when a node stops or fails.\n"
             "Also see the listunspent call\n"
@@ -2679,7 +2679,7 @@ UniValue settxfee(const UniValue& params, bool fHelp)
             "\nSet the transaction fee per kB.\n"
 
             "\nArguments:\n"
-            "1. amount         (numeric, required) The transaction fee in BSOCK/kB rounded to the nearest 0.00000001\n"
+            "1. amount         (numeric, required) The transaction fee in BSCK/kB rounded to the nearest 0.00000001\n"
 
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
@@ -2707,18 +2707,18 @@ UniValue getwalletinfo(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"walletversion\": xxxxx,                  (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,                      (numeric) the total BSOCK balance of the wallet (cold balance excluded)\n"
-            "  \"delegated_balance\": xxxxx,              (numeric) the BSOCK balance held in P2CS (cold staking) contracts\n"
-            "  \"cold_staking_balance\": xx,              (numeric) the BSOCK balance held in cold staking addresses\n"
-            "  \"unconfirmed_balance\": xxx,              (numeric) the total unconfirmed balance of the wallet in BSOCK\n"
-            "  \"immature_delegated_balance\": xxxxxx,    (numeric) the delegated immature balance of the wallet in BSOCK\n"
-            "  \"immature_cold_staking_balance\": xxxxxx, (numeric) the cold-staking immature balance of the wallet in BSOCK\n"
-            "  \"immature_balance\": xxxxxx,              (numeric) the total immature balance of the wallet in BSOCK\n"
+            "  \"balance\": xxxxxxx,                      (numeric) the total BSCK balance of the wallet (cold balance excluded)\n"
+            "  \"delegated_balance\": xxxxx,              (numeric) the BSCK balance held in P2CS (cold staking) contracts\n"
+            "  \"cold_staking_balance\": xx,              (numeric) the BSCK balance held in cold staking addresses\n"
+            "  \"unconfirmed_balance\": xxx,              (numeric) the total unconfirmed balance of the wallet in BSCK\n"
+            "  \"immature_delegated_balance\": xxxxxx,    (numeric) the delegated immature balance of the wallet in BSCK\n"
+            "  \"immature_cold_staking_balance\": xxxxxx, (numeric) the cold-staking immature balance of the wallet in BSCK\n"
+            "  \"immature_balance\": xxxxxx,              (numeric) the total immature balance of the wallet in BSCK\n"
             "  \"txcount\": xxxxxxx,                      (numeric) the total number of transactions in the wallet\n"
             "  \"keypoololdest\": xxxxxx,                 (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,                     (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,                   (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx,                      (numeric) the transaction fee configuration, set in BSOCK/kB\n"
+            "  \"paytxfee\": x.xxxx,                      (numeric) the transaction fee configuration, set in BSCK/kB\n"
             "  \"automintaddresses\": status              (boolean) the status of automint addresses (true if enabled, false if disabled)\n"
             "}\n"
 
@@ -3091,7 +3091,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
     std::string strAddress = params[0].get_str();
     CBitcoinAddress address(strAddress);
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid BSOCK address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid BSCK address");
     if (std::stoi(params[1].get_str().c_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())
@@ -3137,11 +3137,11 @@ UniValue getzerocoinbalance(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
             "getzerocoinbalance\n"
-            "\nReturn the wallet's total zBSOCK balance.\n" +
+            "\nReturn the wallet's total zBSCK balance.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
-            "amount         (numeric) Total zBSOCK balance.\n"
+            "amount         (numeric) Total zBSCK balance.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getzerocoinbalance", "") + HelpExampleRpc("getzerocoinbalance", ""));
@@ -3165,7 +3165,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 2)
         throw std::runtime_error(
             "listmintedzerocoins (fVerbose) (fMatureOnly)\n"
-            "\nList all zBSOCK mints in the wallet.\n" +
+            "\nList all zBSCK mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3184,7 +3184,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"serial hash\": \"xxx\",   (string) Mint serial hash in hex format.\n"
             "    \"version\": n,   (numeric) Zerocoin version number.\n"
-            "    \"zBSOCK ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
+            "    \"zBSCK ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
             "    \"denomination\": n,   (numeric) Coin denomination.\n"
             "    \"mint height\": n     (numeric) Height of the block containing this mint.\n"
             "    \"confirmations\": n   (numeric) Number of confirmations.\n"
@@ -3217,7 +3217,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             UniValue objMint(UniValue::VOBJ);
             objMint.push_back(Pair("serial hash", m.hashSerial.GetHex()));  // Serial hash
             objMint.push_back(Pair("version", m.nVersion));                 // Zerocoin version
-            objMint.push_back(Pair("zBSOCK ID", m.hashPubcoin.GetHex()));     // PubCoin
+            objMint.push_back(Pair("zBSCK ID", m.hashPubcoin.GetHex()));     // PubCoin
             int denom = libzerocoin::ZerocoinDenominationToInt(m.denom);
             objMint.push_back(Pair("denomination", denom));                 // Denomination
             objMint.push_back(Pair("mint height", m.nHeight));              // Mint Height
@@ -3294,7 +3294,7 @@ UniValue listspentzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
             "listspentzerocoins\n"
-            "\nList all the spent zBSOCK mints in the wallet.\n" +
+            "\nList all the spent zBSCK mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -3326,11 +3326,11 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
             "mintzerocoin amount ( utxos )\n"
-            "\nMint the specified zBSOCK amount\n" +
+            "\nMint the specified zBSCK amount\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of Piv to convert to zBSOCK\n"
+            "1. amount      (numeric, required) Enter an amount of Piv to convert to zBSCK\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
@@ -3367,7 +3367,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
 
     if (Params().NetworkID() != CBaseChainParams::REGTEST)
-        throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK minting is DISABLED");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK minting is DISABLED");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
@@ -3381,7 +3381,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
     int64_t nTime = GetTimeMillis();
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked(true);
 
@@ -3446,7 +3446,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 5 || params.size() < 3)
         throw std::runtime_error(
             "spendzerocoin amount mintchange minimizechange ( \"address\" isPublicSpend)\n"
-            "\nSpend zBSOCK to a BSOCK address.\n" +
+            "\nSpend zBSCK to a BSCK address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3474,8 +3474,8 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in BSOCK.\n"
-            "      \"address\": \"xxx\"         (string) BSOCK address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in BSCK.\n"
+            "      \"address\": \"xxx\"         (string) BSCK address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -3488,20 +3488,20 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK is currently disabled due to maintenance.");
 
     CAmount nAmount = AmountFromValue(params[0]);        // Spending amount
-    const bool fMintChange = params[1].get_bool();       // Mint change to zBSOCK
+    const bool fMintChange = params[1].get_bool();       // Mint change to zBSCK
     const bool fMinimizeChange = params[2].get_bool();    // Minimize change
     const std::string address_str = (params.size() > 3 ? params[3].get_str() : "");
     const bool isPublicSpend = (params.size() > 4 ? params[4].get_bool() : true);
 
     if (Params().NetworkID() != CBaseChainParams::REGTEST) {
         if (fMintChange)
-            throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK minting is DISABLED (except for regtest), cannot mint change");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK minting is DISABLED (except for regtest), cannot mint change");
 
         if (!isPublicSpend)
-            throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK old spend only available in regtest for tests purposes");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK old spend only available in regtest for tests purposes");
     }
 
     std::vector<CZerocoinMint> vMintsSelected;
@@ -3514,7 +3514,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw std::runtime_error(
             "spendzerocoinmints mints_list (\"address\" isPublicSpend) \n"
-            "\nSpend zBSOCK mints to a BSOCK address.\n" +
+            "\nSpend zBSCK mints to a BSCK address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3539,8 +3539,8 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in BSOCK.\n"
-            "      \"address\": \"xxx\"         (string) BSOCK address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in BSCK.\n"
+            "      \"address\": \"xxx\"         (string) BSCK address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -3553,7 +3553,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK is currently disabled due to maintenance.");
 
     UniValue arrMints = params[0].get_array();
     const std::string address_str = (params.size() > 1 ? params[1].get_str() : "");
@@ -3563,7 +3563,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_WALLET_ERROR, "No zerocoin selected");
 
     if (!isPublicSpend && Params().NetworkID() != CBaseChainParams::REGTEST) {
-        throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK old spend only available in regtest for tests purposes");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK old spend only available in regtest for tests purposes");
     }
 
     // check mints supplied and save serial hash (do this here so we don't fetch if any is wrong)
@@ -3597,10 +3597,10 @@ extern UniValue DoZpivSpend(const CAmount nAmount, bool fMintChange, bool fMinim
     // zerocoin mint / v2 spend is disabled. fMintChange/isPublicSpend should be false here. Double check
     if (Params().NetworkID() != CBaseChainParams::REGTEST) {
         if (fMintChange)
-            throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK minting is DISABLED (except for regtest), cannot mint change");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK minting is DISABLED (except for regtest), cannot mint change");
 
         if (!isPublicSpend)
-            throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK old spend only available in regtest for tests purposes");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK old spend only available in regtest for tests purposes");
     }
 
     int64_t nTimeStart = GetTimeMillis();
@@ -3696,7 +3696,7 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzBSOCKTracker* zpivTracker = pwalletMain->zpivTracker.get();
+    CzBSCKTracker* zpivTracker = pwalletMain->zpivTracker.get();
     std::set<CMintMeta> setMints = zpivTracker->ListMints(false, false, true);
     std::vector<CMintMeta> vMintsToFind(setMints.begin(), setMints.end());
     std::vector<CMintMeta> vMintsMissing;
@@ -3749,7 +3749,7 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzBSOCKTracker* zpivTracker = pwalletMain->zpivTracker.get();
+    CzBSCKTracker* zpivTracker = pwalletMain->zpivTracker.get();
     std::set<CMintMeta> setMints = zpivTracker->ListMints(false, false, false);
     std::list<CZerocoinSpend> listSpends = walletdb.ListSpentCoins();
     std::list<CZerocoinSpend> listUnconfirmedSpends;
@@ -3854,12 +3854,12 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-            "2. \"denomination\"         (integer, optional) Export a specific denomination of zBSOCK\n"
+            "2. \"denomination\"         (integer, optional) Export a specific denomination of zBSCK\n"
 
             "\nResult:\n"
             "[                   (array of json object)\n"
             "  {\n"
-            "    \"id\": \"serial hash\",  (string) the mint's zBSOCK serial hash \n"
+            "    \"id\": \"serial hash\",  (string) the mint's zBSCK serial hash \n"
             "    \"d\": n,         (numeric) the mint's zerocoin denomination \n"
             "    \"p\": \"pubcoin\", (string) The public coin\n"
             "    \"s\": \"serial\",  (string) The secret serial number\n"
@@ -3867,8 +3867,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
             "    \"t\": \"txid\",    (string) The txid that the coin was minted in\n"
             "    \"h\": n,         (numeric) The height the tx was added to the blockchain\n"
             "    \"u\": used,      (boolean) Whether the mint has been spent\n"
-            "    \"v\": version,   (numeric) The version of the zBSOCK\n"
-            "    \"k\": \"privkey\"  (string) The zBSOCK private key (V2+ zBSOCK only)\n"
+            "    \"v\": version,   (numeric) The version of the zBSCK\n"
+            "    \"k\": \"privkey\"  (string) The zBSCK private key (V2+ zBSCK only)\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -3887,7 +3887,7 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
     if (params.size() == 2)
         denomination = libzerocoin::IntToZerocoinDenomination(params[1].get_int());
 
-    CzBSOCKTracker* zpivTracker = pwalletMain->zpivTracker.get();
+    CzBSCKTracker* zpivTracker = pwalletMain->zpivTracker.get();
     std::set<CMintMeta> setMints = zpivTracker->ListMints(!fIncludeSpent, false, false);
 
     UniValue jsonList(UniValue::VARR);
@@ -3939,7 +3939,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"added\": n,        (numeric) The quantity of zerocoin mints that were added\n"
-            "  \"value\": amount    (numeric) The total zBSOCK value of zerocoin mints that were added\n"
+            "  \"value\": amount    (numeric) The total zBSCK value of zerocoin mints that were added\n"
             "}\n"
 
             "\nExamples\n" +
@@ -4019,7 +4019,7 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw std::runtime_error(
             "reconsiderzerocoins\n"
-            "\nCheck archived zBSOCK list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zBSCK list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -4089,7 +4089,7 @@ UniValue setzpivseed(const UniValue& params, bool fHelp)
     uint256 seed;
     seed.SetHex(params[0].get_str());
 
-    CzBSOCKWallet* zwallet = pwalletMain->getZWallet();
+    CzBSCKWallet* zwallet = pwalletMain->getZWallet();
     bool fSuccess = zwallet->SetMasterSeed(seed, true);
     if (fSuccess)
         zwallet->SyncWithChain();
@@ -4105,18 +4105,18 @@ UniValue getzpivseed(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw std::runtime_error(
             "getzpivseed\n"
-            "\nCheck archived zBSOCK list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zBSCK list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
-            "\"seed\" : s,  (string) The deterministic zBSOCK seed.\n"
+            "\"seed\" : s,  (string) The deterministic zBSCK seed.\n"
 
             "\nExamples\n" +
             HelpExampleCli("getzpivseed", "") + HelpExampleRpc("getzpivseed", ""));
 
     EnsureWalletIsUnlocked();
 
-    CzBSOCKWallet* zwallet = pwalletMain->getZWallet();
+    CzBSCKWallet* zwallet = pwalletMain->getZWallet();
     uint256 seed = zwallet->GetMasterSeed();
 
     UniValue ret(UniValue::VOBJ);
@@ -4130,12 +4130,12 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 2)
         throw std::runtime_error(
             "generatemintlist\n"
-            "\nShow mints that are derived from the deterministic zBSOCK seed.\n" +
+            "\nShow mints that are derived from the deterministic zBSCK seed.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"  : n,  (numeric) Which sequential zBSOCK to start with.\n"
-            "2. \"range\"  : n,  (numeric) How many zBSOCK to generate.\n"
+            "1. \"count\"  : n,  (numeric) Which sequential zBSCK to start with.\n"
+            "2. \"range\"  : n,  (numeric) How many zBSCK to generate.\n"
 
             "\nResult:\n"
             "[\n"
@@ -4155,7 +4155,7 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
 
     int nCount = params[0].get_int();
     int nRange = params[1].get_int();
-    CzBSOCKWallet* zwallet = pwalletMain->zwalletMain;
+    CzBSCKWallet* zwallet = pwalletMain->zwalletMain;
 
     UniValue arrRet(UniValue::VARR);
     for (int i = nCount; i < nCount + nRange; i++) {
@@ -4178,13 +4178,13 @@ UniValue dzpivstate(const UniValue& params, bool fHelp) {
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
                 "dzpivstate\n"
-                        "\nThe current state of the mintpool of the deterministic zBSOCK wallet.\n" +
+                        "\nThe current state of the mintpool of the deterministic zBSCK wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
                 HelpExampleCli("mintpoolstatus", "") + HelpExampleRpc("mintpoolstatus", ""));
 
-    CzBSOCKWallet* zwallet = pwalletMain->zwalletMain;
+    CzBSCKWallet* zwallet = pwalletMain->zwalletMain;
     UniValue obj(UniValue::VOBJ);
     int nCount, nCountLastUsed;
     zwallet->GetState(nCount, nCountLastUsed);
@@ -4195,7 +4195,7 @@ UniValue dzpivstate(const UniValue& params, bool fHelp) {
 }
 
 
-void static SearchThread(CzBSOCKWallet* zwallet, int nCountStart, int nCountEnd)
+void static SearchThread(CzBSCKWallet* zwallet, int nCountStart, int nCountEnd)
 {
     LogPrintf("%s: start=%d end=%d\n", __func__, nCountStart, nCountEnd);
     CWalletDB walletDB(pwalletMain->strWalletFile);
@@ -4212,7 +4212,7 @@ void static SearchThread(CzBSOCKWallet* zwallet, int nCountStart, int nCountEnd)
             CBigNum bnSerial;
             CBigNum bnRandomness;
             CKey key;
-            zwallet->SeedToZBSOCK(zerocoinSeed, bnValue, bnSerial, bnRandomness, key);
+            zwallet->SeedToZBSCK(zerocoinSeed, bnValue, bnSerial, bnRandomness, key);
 
             uint256 hashPubcoin = GetPubCoinHash(bnValue);
             zwallet->AddToMintPool(std::make_pair(hashPubcoin, i), true);
@@ -4230,12 +4230,12 @@ UniValue searchdzpiv(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 3)
         throw std::runtime_error(
             "searchdzpiv\n"
-            "\nMake an extended search for deterministically generated zBSOCK that have not yet been recognized by the wallet.\n" +
+            "\nMake an extended search for deterministically generated zBSCK that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"       (numeric) Which sequential zBSOCK to start with.\n"
-            "2. \"range\"       (numeric) How many zBSOCK to generate.\n"
+            "1. \"count\"       (numeric) Which sequential zBSCK to start with.\n"
+            "2. \"range\"       (numeric) How many zBSCK to generate.\n"
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
@@ -4253,7 +4253,7 @@ UniValue searchdzpiv(const UniValue& params, bool fHelp)
 
     int nThreads = params[2].get_int();
 
-    CzBSOCKWallet* zwallet = pwalletMain->zwalletMain;
+    CzBSCKWallet* zwallet = pwalletMain->zwalletMain;
 
     boost::thread_group* dzpivThreads = new boost::thread_group();
     int nRangePerThread = nRange / nThreads;
@@ -4341,12 +4341,12 @@ UniValue spendrawzerocoin(const UniValue& params, bool fHelp)
 
     const bool isPublicSpend = (params.size() > 6 ? params[6].get_bool() : true);
     if (Params().NetworkID() != CBaseChainParams::REGTEST && !isPublicSpend)
-        throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK old spend only available in regtest for tests purposes");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK old spend only available in regtest for tests purposes");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-            throw JSONRPCError(RPC_WALLET_ERROR, "zBSOCK is currently disabled due to maintenance.");
+            throw JSONRPCError(RPC_WALLET_ERROR, "zBSCK is currently disabled due to maintenance.");
 
     CBigNum serial;
     serial.SetHex(params[0].get_str());

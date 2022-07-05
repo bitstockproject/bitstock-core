@@ -128,7 +128,7 @@ const uint256 PublicCoinSpend::signatureHash() const
     return h.GetHash();
 }
 
-namespace ZBSOCKModule {
+namespace ZBSCKModule {
 
     bool createInput(CTxIn &in, CZerocoinMint &mint, uint256 hashTxOut, const int spendVersion) {
         // check that this spend is allowed
@@ -152,12 +152,12 @@ namespace ZBSOCKModule {
         if (!fUseV1Params) {
             CKey key;
             if (!mint.GetKeyPair(key))
-                return error("%s: failed to set zBSOCK privkey mint.", __func__);
+                return error("%s: failed to set zBSCK privkey mint.", __func__);
             spend.setPubKey(key.GetPubKey(), true);
 
             std::vector<unsigned char> vchSig;
             if (!key.Sign(spend.signatureHash(), vchSig))
-                return error("%s: ZBSOCKModule failed to sign signatureHash.", __func__);
+                return error("%s: ZBSCKModule failed to sign signatureHash.", __func__);
             spend.setVchSig(vchSig);
 
         }
@@ -227,7 +227,7 @@ namespace ZBSOCKModule {
             return state.DoS(100, error("%s: public zerocoin spend prev output not found, prevTx %s, index %d",
                                         __func__, txIn.prevout.hash.GetHex(), txIn.prevout.n));
         }
-        if (!ZBSOCKModule::parseCoinSpend(txIn, tx, prevOut, publicSpend)) {
+        if (!ZBSCKModule::parseCoinSpend(txIn, tx, prevOut, publicSpend)) {
             return state.Invalid(error("%s: invalid public coin spend parse %s\n", __func__,
                                        tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zpiv");
         }

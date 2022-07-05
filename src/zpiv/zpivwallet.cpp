@@ -12,7 +12,7 @@
 #include "zpivchain.h"
 
 
-CzBSOCKWallet::CzBSOCKWallet(std::string strWalletFile)
+CzBSCKWallet::CzBSCKWallet(std::string strWalletFile)
 {
     this->strWalletFile = strWalletFile;
     CWalletDB walletdb(strWalletFile);
@@ -23,13 +23,13 @@ CzBSOCKWallet::CzBSOCKWallet(std::string strWalletFile)
     //Check for old db version of storing zpiv seed
     if (fFirstRun) {
         uint256 seed;
-        if (walletdb.ReadZBSOCKSeed_deprecated(seed)) {
+        if (walletdb.ReadZBSCKSeed_deprecated(seed)) {
             //Update to new format, erase old
             seedMaster = seed;
             hashSeed = Hash(seed.begin(), seed.end());
             if (pwalletMain->AddDeterministicSeed(seed)) {
-                if (walletdb.EraseZBSOCKSeed_deprecated()) {
-                    LogPrintf("%s: Updated zBSOCK seed databasing\n", __func__);
+                if (walletdb.EraseZBSCKSeed_deprecated()) {
+                    LogPrintf("%s: Updated zBSCK seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
                     LogPrintf("%s: failed to remove old zpiv seed\n", __func__);
@@ -67,7 +67,7 @@ CzBSOCKWallet::CzBSOCKWallet(std::string strWalletFile)
     this->mintPool = CMintPool(nCountLastUsed);
 }
 
-bool CzBSOCKWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
+bool CzBSCKWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
 {
 
     CWalletDB walletdb(strWalletFile);
@@ -83,8 +83,8 @@ bool CzBSOCKWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     nCountLastUsed = 0;
 
     if (fResetCount)
-        walletdb.WriteZBSOCKCount(nCountLastUsed);
-    else if (!walletdb.ReadZBSOCKCount(nCountLastUsed))
+        walletdb.WriteZBSCKCount(nCountLastUsed);
+    else if (!walletdb.ReadZBSCKCount(nCountLastUsed))
         nCountLastUsed = 0;
 
     mintPool.Reset();
@@ -92,18 +92,18 @@ bool CzBSOCKWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     return true;
 }
 
-void CzBSOCKWallet::Lock()
+void CzBSCKWallet::Lock()
 {
     seedMaster = 0;
 }
 
-void CzBSOCKWallet::AddToMintPool(const std::pair<uint256, uint32_t>& pMint, bool fVerbose)
+void CzBSCKWallet::AddToMintPool(const std::pair<uint256, uint32_t>& pMint, bool fVerbose)
 {
     mintPool.Add(pMint, fVerbose);
 }
 
 //Add the next 20 mints to the mint pool
-void CzBSOCKWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
+void CzBSCKWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
 {
 
     //Is locked
@@ -145,7 +145,7 @@ void CzBSOCKWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
         CBigNum bnSerial;
         CBigNum bnRandomness;
         CKey key;
-        SeedToZBSOCK(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+        SeedToZBSCK(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
 
         mintPool.Add(bnValue, i);
         CWalletDB(strWalletFile).WriteMintPoolPair(hashSeed, GetPubCoinHash(bnValue), i);
@@ -154,7 +154,7 @@ void CzBSOCKWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
 }
 
 // pubcoin hashes are stored to db so that a full accounting of mints belonging to the seed can be tracked without regenerating
-bool CzBSOCKWallet::LoadMintPoolFromDB()
+bool CzBSCKWallet::LoadMintPoolFromDB()
 {
     std::map<uint256, std::vector<std::pair<uint256, uint32_t> > > mapMintPool = CWalletDB(strWalletFile).MapMintPool();
 
@@ -165,20 +165,20 @@ bool CzBSOCKWallet::LoadMintPoolFromDB()
     return true;
 }
 
-void CzBSOCKWallet::RemoveMintsFromPool(const std::vector<uint256>& vPubcoinHashes)
+void CzBSCKWallet::RemoveMintsFromPool(const std::vector<uint256>& vPubcoinHashes)
 {
     for (const uint256& hash : vPubcoinHashes)
         mintPool.Remove(hash);
 }
 
-void CzBSOCKWallet::GetState(int& nCount, int& nLastGenerated)
+void CzBSCKWallet::GetState(int& nCount, int& nLastGenerated)
 {
     nCount = this->nCountLastUsed + 1;
     nLastGenerated = mintPool.CountOfLastGenerated();
 }
 
 //Catch the counter up with the chain
-void CzBSOCKWallet::SyncWithChain(bool fGenerateMintPool)
+void CzBSCKWallet::SyncWithChain(bool fGenerateMintPool)
 {
     uint32_t nLastCountUsed = 0;
     bool found = true;
@@ -279,7 +279,7 @@ void CzBSOCKWallet::SyncWithChain(bool fGenerateMintPool)
     }
 }
 
-bool CzBSOCKWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom)
+bool CzBSCKWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom)
 {
     if (!mintPool.Has(bnValue))
         return error("%s: value not in pool", __func__);
@@ -291,7 +291,7 @@ bool CzBSOCKWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, cons
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZBSOCK(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
+    SeedToZBSCK(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
 
     //Sanity check
     if (bnValueGen != bnValue)
@@ -333,7 +333,7 @@ bool CzBSOCKWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, cons
     if (nCountLastUsed < pMint.second) {
         CWalletDB walletdb(strWalletFile);
         nCountLastUsed = pMint.second;
-        walletdb.WriteZBSOCKCount(nCountLastUsed);
+        walletdb.WriteZBSCKCount(nCountLastUsed);
     }
 
     //remove from the pool
@@ -350,7 +350,7 @@ bool IsValidCoinValue(const CBigNum& bnValue)
     bnValue.isPrime();
 }
 
-void CzBSOCKWallet::SeedToZBSOCK(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
+void CzBSCKWallet::SeedToZBSCK(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
 {
     libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
 
@@ -399,7 +399,7 @@ void CzBSOCKWallet::SeedToZBSOCK(const uint512& seedZerocoin, CBigNum& bnValue, 
     }
 }
 
-uint512 CzBSOCKWallet::GetZerocoinSeed(uint32_t n)
+uint512 CzBSCKWallet::GetZerocoinSeed(uint32_t n)
 {
     CDataStream ss(SER_GETHASH, 0);
     ss << seedMaster << n;
@@ -407,14 +407,14 @@ uint512 CzBSOCKWallet::GetZerocoinSeed(uint32_t n)
     return zerocoinSeed;
 }
 
-void CzBSOCKWallet::UpdateCount()
+void CzBSCKWallet::UpdateCount()
 {
     nCountLastUsed++;
     CWalletDB walletdb(strWalletFile);
-    walletdb.WriteZBSOCKCount(nCountLastUsed);
+    walletdb.WriteZBSCKCount(nCountLastUsed);
 }
 
-void CzBSOCKWallet::GenerateDeterministicZBSOCK(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
+void CzBSCKWallet::GenerateDeterministicZBSCK(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
 {
     GenerateMint(nCountLastUsed + 1, denom, coin, dMint);
     if (fGenerateOnly)
@@ -424,14 +424,14 @@ void CzBSOCKWallet::GenerateDeterministicZBSOCK(libzerocoin::CoinDenomination de
     //LogPrintf("%s : Generated new deterministic mint. Count=%d pubcoin=%s seed=%s\n", __func__, nCount, coin.getPublicCoin().getValue().GetHex().substr(0,6), seedZerocoin.GetHex().substr(0, 4));
 }
 
-void CzBSOCKWallet::GenerateMint(const uint32_t& nCount, const libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint)
+void CzBSCKWallet::GenerateMint(const uint32_t& nCount, const libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint)
 {
     uint512 seedZerocoin = GetZerocoinSeed(nCount);
     CBigNum bnValue;
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZBSOCK(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+    SeedToZBSCK(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
     coin = libzerocoin::PrivateCoin(Params().Zerocoin_Params(false), denom, bnSerial, bnRandomness);
     coin.setPrivKey(key.GetPrivKey());
     coin.setVersion(libzerocoin::PrivateCoin::CURRENT_VERSION);
@@ -445,14 +445,14 @@ void CzBSOCKWallet::GenerateMint(const uint32_t& nCount, const libzerocoin::Coin
     dMint.SetDenomination(denom);
 }
 
-bool CzBSOCKWallet::CheckSeed(const CDeterministicMint& dMint)
+bool CzBSCKWallet::CheckSeed(const CDeterministicMint& dMint)
 {
     //Check that the seed is correct    todo:handling of incorrect, or multiple seeds
     uint256 hashSeed = Hash(seedMaster.begin(), seedMaster.end());
     return hashSeed == dMint.GetSeedHash();
 }
 
-bool CzBSOCKWallet::RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint)
+bool CzBSCKWallet::RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint)
 {
     if (!CheckSeed(dMint)) {
         uint256 hashSeed = Hash(seedMaster.begin(), seedMaster.end());

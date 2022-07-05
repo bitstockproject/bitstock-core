@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Bitstock_ZBSOCKCHAIN_H
-#define Bitstock_ZBSOCKCHAIN_H
+#ifndef Bitstock_ZBSCKCHAIN_H
+#define Bitstock_ZBSCKCHAIN_H
 
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/Denominations.h"
@@ -39,4 +39,4 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
 std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block, bool fFilterInvalid);
 
 
-#endif //Bitstock_ZBSOCKCHAIN_H
+#endif //Bitstock_ZBSCKCHAIN_H

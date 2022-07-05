@@ -392,7 +392,7 @@ void MasterNodesWidget::onDeleteMNClicked(){
         if (lineCopy.size() == 0) {
             lineCopy = "# Masternode config file\n"
                                     "# Format: alias IP:port masternodeprivkey collateral_output_txid collateral_output_index\n"
-                                    "# Example: mn1 127.0.0.2:4316 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0\n";
+                                    "# Example: mn1 127.0.0.2:8316 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0\n";
         }
 
         streamConfig.close();
@@ -430,9 +430,9 @@ void MasterNodesWidget::onCreateMNClicked(){
     if(verifyWalletUnlocked()) {
         if(walletModel->getBalance() <= CollateralRequired(chainActive.Height())){
             // TODO: Convert CAmount CollateralRequired() result to qString,
-            // kind of like "...node, %i BSOCK requited").arg(qYourCollateralResultVariable),
+            // kind of like "...node, %i BSCK requited").arg(qYourCollateralResultVariable),
             // to nicely print required collateral amount.
-            inform(tr("Not enough balance to create a masternode")); //, 10,000 BSOCK required."));
+            inform(tr("Not enough balance to create a masternode")); //, 10,000 BSCK required."));
             return;
         }
         showHideOp(true);

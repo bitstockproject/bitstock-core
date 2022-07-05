@@ -20,22 +20,22 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://bitstock.org/
-Source0:	https://bitstock.org/bin/bitstock-core-%{version}/bitstock-%{version}.tar.gz
+URL:		https://bitstock.investments/
+Source0:	https://bitstock.investments/bin/bitstock-core-%{version}/bitstock-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/bitstockproject/bitstock-core/v%{version}/contrib/debian/examples/bitstock.conf
+Source10:	https://raw.githubusercontent.com/bitstock-bitstock/bitstock/v%{version}/contrib/debian/examples/bitstock.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/bitstockproject/bitstock-core/v%{version}/doc/man/bitstockd.1
-Source21:	https://raw.githubusercontent.com/bitstockproject/bitstock-core/v%{version}/doc/man/bitstock-cli.1
-Source22:	https://raw.githubusercontent.com/bitstockproject/bitstock-core/v%{version}/doc/man/bitstock-qt.1
+Source20:	https://raw.githubusercontent.com/bitstock-bitstock/bitstock/v%{version}/doc/man/bitstockd.1
+Source21:	https://raw.githubusercontent.com/bitstock-bitstock/bitstock/v%{version}/doc/man/bitstock-cli.1
+Source22:	https://raw.githubusercontent.com/bitstock-bitstock/bitstock/v%{version}/doc/man/bitstock-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/bitstockproject/bitstock-core/v%{version}/contrib/rpm/bitstock.te
+Source30:	https://raw.githubusercontent.com/bitstock-bitstock/bitstock/v%{version}/contrib/rpm/bitstock.te
 # Source31 - what about bitstock-tx and bench_bitstock ???
-Source31:	https://raw.githubusercontent.com/bitstockproject/bitstock-core/v%{version}/contrib/rpm/bitstock.fc
-Source32:	https://raw.githubusercontent.com/bitstockproject/bitstock-core/v%{version}/contrib/rpm/bitstock.if
+Source31:	https://raw.githubusercontent.com/bitstock-bitstock/bitstock/v%{version}/contrib/rpm/bitstock.fc
+Source32:	https://raw.githubusercontent.com/bitstock-bitstock/bitstock/v%{version}/contrib/rpm/bitstock.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
 

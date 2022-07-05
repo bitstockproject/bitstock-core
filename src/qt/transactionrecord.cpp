@@ -32,7 +32,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     bool fZSpendFromMe = false;
 
     if (wtx.HasZerocoinSpendInputs()) {
-        libzerocoin::CoinSpend zcspend = wtx.HasZerocoinPublicSpendInputs() ? ZBSOCKModule::parseCoinSpend(wtx.vin[0]) : TxInToZerocoinSpend(wtx.vin[0]);
+        libzerocoin::CoinSpend zcspend = wtx.HasZerocoinPublicSpendInputs() ? ZBSCKModule::parseCoinSpend(wtx.vin[0]) : TxInToZerocoinSpend(wtx.vin[0]);
         fZSpendFromMe = wallet->IsMyZerocoinSpend(zcspend.getCoinSerialNumber());
     }
 
@@ -44,9 +44,9 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             return parts;
 
         if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zpivTracker->HasMintTx(hash))) {
-            //zBSOCK stake reward
+            //zBSCK stake reward
             sub.involvesWatchAddress = false;
-            sub.type = TransactionRecord::StakeZBSOCK;
+            sub.type = TransactionRecord::StakeZBSCK;
             sub.address = mapValue["zerocoinmint"];
             sub.credit = 0;
             for (const CTxOut& out : wtx.vout) {
@@ -64,22 +64,36 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 parts.append(sub);
                 return parts;
             } else {
-                // BSOCK stake reward
+                // BSCK stake reward
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 sub.type = TransactionRecord::StakeMint;
                 sub.address = CBitcoinAddress(address).ToString();
                 sub.credit = nNet;
             }
         } else {
-            //Masternode reward
+            // Masternode reward
             CTxDestination destMN;
-            int nIndexMN = wtx.vout.size() - 1;
+            int nIndexMN = wtx.vout.size() - 2;
             if (ExtractDestination(wtx.vout[nIndexMN].scriptPubKey, destMN) && IsMine(*wallet, destMN)) {
                 isminetype mine = wallet->IsMine(wtx.vout[nIndexMN]);
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 sub.type = TransactionRecord::MNReward;
                 sub.address = CBitcoinAddress(destMN).ToString();
                 sub.credit = wtx.vout[nIndexMN].nValue;
+            }
+
+            // Dev reward
+            CTxDestination dest;
+            CTxDestination destDev = CBitcoinAddress(Params().DevAddress()).Get();
+            int nIndexDev = wtx.vout.size() - 1;
+            if (ExtractDestination(wtx.vout[nIndexDev].scriptPubKey, dest) && IsMine(*wallet, dest)) {
+                if (dest == destDev) {
+                    isminetype mine = wallet->IsMine(wtx.vout[nIndexDev]);
+                    sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
+                    sub.type = TransactionRecord::Generated;
+                    sub.address = CBitcoinAddress(dest).ToString();
+                    sub.credit = wtx.vout[nIndexDev].nValue;
+                }
             }
         }
 
@@ -424,10 +438,10 @@ bool TransactionRecord::ExtractAddress(const CScript& scriptPubKey, bool fColdSt
     }
 }
 
-bool IsZBSOCKType(TransactionRecord::Type type)
+bool IsZBSCKType(TransactionRecord::Type type)
 {
     switch (type) {
-        case TransactionRecord::StakeZBSOCK:
+        case TransactionRecord::StakeZBSCK:
         case TransactionRecord::ZerocoinMint:
         case TransactionRecord::ZerocoinSpend:
         case TransactionRecord::RecvFromZerocoinSpend:
@@ -482,7 +496,7 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
     // For generated transactions, determine maturity
     else if (type == TransactionRecord::Generated ||
             type == TransactionRecord::StakeMint ||
-            type == TransactionRecord::StakeZBSOCK ||
+            type == TransactionRecord::StakeZBSCK ||
             type == TransactionRecord::MNReward ||
             type == TransactionRecord::StakeDelegated ||
             type == TransactionRecord::StakeHot) {
@@ -535,7 +549,7 @@ int TransactionRecord::getOutputIndex() const
 
 bool TransactionRecord::isCoinStake() const
 {
-    return (type == TransactionRecord::StakeMint || type == TransactionRecord::Generated || type == TransactionRecord::StakeZBSOCK);
+    return (type == TransactionRecord::StakeMint || type == TransactionRecord::Generated || type == TransactionRecord::StakeZBSCK);
 }
 
 bool TransactionRecord::isAnyColdStakingType() const

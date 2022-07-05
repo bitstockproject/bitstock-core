@@ -3,7 +3,7 @@ Bitstock Core
 
 Setup
 ---------------------
-[Bitstock Core](http://bitstock.org/wallet) is the original Bitstock client and it builds the backbone of the network. However, it downloads and stores the entire history of Bitstock transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Bitstock Core](http://bitstock.investments/wallet) is the original Bitstock client and it builds the backbone of the network. However, it downloads and stores the entire history of Bitstock transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -26,10 +26,10 @@ Drag Bitstock-Qt to your applications folder, and then run Bitstock-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Bitstock Wiki](https://github.com/bitstockproject/bitstock-core/wiki)
+* See the documentation at the [Bitstock Wiki](https://https://github.com/Bitstock-blockchain/BITSTOCK/wiki)
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Bitstock Forum](http://forum.bitstock.org/).
-* Join our Discord server [Discord Server](https://discord.bitstock.org)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Bitstock Forum](http://forum.bitstock.investments/).
+* Join our Discord server [Discord Server](https://https://discord.gg/HwVvDy7HDU)
 
 Building
 ---------------------
@@ -56,8 +56,8 @@ The Bitstock repo's [root README](/README.md) contains relevant information on t
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Bitstock](http://forum.bitstock.org/) forum.
-* Join the [Bitstock Discord](https://discord.bitstock.org).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Bitstock](http://forum.bitstock.investments/) forum.
+* Join the [Bitstock Discord](https://https://discord.gg/HwVvDy7HDU).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

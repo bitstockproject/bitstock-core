@@ -2,16 +2,14 @@
 # Copyright (c) 2019 The Bitstock developers
 name: bitstock-core
 base: core18
-version: 4.0.99
-summary:   Bitstock (Private – Instant – Verified – Transaction)
+version: 1.0.0
+summary:   Bitstock Blockchain
 description: |
   Bitstock is an MIT licensed,
   open source, blockchain-based cryptocurrency with
   ultra fast transactions, low fees, high network decentralization, and
   Zero Knowledge cryptography proofs for industry-leading
   transaction anonymity.
-
-  - [Download](https://bitstock.org/wp-content/uploads/2018/10/Bitstock-White.pdf) Bitstock White Paper PDF
 grade: devel
 confinement: strict
 apps:
@@ -68,7 +66,7 @@ apps:
     plugs: [home]
 parts:
   bitstock-core:
-    source: https://github.com/bitstockproject/bitstock-core
+    source: https://https://github.com/Bitstock-blockchain/BITSTOCK
     source-type: git
     source-tag: master
     plugin: nil

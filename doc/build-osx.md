@@ -43,7 +43,7 @@ Build Bitstock
 
 1. Clone the Bitstock source code:
 
-        git clone https://github.com/bitstockproject/bitstock-core.git
+        git clone https://https://github.com/Bitstock-blockchain/BITSTOCK.git
         cd bitstock
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).

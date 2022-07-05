@@ -31,7 +31,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
 
     bool fFirstRun;
     cWallet.LoadWallet(fFirstRun);
-    cWallet.zpivTracker = std::unique_ptr<CzBSOCKTracker>(new CzBSOCKTracker(cWallet.strWalletFile));
+    cWallet.zpivTracker = std::unique_ptr<CzBSCKTracker>(new CzBSCKTracker(cWallet.strWalletFile));
     CMutableTransaction tx;
     CWalletTx* wtx = new CWalletTx(&cWallet, tx);
     bool fMintChange=true;
@@ -44,7 +44,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
     std::list<std::pair<CBitcoinAddress*, CAmount>> outputs;
     cWallet.SpendZerocoin(nAmount, *wtx, receipt, vMints, fMintChange, fMinimizeChange, outputs);
 
-    BOOST_CHECK_MESSAGE(receipt.GetStatus() == ZBSOCK_TRX_FUNDS_PROBLEMS, strprintf("Failed Invalid Amount Check: %s", receipt.GetStatusMessage()));
+    BOOST_CHECK_MESSAGE(receipt.GetStatus() == ZBSCK_TRX_FUNDS_PROBLEMS, strprintf("Failed Invalid Amount Check: %s", receipt.GetStatusMessage()));
 
     nAmount = 1;
     CZerocoinSpendReceipt receipt2;
@@ -53,7 +53,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
     // if using "wallet.dat", instead of "unlocked.dat" need this
     /// BOOST_CHECK_MESSAGE(vString == "Error: Wallet locked, unable to create transaction!"," Locked Wallet Check Failed");
 
-    BOOST_CHECK_MESSAGE(receipt2.GetStatus() == ZBSOCK_TRX_FUNDS_PROBLEMS, strprintf("Failed Invalid Amount Check: %s", receipt.GetStatusMessage()));
+    BOOST_CHECK_MESSAGE(receipt2.GetStatus() == ZBSCK_TRX_FUNDS_PROBLEMS, strprintf("Failed Invalid Amount Check: %s", receipt.GetStatusMessage()));
 
 }
 
@@ -239,52 +239,52 @@ BOOST_AUTO_TEST_CASE(zerocoin_public_spend_test)
     // check spendVersion = 3 for v2 coins
     // -----------------------------------
     int spendVersion = 3;
-    BOOST_CHECK_MESSAGE(ZBSOCKModule::createInput(in1, mint_v2, tx1.GetHash(), spendVersion),
+    BOOST_CHECK_MESSAGE(ZBSCKModule::createInput(in1, mint_v2, tx1.GetHash(), spendVersion),
             "Failed to create zc input for mint v2 and spendVersion 3");
 
     std::cout << "Spend v3 size: " << ::GetSerializeSize(in1, SER_NETWORK, PROTOCOL_VERSION) << " bytes" << std::endl;
 
     PublicCoinSpend publicSpend1(ZCParams_v2);
-    BOOST_CHECK_MESSAGE(ZBSOCKModule::validateInput(in1, out_v2, tx1, publicSpend1),
+    BOOST_CHECK_MESSAGE(ZBSCKModule::validateInput(in1, out_v2, tx1, publicSpend1),
             "Failed to validate zc input for mint v2 and spendVersion 3");
 
     // Verify that it fails with a different denomination
     in1.nSequence = 500;
     PublicCoinSpend publicSpend1b(ZCParams_v2);
-    BOOST_CHECK_MESSAGE(!ZBSOCKModule::validateInput(in1, out_v2, tx1, publicSpend1b), "Different denomination for mint v2 and spendVersion 3");
+    BOOST_CHECK_MESSAGE(!ZBSCKModule::validateInput(in1, out_v2, tx1, publicSpend1b), "Different denomination for mint v2 and spendVersion 3");
 
     // check spendVersion = 4 for v2 coins
     // -----------------------------------
     spendVersion = 4;
-    BOOST_CHECK_MESSAGE(ZBSOCKModule::createInput(in2, mint_v2, tx2.GetHash(), spendVersion),
+    BOOST_CHECK_MESSAGE(ZBSCKModule::createInput(in2, mint_v2, tx2.GetHash(), spendVersion),
             "Failed to create zc input for mint v2 and spendVersion 4");
 
     std::cout << "Spend v4 (coin v2) size: " << ::GetSerializeSize(in2, SER_NETWORK, PROTOCOL_VERSION) << " bytes" << std::endl;
 
     PublicCoinSpend publicSpend2(ZCParams_v2);
-    BOOST_CHECK_MESSAGE(ZBSOCKModule::validateInput(in2, out_v2, tx2, publicSpend2),
+    BOOST_CHECK_MESSAGE(ZBSCKModule::validateInput(in2, out_v2, tx2, publicSpend2),
             "Failed to validate zc input for mint v2 and spendVersion 4");
 
     // Verify that it fails with a different denomination
     in2.nSequence = 500;
     PublicCoinSpend publicSpend2b(ZCParams_v2);
-    BOOST_CHECK_MESSAGE(!ZBSOCKModule::validateInput(in2, out_v2, tx2, publicSpend2b), "Different denomination for mint v2 and spendVersion 4");
+    BOOST_CHECK_MESSAGE(!ZBSCKModule::validateInput(in2, out_v2, tx2, publicSpend2b), "Different denomination for mint v2 and spendVersion 4");
 
     // check spendVersion = 4 for v1 coins
     // -----------------------------------
-    BOOST_CHECK_MESSAGE(ZBSOCKModule::createInput(in3, mint_v1, tx3.GetHash(), spendVersion),
+    BOOST_CHECK_MESSAGE(ZBSCKModule::createInput(in3, mint_v1, tx3.GetHash(), spendVersion),
             "Failed to create zc input for mint v1 and spendVersion 4");
 
     std::cout << "Spend v4 (coin v1) size: " << ::GetSerializeSize(in3, SER_NETWORK, PROTOCOL_VERSION) << " bytes" << std::endl;
 
     PublicCoinSpend publicSpend3(ZCParams_v1);
-    BOOST_CHECK_MESSAGE(ZBSOCKModule::validateInput(in3, out_v1, tx3, publicSpend3),
+    BOOST_CHECK_MESSAGE(ZBSCKModule::validateInput(in3, out_v1, tx3, publicSpend3),
             "Failed to validate zc input for mint v1 and spendVersion 4");
 
     // Verify that it fails with a different denomination
     in3.nSequence = 500;
     PublicCoinSpend publicSpend3b(ZCParams_v1);
-    BOOST_CHECK_MESSAGE(!ZBSOCKModule::validateInput(in3, out_v1, tx3, publicSpend3b), "Different denomination for mint v1 and spendVersion 4");
+    BOOST_CHECK_MESSAGE(!ZBSCKModule::validateInput(in3, out_v1, tx3, publicSpend3b), "Different denomination for mint v1 and spendVersion 4");
 
 }
 

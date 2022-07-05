@@ -29,7 +29,7 @@ void TxViewHolder::init(QWidget* holder,const QModelIndex &index, bool isHovered
 
     if(type != TransactionRecord::ZerocoinMint &&
             type !=  TransactionRecord::ZerocoinSpend_Change_zPiv &&
-            type !=  TransactionRecord::StakeZBSOCK &&
+            type !=  TransactionRecord::StakeZBSCK &&
             type != TransactionRecord::Other){
         QString address = rIndex.data(Qt::DisplayRole).toString();
         if(address.length() > 20) {

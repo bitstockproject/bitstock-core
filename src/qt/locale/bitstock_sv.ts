@@ -370,16 +370,16 @@ for staking</source>
         <translation>cancel</translation>
     </message>
     <message>
-        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSOCKs from being stolen by malware infecting your computer.</source>
-        <translation>Bitstock kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina BSOCKs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>Bitstock will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BSCKs from being stolen by malware infecting your computer.</source>
+        <translation>Bitstock kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina BSCKs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSOCK&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA BSOCK&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSCK&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA BSCK&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -541,8 +541,8 @@ for staking</source>
         <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>0.00 BSOCK</source>
-        <translation>0.00 BSOCK</translation>
+        <source>0.00 BSCK</source>
+        <translation>0.00 BSCK</translation>
     </message>
     <message>
         <source>0</source>
@@ -752,8 +752,8 @@ for staking</source>
         <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>BSOCK:</source>
-        <translation>BSOCK:</translation>
+        <source>BSCK:</source>
+        <translation>BSCK:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -889,12 +889,12 @@ for staking</source>
         <translation>Staking statistik</translation>
     </message>
     <message>
-        <source>BSOCK</source>
-        <translation>BSOCK</translation>
+        <source>BSCK</source>
+        <translation>BSCK</translation>
     </message>
     <message>
-        <source>zBSOCK</source>
-        <translation>zBSOCK</translation>
+        <source>zBSCK</source>
+        <translation>zBSCK</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -925,8 +925,8 @@ for staking</source>
         <translation>Du kan se ditt kontos historik</translation>
     </message>
     <message>
-        <source>Amount of BSOCK and zBSOCK staked.</source>
-        <translation>Mängden BSOCK och zBSOCK som präglats.</translation>
+        <source>Amount of BSCK and zBSCK staked.</source>
+        <translation>Mängden BSCK och zBSCK som präglats.</translation>
     </message>
     <message>
         <source>All</source>
@@ -965,8 +965,8 @@ for staking</source>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>How to get BSOCK or zBSOCK</source>
-        <translation>Hur man får BSOCK eller zBSOCK.</translation>
+        <source>How to get BSCK or zBSCK</source>
+        <translation>Hur man får BSCK eller zBSCK.</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1403,16 +1403,16 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>Adress</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Bitstock Masternode you must dedicate 10.000 BSOCK (the unit of Bitstock) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>För att skapa en Bitstock Masternode måste du avsätta 10.000 BSOCK (enheten till Bitstock) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Bitstock Masternode you must dedicate 10.000 BSCK (the unit of Bitstock) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>För att skapa en Bitstock Masternode måste du avsätta 10.000 BSCK (enheten till Bitstock) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
         <translation>Se till att du har denna mängd mynt.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 BSOCK will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>En transaktion på 10 000 BSOCK kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 BSCK will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>En transaktion på 10 000 BSCK kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1617,8 +1617,8 @@ Are you sure?</source>
         <translation>Masternode conf file existerar inte</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 BSOCK required.</source>
-        <translation>Inte nog på saldot för att skapa en Masternode, 10000 BSOCK behövs.</translation>
+        <source>Not enough balance to create a masternode, 10,000 BSCK required.</source>
+        <translation>Inte nog på saldot för att skapa en Masternode, 10000 BSCK behövs.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1828,45 +1828,45 @@ Are you sure?</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</source>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</source>
         <translation>Fattas språk eller är översättningen ofullständig? Hjälp till att bidra med översättning här:
-https://www.transifex.com/bitstockproject/bitstockproject-translations</translation>
+https://www.transifex.com/bitstock-bitstock/bitstock-bitstock-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of BSOCK units to zBSOCK</source>
-        <translation>Tillåt automatisk prägling med BSOCK enheter till zBSOCK</translation>
+        <source>Enable automatic minting of BSCK units to zBSCK</source>
+        <translation>Tillåt automatisk prägling med BSCK enheter till zBSCK</translation>
     </message>
     <message>
-        <source>Enable zBSOCK Automint</source>
-        <translation>Tillåt zBSOCK Autoprägling</translation>
+        <source>Enable zBSCK Automint</source>
+        <translation>Tillåt zBSCK Autoprägling</translation>
     </message>
     <message>
-        <source>Enable automatic zBSOCK minting from specific addresses</source>
-        <translation>Aktivera automatisk zBSOCK prägling från specifika adresser</translation>
+        <source>Enable automatic zBSCK minting from specific addresses</source>
+        <translation>Aktivera automatisk zBSCK prägling från specifika adresser</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming BSOCK which get automatically converted to zBSOCK via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande BSOCK som automatiskt konverteras till zBSOCK via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming BSCK which get automatically converted to zBSCK via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande BSCK som automatiskt konverteras till zBSCK via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zBSOCK</source>
-        <translation>Procent av autopräglade zBSOCK</translation>
+        <source>Percentage of autominted zBSCK</source>
+        <translation>Procent av autopräglade zBSCK</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BSOCK for this denomination is available</source>
-        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många BSOCK för denna valör är tillgängliga</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BSCK for this denomination is available</source>
+        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många BSCK för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zBSOCK Denomination</source>
-        <translation>Preferens på zBSOCK valör i autoprägling</translation>
+        <source>Preferred Automint zBSCK Denomination</source>
+        <translation>Preferens på zBSCK valör i autoprägling</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2244,42 +2244,42 @@ Adress: %4
         <translation>Prägla</translation>
     </message>
     <message>
-        <source>Minting zBSOCK anonymizes your BSOCK by removing any
+        <source>Minting zBSCK anonymizes your BSCK by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Prägling av zBSOCK anonymiserar dina BSOCK genom att ta bort
+        <translation>Prägling av zBSCK anonymiserar dina BSCK genom att ta bort
 transaktionshistorik, vilket gör transaktioner ospårbara</translation>
     </message>
     <message>
-        <source>Mint new zBSOCK or convert back to BSOCK</source>
-        <translation>Prägla nya zBSOCK eller konvertera tillbaka till BSOCK</translation>
+        <source>Mint new zBSCK or convert back to BSCK</source>
+        <translation>Prägla nya zBSCK eller konvertera tillbaka till BSCK</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>Mint zBSOCK</source>
-        <translation>Prägla zBSOCK</translation>
+        <source>Mint zBSCK</source>
+        <translation>Prägla zBSCK</translation>
     </message>
     <message>
-        <source>Enter amount of BSOCK to mint into zBSOCK</source>
-        <translation>Ange BSOCK beloppet att prägla till zBSOCK</translation>
+        <source>Enter amount of BSCK to mint into zBSCK</source>
+        <translation>Ange BSCK beloppet att prägla till zBSCK</translation>
     </message>
     <message>
-        <source>Convert back to BSOCK</source>
-        <translation>Konvertera tillbaka till BSOCK</translation>
+        <source>Convert back to BSCK</source>
+        <translation>Konvertera tillbaka till BSCK</translation>
     </message>
     <message>
-        <source>Enter amount of zBSOCK to convert back into BSOCK</source>
-        <translation>Ange mängden zBSOCK som ska konverteras tillbaka till BSOCK</translation>
+        <source>Enter amount of zBSCK to convert back into BSCK</source>
+        <translation>Ange mängden zBSCK som ska konverteras tillbaka till BSCK</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance</source>
-        <translation>zBSOCK genomgår underhåll</translation>
+        <source>zBSCK is currently undergoing maintenance</source>
+        <translation>zBSCK genomgår underhåll</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2627,8 +2627,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Vanlig Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zBSOCK Backup Path:</source>
-        <translation>Vanlig zBSOCK Backup Sökväg:</translation>
+        <source>Custom zBSCK Backup Path:</source>
+        <translation>Vanlig zBSCK Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2903,8 +2903,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Mängd</translation>
     </message>
     <message>
-        <source>BSOCK</source>
-        <translation>BSOCK</translation>
+        <source>BSCK</source>
+        <translation>BSCK</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2999,12 +2999,12 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>zBSOCK is currently undergoing maintenance.</source>
-        <translation>zBSOCK genomgår för tillfället underhåll.</translation>
+        <source>zBSCK is currently undergoing maintenance.</source>
+        <translation>zBSCK genomgår för tillfället underhåll.</translation>
     </message>
     <message>
-        <source>Version 1 zBSOCK require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zBSOCK kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
+        <source>Version 1 zBSCK require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zBSCK kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3883,12 +3883,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Mottaget via Fördunkling</translation>
     </message>
     <message>
-        <source>BSOCK Stake</source>
-        <translation>BSOCK staking</translation>
+        <source>BSCK Stake</source>
+        <translation>BSCK staking</translation>
     </message>
     <message>
-        <source>zBSOCK Stake</source>
-        <translation>zBSOCK Staking</translation>
+        <source>zBSCK Stake</source>
+        <translation>zBSCK Staking</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3907,24 +3907,24 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted BSOCK to zBSOCK</source>
-        <translation>Konvertera BSOCK till zBSOCK</translation>
+        <source>Converted BSCK to zBSCK</source>
+        <translation>Konvertera BSCK till zBSCK</translation>
     </message>
     <message>
-        <source>Spent zBSOCK</source>
-        <translation>Spendera zBSOCK</translation>
+        <source>Spent zBSCK</source>
+        <translation>Spendera zBSCK</translation>
     </message>
     <message>
-        <source>Received BSOCK from zBSOCK</source>
-        <translation>Mottog BSOCK från zBSOCK</translation>
+        <source>Received BSCK from zBSCK</source>
+        <translation>Mottog BSCK från zBSCK</translation>
     </message>
     <message>
-        <source>Minted Change as zBSOCK from zBSOCK Spend</source>
-        <translation>Myntad Växel som zBSOCK från zBSOCK Spendering</translation>
+        <source>Minted Change as zBSCK from zBSCK Spend</source>
+        <translation>Myntad Växel som zBSCK från zBSCK Spendering</translation>
     </message>
     <message>
-        <source>Converted zBSOCK to BSOCK</source>
-        <translation>Konverterad zBSOCK till BSOCK</translation>
+        <source>Converted zBSCK to BSCK</source>
+        <translation>Konverterad zBSCK till BSCK</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4040,8 +4040,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSOCK.</source>
-        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 BSOCK.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BSCK.</source>
+        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 BSCK.</translation>
     </message>
 </context>
 <context>
@@ -4097,8 +4097,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zBSOCK to Spend</source>
-        <translation>Välj zBSOCK att Spendera</translation>
+        <source>Select zBSCK to Spend</source>
+        <translation>Välj zBSCK att Spendera</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4180,16 +4180,16 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zBSOCK minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zBSOCK minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zBSCK minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje zBSCK minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for BSOCK inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för BSOCK inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for BSCK inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för BSCK inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zBSOCK inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zBSOCK inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zBSCK inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för zBSCK inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4224,12 +4224,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Exekvera kommando när den bästa block ändras (%s i cmd är utbytt mot block hash)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Avgifter (i BSOCK/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i BSCK/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BSOCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Avgifter (i BSOCK/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
+        <source>Fees (in BSCK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Avgifter (i BSCK/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4336,12 +4336,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 BSOCK.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 BSCK.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSOCK.</source>
-        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 BSOCK.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BSCK.</source>
+        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 BSCK.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4388,8 +4388,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Du måste specifiera en masternodeprivkey i konfigurationen. Var vänlig se dokumentationen för hjälp.</translation>
     </message>
     <message>
-        <source>(4316 could be used only on mainnet)</source>
-        <translation>(4316 kunde endast användas på mainnet)</translation>
+        <source>(8316 could be used only on mainnet)</source>
+        <translation>(8316 kunde endast användas på mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4400,8 +4400,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>(standard: 1)</translation>
     </message>
     <message>
-        <source>(must be 4316 for mainnet)</source>
-        <translation>(måste vara 4316 för mainnet)</translation>
+        <source>(must be 8316 for mainnet)</source>
+        <translation>(måste vara 8316 för mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4620,8 +4620,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Misslyckades läsa block</translation>
     </message>
     <message>
-        <source>Fee (in BSOCK/kB) to add to transactions you send (default: %s)</source>
-        <translation>Avgift (i BSOCK/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
+        <source>Fee (in BSCK/kB) to add to transactions you send (default: %s)</source>
+        <translation>Avgift (i BSCK/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4720,8 +4720,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the BSOCK and zBSOCK money supply statistics</source>
-        <translation>Indexera BSOCK och zBSOCK pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the BSCK and zBSCK money supply statistics</source>
+        <translation>Indexera BSCK och zBSCK pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4800,8 +4800,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Valör aatt föredra för automatiskt mintad Zerocoin (1/5/10/50/100/500/1000/5000), 0 för ingen preface. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zBSOCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zBSOCK backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBSCK backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zBSCK backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5208,8 +5208,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Synkroniserar sporks...</translation>
     </message>
     <message>
-        <source>Syncing zBSOCK wallet...</source>
-        <translation>Synkroniserar zBSOCK plånbok...</translation>
+        <source>Syncing zBSCK wallet...</source>
+        <translation>Synkroniserar zBSCK plånbok...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5320,8 +5320,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zBSOCK</source>
-        <translation>Värde är under den minsta tillgängliga valören (=1) av zBSOCK</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBSCK</source>
+        <translation>Värde är under den minsta tillgängliga valören (=1) av zBSCK</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

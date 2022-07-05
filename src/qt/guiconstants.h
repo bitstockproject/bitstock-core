@@ -54,7 +54,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "Bitstock"
-#define QAPP_ORG_DOMAIN "bitstock.org"
+#define QAPP_ORG_DOMAIN "bitstock.investments"
 #define QAPP_APP_NAME_DEFAULT "Bitstock-Qt"
 #define QAPP_APP_NAME_TESTNET "Bitstock-Qt-testnet"
 

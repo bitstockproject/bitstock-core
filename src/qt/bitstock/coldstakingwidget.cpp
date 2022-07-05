@@ -97,7 +97,7 @@ ColdStakingWidget::ColdStakingWidget(BitstockGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can delegate your BSOCKs, letting a hot node (24/7 online node)\nstake on your behalf, while you keep the keys securely offline."));
+    ui->labelSubtitle1->setText(tr("You can delegate your BSCKs, letting a hot node (24/7 online node)\nstake on your behalf, while you keep the keys securely offline."));
     setCssSubtitleScreen(ui->labelSubtitle1);
     spacerDiv = new QSpacerItem(40, 20, QSizePolicy::Maximum, QSizePolicy::Expanding);
 
@@ -108,7 +108,7 @@ ColdStakingWidget::ColdStakingWidget(BitstockGUI* parent) :
     ui->lineEditOwnerAddress->setAttribute(Qt::WA_MacShowFocusRect, 0);
     setShadow(ui->lineEditOwnerAddress);
 
-    ui->labelSubtitle2->setText(tr("Accept BSOCK delegation / Delegate BSOCK"));
+    ui->labelSubtitle2->setText(tr("Accept BSCK delegation / Delegate BSCK"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
 
@@ -135,7 +135,7 @@ ColdStakingWidget::ColdStakingWidget(BitstockGUI* parent) :
     setCssProperty(ui->labelEmpty, "text-empty");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select BSOCK outputs to delegate.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select BSCK outputs to delegate.");
 
     ui->btnColdStaking->setTitleClassAndText("btn-title-grey", "Create Cold Staking Address");
     ui->btnColdStaking->setSubTitleClassAndText("text-subtitle", "Creates an address to receive delegated coins\nand stake them on their owner's behalf.");
@@ -513,7 +513,7 @@ void ColdStakingWidget::onCoinControlClicked(){
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any BSOCK to select."));
+            inform(tr("You don't have any BSCK to select."));
         }
     }
 }
@@ -736,7 +736,7 @@ void ColdStakingWidget::updateStakingTotalLabel()
 {
     const CAmount& total = csModel->getTotalAmount();
     ui->labelStakingTotal->setText(tr("Total Staking: %1").arg(
-            (total == 0) ? "0.00 BSOCK" : GUIUtil::formatBalance(total, nDisplayUnit))
+            (total == 0) ? "0.00 BSCK" : GUIUtil::formatBalance(total, nDisplayUnit))
     );
 }
 

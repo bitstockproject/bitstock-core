@@ -44,7 +44,7 @@ related to the DNS seed operation.
 If these expectations cannot be satisfied the operator should
 discontinue providing services and contact the active Bitstock
 Core development team as well as posting on the
-[Bitstock Forum](https://forum.bitstock.org).
+[Bitstock Forum](https://forum.bitstock.investments).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

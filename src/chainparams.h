@@ -93,6 +93,7 @@ public:
     bool IsValidBlockTimeStamp(const int64_t nTime, const int nHeight) const;
 
     CAmount MaxMoneyOut() const { return nMaxMoneyOut; }
+    std::string DevAddress() const { return nDevAddress; }
     /** The masternode count that we will allow the see-saw reward payments to be off by */
     int MasternodeCountDrift() const { return nMasternodeCountDrift; }
     /** Make miner stop after a block is found. In RPC, don't return until nGenProcLimit blocks are generated */
@@ -192,6 +193,7 @@ protected:
     int nFutureTimeDriftPoW;
     int nFutureTimeDriftPoS;
     int nTimeSlotLength;
+    std::string nDevAddress;
 
     int nModifierUpdateBlock;
     CAmount nMaxMoneyOut;

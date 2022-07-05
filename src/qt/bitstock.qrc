@@ -2,7 +2,6 @@
     <qresource prefix="/icons">
         <file alias="bitcoin">res/icons/bitcoin.png</file>
         <file alias="address-book">res/icons/address-book.png</file>
-        <file alias="quit">res/icons/quit.png</file>
         <file alias="send">res/icons/send.png</file>
         <file alias="send_dark">res/icons/send_dark.png</file>
         <file alias="connect_0">res/icons/connect0_16.png</file>
@@ -27,7 +26,6 @@
         <file alias="privacy">res/icons/privacy.png</file>
         <file alias="editpaste">res/icons/editpaste.png</file>
         <file alias="editcopy">res/icons/editcopy.png</file>
-        <file alias="add">res/icons/add.png</file>
         <file alias="bitcoin_testnet">res/icons/bitcoin_testnet.png</file>
         <file alias="bitcoin_regtest">res/icons/bitcoin_regtest.png</file>
         <file alias="edit">res/icons/edit.png</file>
@@ -47,23 +45,15 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_bitstock">res/icons/unit_bitstock.png</file>
-        <file alias="unit_mbitstock">res/icons/unit_mbitstock.png</file>
-        <file alias="unit_ubitstock">res/icons/unit_ubitstock.png</file>
-        <file alias="unit_tbitstock">res/icons/unit_tbitstock.png</file>
-        <file alias="unit_tmbitstock">res/icons/unit_tmbitstock.png</file>
-        <file alias="unit_tubitstock">res/icons/unit_tubitstock.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>
         <file alias="filesave">res/icons/filesave.png</file>
         <file alias="qrcode">res/icons/qrcode.png</file>
         <file alias="debugwindow">res/icons/debugwindow.png</file>
-        <file alias="browse">res/icons/browse.png</file>
         <file alias="staking_active">res/icons/staking_active.png</file>
         <file alias="staking_inactive">res/icons/staking_inactive.png</file>
         <file alias="automint_active">res/icons/automint_active.png</file>
-        <file alias="explorer">res/icons/explorer.png</file>
         <file alias="automint_inactive">res/icons/automint_inactive.png</file>
         <file alias="yesvote">res/icons/yesvote.png</file>
         <file alias="novote">res/icons/novote.png</file>
@@ -76,7 +66,6 @@
         <file alias="default">bitstock/res/css/style_light.css</file>
     </qresource>
     <qresource prefix="/images">
-        <file alias="about">res/images/about.png</file>
         <file alias="bitstock_logo_horizontal">res/images/bitstock_logo_horizontal.png</file>
         <file alias="downArrow">res/images/downArrow_dark.png</file>
         <file alias="downArrow_small">res/images/downArrow_small_dark.png</file>
@@ -128,11 +117,7 @@
         <file alias="spinner-034">res/movies/spinner-034.png</file>
     </qresource>
     <qresource prefix="/">
-        <file alias="bg-splash">bitstock/res/img/bg-splash.svg</file>
         <file alias="bg-splash-png">bitstock/res/img/bg-splash.png</file>
-        <file alias="img-logo-bitstock-png">bitstock/res/img/img-logo-bitstock.png</file>
-        <file alias="img-logo-bitstock-2x">bitstock/res/img/img-logo-bitstock@2x.png</file>
-        <file alias="img-logo-bitstock-3x">bitstock/res/img/img-logo-bitstock@3x.png</file>
         <file alias="img-nav-logo-bitstock">bitstock/res/img/img-nav-logo-bitstock.png</file>
         <file alias="img-qr-test-big">bitstock/res/img/img-qr-test-big.png</file>
         <file alias="img-qr-test">bitstock/res/img/img-qr-test.png</file>
@@ -283,22 +268,13 @@
         <file alias="img-empty-staking-off">bitstock/res/img/img-empty-staking-off.svg</file>
         <file alias="img-empty-staking-on">bitstock/res/img/img-empty-staking-on.svg</file>
         <file alias="img-empty-transactions">bitstock/res/img/img-empty-transactions.svg</file>
-        <file alias="img-nav-logo">bitstock/res/img/img-nav-logo.svg</file>
         <file alias="img-qr">bitstock/res/img/img-qr.svg</file>
         <file alias="ic-contact-arrow-down">bitstock/res/img/ic-contact-arrow-down.svg</file>
         <file alias="ic-contact-arrow-down-white">bitstock/res/img/ic-contact-arrow-down-white.svg</file>
         <file alias="ic-arrow-drop-down-purple">bitstock/res/img/ic-arrow-drop-down-purple.svg</file>
         <file alias="ic-arrow-drop-up-purple">bitstock/res/img/ic-arrow-drop-up-purple.svg</file>
-        <file alias="bg-welcome-2x">bitstock/res/img/bg-welcome@2x.jpg</file>
-        <file alias="bg-welcome-3x">bitstock/res/img/bg-welcome@3x.jpg</file>
-        <file alias="img-logo-bitstock">bitstock/res/img/img-logo-bitstock.svg</file>
-        <file alias="bg-welcome-svg">bitstock/res/img/bg-welcome.svg</file>
-        <file alias="bg-welcome-container">bitstock/res/img/bg-welcome-container.svg</file>
         <file alias="bg-welcome">bitstock/res/img/bg-welcome.png</file>
         <file alias="bg-welcome-container-png">bitstock/res/img/bg-welcome-container.png</file>
-        <file alias="bg-welcome-container-2x">bitstock/res/img/bg-welcome-container@2x.png</file>
-        <file alias="bg-welcome-container-3x">bitstock/res/img/bg-welcome-container@3x.png</file>
-        <file alias="bg-dashboard-banner">bitstock/res/img/bg-dashboard-banner.png</file>
         <file alias="ic-check-box-dark-active">bitstock/res/img/ic-check-box-dark-active.svg</file>
         <file alias="ic-check-box-indeterminate">bitstock/res/img/ic-check-box-indeterminate.svg</file>
         <file alias="ic-check-liliac-indeterminate">bitstock/res/img/ic-check-liliac-indeterminate.svg</file>

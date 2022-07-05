@@ -55,7 +55,7 @@ DashboardWidget::DashboardWidget(BitstockGUI* parent) :
     setCssSubtitleScreen(ui->labelSubtitle);
 
     // Staking Information
-    ui->labelMessage->setText(tr("Amount of BSOCK staked."));
+    ui->labelMessage->setText(tr("Amount of BSCK staked."));
     setCssSubtitleScreen(ui->labelMessage);
     setCssProperty(ui->labelSquarePiv, "square-chart-piv");
     setCssProperty(ui->labelSquarezPiv, "square-chart-zpiv");
@@ -67,7 +67,7 @@ DashboardWidget::DashboardWidget(BitstockGUI* parent) :
 
     setCssProperty(ui->labelChart, "legend-chart");
 
-    ui->labelAmountPiv->setText("0 BSOCK");
+    ui->labelAmountPiv->setText("0 BSCK");
     setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
 
     setCssProperty({ui->pushButtonAll,  ui->pushButtonMonth, ui->pushButtonYear}, "btn-check-time");
@@ -140,7 +140,7 @@ DashboardWidget::DashboardWidget(BitstockGUI* parent) :
     setCssProperty(ui->chartContainer, "container-chart");
     setCssProperty(ui->pushImgEmptyChart, "img-empty-staking-on");
 
-    ui->btnHowTo->setText(tr("How to get BSOCK"));
+    ui->btnHowTo->setText(tr("How to get BSCK"));
     setCssBtnSecondary(ui->btnHowTo);
 
 
@@ -234,7 +234,7 @@ void DashboardWidget::loadWalletModel(){
         loadChart();
 #endif
     }
-    // update the display unit, to not use the default ("BSOCK")
+    // update the display unit, to not use the default ("BSCK")
     updateDisplayUnit();
 }
 
@@ -495,7 +495,7 @@ void DashboardWidget::updateStakeFilter() {
     }
 }
 
-// pair BSOCK, zBSOCK
+// pair BSCK, zBSCK
 const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
     updateStakeFilter();
     const int size = stakesFilter->rowCount();
@@ -505,7 +505,7 @@ const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
         QModelIndex modelIndex = stakesFilter->index(i, TransactionTableModel::ToAddress);
         qint64 amount = llabs(modelIndex.data(TransactionTableModel::AmountRole).toLongLong());
         QDate date = modelIndex.data(TransactionTableModel::DateRole).toDateTime().date();
-        bool isPiv = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZBSOCK;
+        bool isPiv = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZBSCK;
 
         int time = 0;
         switch (chartShow) {
@@ -550,7 +550,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames) {
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair BSOCK, zBSOCK
+    chartData->amountsByCache = getAmountBy(); // pair BSCK, zBSCK
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {
@@ -631,8 +631,8 @@ void DashboardWidget::onChartRefreshed() {
         axisX->clear();
     }
     // init sets
-    set0 = new QBarSet("BSOCK");
-    set1 = new QBarSet("zBSOCK");
+    set0 = new QBarSet("BSCK");
+    set1 = new QBarSet("zBSCK");
     set0->setColor(QColor(9,23,133));
     set1->setColor(QColor(20,174,245));
 

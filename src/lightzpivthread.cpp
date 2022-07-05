@@ -8,7 +8,7 @@
 #include "main.h"
 
 /****** Thread ********/
-void CLightWorker::ThreadLightZBSOCKSimplified() {
+void CLightWorker::ThreadLightZBSCKSimplified() {
     RenameThread("bitstock-light-thread");
     isWorkerRunning = true;
     while (true) {
@@ -60,7 +60,7 @@ void CLightWorker::ThreadLightZBSOCKSimplified() {
                         );
 
                     } catch (const NotEnoughMintsException& e) {
-                        LogPrintStr(std::string("ThreadLightZBSOCKSimplified: ") + e.message + "\n");
+                        LogPrintStr(std::string("ThreadLightZBSCKSimplified: ") + e.message + "\n");
                         rejectWork(genWit, blockHeight, NOT_ENOUGH_MINTS);
                         continue;
                     }

@@ -33,8 +33,7 @@ TopBar::TopBar(BitstockGUI* _mainWindow, QWidget *parent) :
     /* Containers */
     ui->containerTop->setContentsMargins(10, 4, 10, 10);
 #ifdef Q_OS_MAC
-    ui->containerTop->load("://bg-dashboard-banner");
-    setCssProperty(ui->containerTop,"container-topbar-no-image");
+    ui->containerTop->setProperty("cssClass", "container-top");
 #else
     ui->containerTop->setProperty("cssClass", "container-top");
 #endif
@@ -546,9 +545,9 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
     }
     ui->labelTitle1->setText(nLockedBalance > 0 ? tr("Available (Locked included)") : tr("Available"));
 
-    // BSOCK Total
+    // BSCK Total
     CAmount pivAvailableBalance = balance;
-    // zBSOCK Balance
+    // zBSCK Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Set

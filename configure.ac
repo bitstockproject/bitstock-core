@@ -7,7 +7,7 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_RC, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2020)
-AC_INIT([Bitstock Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/bitstockproject/bitstock-core/issues],[bitstock],[https://bitstock.investments/])
+AC_INIT([Bitstock Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://https://github.com/Bitstock-blockchain/BITSTOCK/issues],[bitstock],[https://bitstock.investments/])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/bitstock-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -26,9 +26,9 @@ fi
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef BSOCK_CONFIG_H])
-AH_TOP([#define BSOCK_CONFIG_H])
-AH_BOTTOM([#endif //BSOCK_CONFIG_H])
+AH_TOP([#ifndef BSCK_CONFIG_H])
+AH_TOP([#define BSCK_CONFIG_H])
+AH_BOTTOM([#endif //BSCK_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

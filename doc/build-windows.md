@@ -73,7 +73,7 @@ If you want to build the windows installer with `make deploy` you need [NSIS](ht
 
 Acquire the source in the usual way:
 
-    git clone https://github.com/bitstockproject/bitstock-core.git
+    git clone https://https://github.com/Bitstock-blockchain/BITSTOCK.git
     cd bitstock
 
 ## Building for 64-bit Windows

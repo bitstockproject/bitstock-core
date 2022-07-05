@@ -16,11 +16,26 @@ const unsigned int COLLATERAL_TRANSITION_BLOCKS = 100;
  */
 CAmount CollateralRequired(int nHeight)
 {
-    CAmount nCollateralRequired;
-    
-    nCollateralRequired = 1000 * COIN;
-
-    return nCollateralRequired;
+    if (nHeight >  900000) return   10000 * COIN;
+    if (nHeight >  850000) return    9000 * COIN;
+    if (nHeight >  800000) return    8000 * COIN;
+    if (nHeight >  750000) return    7000 * COIN;
+    if (nHeight >  700000) return    6000 * COIN;
+    if (nHeight >  650000) return    5000 * COIN;
+    if (nHeight >  600000) return    4500 * COIN;
+    if (nHeight >  550000) return    4000 * COIN;
+    if (nHeight >  500000) return    3500 * COIN;
+    if (nHeight >  450000) return    3000 * COIN;
+    if (nHeight >  400000) return    2500 * COIN;
+    if (nHeight >  350000) return    2000 * COIN;
+    if (nHeight >  300000) return    1500 * COIN;
+    if (nHeight >  250000) return    1000 * COIN;
+    if (nHeight >  200000) return     700 * COIN;
+    if (nHeight >  150000) return     500 * COIN;
+    if (nHeight >  100000) return     300 * COIN;
+    if (nHeight >   60000) return     200 * COIN;
+         
+    return 100 * COIN;
 }
 
 

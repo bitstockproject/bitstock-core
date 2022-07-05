@@ -145,7 +145,7 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
         zpivObj.push_back(Pair(std::to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zpivObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zBSOCKsupply", zpivObj));
+    result.push_back(Pair("zBSCKsupply", zpivObj));
 
     //////////
     ////////// Coin stake data ////////////////
@@ -167,7 +167,7 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
         stakeData.push_back(Pair("BlockFromHash", stake.get()->GetIndexFrom()->GetBlockHash().GetHex()));
         stakeData.push_back(Pair("BlockFromHeight", stake.get()->GetIndexFrom()->nHeight));
         stakeData.push_back(Pair("hashProofOfStake", hashProofOfStakeRet.GetHex()));
-        stakeData.push_back(Pair("stakeModifierHeight", ((stake->IsZBSOCK()) ? "Not available" : std::to_string(
+        stakeData.push_back(Pair("stakeModifierHeight", ((stake->IsZBSCK()) ? "Not available" : std::to_string(
                 stake->getStakeModifierHeight()))));
         result.push_back(Pair("CoinStake", stakeData));
     }
@@ -208,17 +208,17 @@ UniValue getchecksumblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zBSOCKsupply\" :\n"
+            "  \"zBSCKsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zBSOCK denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zBSOCK denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zBSOCK denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zBSOCK denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zBSOCK denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zBSOCK denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zBSOCK denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zBSOCK denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zBSOCK denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zBSCK denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zBSCK denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zBSCK denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zBSCK denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zBSCK denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zBSCK denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zBSCK denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zBSCK denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zBSCK denominations\n"
             "  }\n"
             "}\n"
 
@@ -599,17 +599,17 @@ UniValue getblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zBSOCKsupply\" :\n"
+            "  \"zBSCKsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zBSOCK denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zBSOCK denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zBSOCK denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zBSOCK denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zBSOCK denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zBSOCK denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zBSOCK denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zBSOCK denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zBSOCK denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zBSCK denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zBSCK denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zBSCK denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zBSCK denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zBSCK denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zBSCK denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zBSCK denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zBSCK denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zBSCK denominations\n"
             "  },\n"
             "  \"CoinStake\" :\n"
             "    \"BlockFromHash\" : \"hash\",      (string) Block hash of the coin stake input\n"
@@ -1292,7 +1292,7 @@ UniValue getaccumulatorwitness(const UniValue& params, bool fHelp)
     CZerocoinSpendReceipt receipt;
 
     if (!GenerateAccumulatorWitness(pubCoin, accumulator, witness, nMintsAdded, strFailReason)) {
-        receipt.SetStatus(_(strFailReason.c_str()), ZBSOCK_FAILED_ACCUMULATOR_INITIALIZATION);
+        receipt.SetStatus(_(strFailReason.c_str()), ZBSCK_FAILED_ACCUMULATOR_INITIALIZATION);
         throw JSONRPCError(RPC_DATABASE_ERROR, receipt.GetStatusMessage());
     }
 
@@ -1468,7 +1468,7 @@ UniValue getserials(const UniValue& params, bool fHelp) {
                         }
                         libzerocoin::ZerocoinParams *params = Params().Zerocoin_Params(false);
                         PublicCoinSpend publicSpend(params);
-                        if (!ZBSOCKModule::parseCoinSpend(txin, tx, prevOut, publicSpend)) {
+                        if (!ZBSCKModule::parseCoinSpend(txin, tx, prevOut, publicSpend)) {
                             throw JSONRPCError(RPC_INTERNAL_ERROR, "public zerocoin spend parse failed");
                         }
                         serial_str = publicSpend.getCoinSerialNumber().ToString(16);
@@ -1542,9 +1542,9 @@ UniValue getblockindexstats(const UniValue& params, bool fHelp) {
                 "        \"denom_5\": xxxx           (numeric) number of PUBLIC spends of denom_5 occurred over the block range\n"
                 "         ...                    ... number of PUBLIC spends of other denominations: ..., 10, 50, 100, 500, 1000, 5000\n"
                 "  }\n"
-                "  \"txbytes\": xxxxx                (numeric) Sum of the size of all txes (zBSOCK excluded) over block range\n"
-                "  \"ttlfee\": xxxxx                 (numeric) Sum of the fee amount of all txes (zBSOCK mints excluded) over block range\n"
-                "  \"ttlfee_all\": xxxxx             (numeric) Sum of the fee amount of all txes (zBSOCK mints included) over block range\n"
+                "  \"txbytes\": xxxxx                (numeric) Sum of the size of all txes (zBSCK excluded) over block range\n"
+                "  \"ttlfee\": xxxxx                 (numeric) Sum of the fee amount of all txes (zBSCK mints excluded) over block range\n"
+                "  \"ttlfee_all\": xxxxx             (numeric) Sum of the fee amount of all txes (zBSCK mints included) over block range\n"
                 "  \"feeperkb\": xxxxx               (numeric) Average fee per kb (excluding zc txes)\n"
                 "}\n"
 

@@ -61,9 +61,9 @@ md2k7
 * License: LGPL
 
 ### Assets Used
-	src/qt/res/icons/configure.png, src/qt/res/icons/quit.png,
+	src/qt/res/icons/configure.png,
 	src/qt/res/icons/editcopy.png, src/qt/res/icons/editpaste.png,
-	src/qt/res/icons/add.png, src/qt/res/icons/edit.png,
+	src/qt/res/icons/edit.png,
 	src/qt/res/icons/remove.png (edited)
 
 Everaldo (Everaldo Coelho)
