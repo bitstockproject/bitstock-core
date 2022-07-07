@@ -4420,14 +4420,14 @@ Verify that you have installed a predetermined text editor.</translation>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://https://discord.gg/HwVvDy7HDU'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.gg/M3dUsJwy'&gt;
                            #support in our Discord&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://https://discord.gg/HwVvDy7HDU'&gt;
+                           &lt;a style='color: #b088ff' href='https://discord.gg/M3dUsJwy'&gt;
                            #support in our Discord&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>

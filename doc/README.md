@@ -29,7 +29,7 @@ Drag Bitstock-Qt to your applications folder, and then run Bitstock-Qt.
 * See the documentation at the [Bitstock Wiki](https://https://github.com/Bitstock-blockchain/BITSTOCK/wiki)
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Bitstock Forum](http://forum.bitstock.investments/).
-* Join our Discord server [Discord Server](https://https://discord.gg/HwVvDy7HDU)
+* Join our Discord server [Discord Server](https://discord.gg/M3dUsJwy)
 
 Building
 ---------------------
@@ -57,7 +57,7 @@ The Bitstock repo's [root README](/README.md) contains relevant information on t
 
 ### Resources
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Bitstock](http://forum.bitstock.investments/) forum.
-* Join the [Bitstock Discord](https://https://discord.gg/HwVvDy7HDU).
+* Join the [Bitstock Discord](https://discord.gg/M3dUsJwy).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

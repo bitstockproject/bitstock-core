@@ -712,7 +712,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent3">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;We have support channels in most of our official chat groups, for example &lt;a href=&quot;https://https://discord.gg/HwVvDy7HDU&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#b088ff;&quot;&gt;#support in our Discord&lt;/span&gt;&lt;/a&gt;. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;We have support channels in most of our official chat groups, for example &lt;a href=&quot;https://discord.gg/M3dUsJwy&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#b088ff;&quot;&gt;#support in our Discord&lt;/span&gt;&lt;/a&gt;. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
